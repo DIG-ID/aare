@@ -1,0 +1,74 @@
+//Titles
+.st-title
+    @apply font-transducerCondensed text-[40px] md:text-[90px] font-bold italic leading-[38px] md:leading-[81px] md:tracking-[-0.9px] uppercase
+
+.st-title-big
+    @apply font-transducerCondensed text-[82px] md:text-[156px] xl:text-[200px] font-bold italic leading-[70px] md:leading-[135px] xl:leading-[160px] uppercase
+    &--autograph
+        @apply xl:text-[165px]
+
+//Subtitles
+.st-subtitle
+    @apply font-transducerCondensed text-[16px] md:text-[32px] leading-[18px] md:leading-[38px] tracking-[-0.4px] md:tracking-normal
+
+.st-subtitle-i
+    @apply font-transducerCondensed text-[16px] md:text-[32px] leading-[18px] md:leading-[38px] tracking-[-0.4px] md:tracking-normal italic
+
+.st-subtitle-caps
+    @apply font-transducerCondensed text-[16px] md:text-[32px] leading-[18px] md:leading-[38px] tracking-[-0.4px] md:tracking-normal uppercase
+
+.st-subtitle-b-caps
+    @apply font-transducerCondensed text-[16px] md:text-[32px] leading-[18px] md:leading-[38px] tracking-[-0.4px] md:tracking-normal uppercase font-bold
+    
+.st-subtitle-bi
+    @apply font-transducerCondensed text-[16px] md:text-[32px] leading-[18px] md:leading-[38px] tracking-[-0.4px] md:tracking-normal font-bold italic
+
+.st-subtitle-bi-caps
+    @apply font-transducerCondensed text-[16px] md:text-[32px] leading-[18px] md:leading-[38px] tracking-[-0.4px] md:tracking-normal uppercase font-bold italic
+
+.st-subtitle-big
+    @apply font-transducerCondensed text-[16px] md:text-[45px] leading-[22px] md:leading-[50px] font-bold italic
+
+.st-subtitle-big-regular
+    @apply font-transducerCondensed text-[16px] md:text-[45px] leading-[22px] md:leading-[50px] tracking-[0.9px] italic uppercase
+
+.st-subtitle-regular
+    @apply font-transducerCondensed text-[12px] md:text-[26px] leading-[16px] md:leading-[36px] tracking-[4.8px] md:tracking-[10.4px] italic
+
+//Body Text
+.st-body
+    @apply font-transducer text-[8px] md:text-[12px] leading-[14px] md:leading-[23px] tracking-[0.16px] md:tracking-[0.24px] font-bold 
+.st-body-dates
+    @apply font-transducer text-[10px] md:text-[14px] xl:text-[17px] leading-[18px] md:leading-[24px] xl:leading-[29px] tracking-[0.24px] md:tracking-[0.28px] xl:tracking-[0.34px]
+
+//Display outlines
+.st-text-outline
+    &-big
+        -webkit-text-stroke-width: 2px
+        -webkit-text-stroke-color: #14A5BB
+    &-big-light
+        -webkit-text-stroke-width: 2px
+        -webkit-text-stroke-color: #D0EDF1
+    &-big-dark
+        -webkit-text-stroke-width: 2px
+        -webkit-text-stroke-color: #001A26
+
+.st-text-outline
+    -webkit-text-stroke-width: 1px
+    -webkit-text-stroke-color: #D0EDF1
+
+//Footer Text
+.st-text-footer
+    @apply font-transducer text-[8px] md:text-base leading-[14px] md:leading-[29px] tracking-[0.16px] md:tracking-[0.23px] font-normal
+
+.single-line
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+.truncate-text
+    display: inline-block
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    max-width: 300px

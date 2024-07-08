@@ -1,0 +1,36 @@
+.page-template-page-media
+  #breadcrumbs
+    > span
+      @apply text-dark-blue
+  
+
+  .filters-select-wrapper
+    @apply border-dark-blue border-[2px] border-solid rounded-[190px] cursor-pointer font-transducer font-semibold text-dark-blue text-xs xl:text-[17px] xl:leading-[29px] tracking-[0.4px] xl:tracking-[0.68px] uppercase relative flex items-center mb-4 xl:mb-0
+    &::after
+      @apply w-3 h-2 xl:w-4 xl:h-3 bg-dark-blue justify-self-end relative right-3
+      content: ''
+      clip-path: polygon(100% 0%, 0 0%, 50% 100%)
+    select,
+    .filters-select-wrapper::after
+      grid-area: select
+    select
+      @apply appearance-none bg-transparent border-none w-full cursor-[inherit] text-[inherit] font-[inherit] leading-[inherit] m-0 p-0 uppercase px-4 py-1
+      outline: none
+      &::-ms-expand
+        @apply hidden
+      option
+        @apply mb-4
+  #reset-filters
+    @apply font-transducer font-semibold text-[#91b2b6] text-xs md:text-base md:leading-[29px] md:tracking-[0.68px] uppercase
+
+  .brand-toolkit-card
+    &--content
+      span
+        svg
+          rect
+            @apply transition-all duration-500 ease-in-out
+    &:hover
+      span
+        svg
+          rect
+            @apply fill-blue
