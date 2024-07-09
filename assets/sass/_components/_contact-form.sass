@@ -4,22 +4,19 @@
   .wpcf7-form-control
     &.wpcf7-text,
     &.wpcf7-textarea
-      @apply w-full rounded-[10px] bg-light-blue py-2 px-3 md:py-4 md:px-7 font-transducer text-xs md:text-[17px] text-dark-blue font-normal leading-3 md:leading-[29px] tracking-[0.16px] md:tracking-[0.34px] opacity-100
+      @apply w-full rounded-[10px]  py-2 px-3 md:py-4 md:px-7  text-xs md:text-[17px]  font-normal leading-3 md:leading-[29px] tracking-[0.16px] md:tracking-[0.34px] opacity-100
       &::placeholder
-        @apply font-transducer text-xs md:text-[17px] uppercase text-dark-blue font-normal leading-3 md:leading-[29px] tracking-[0.34px] opacity-100
+        @apply  text-xs md:text-[17px] uppercase  font-normal leading-3 md:leading-[29px] tracking-[0.34px] opacity-100
     &.wpcf7-submit
-      @apply inline-block transition-all duration-150 font-transducerCondensed text-base md:text-[31px] italic font-[545] text-blue relative
-      &::after
-        content: url('/wp-content/themes/stricker/assets/svg/after-arrow-blue.svg')
-        @apply absolute -right-[36px] -bottom-[20px] w-[52px] md:w-[104px]
+      @apply inline-block transition-all duration-150 text-base md:text-[31px] italic font-[545] relative
   .wpcf7-spinner
-    @apply bg-blue
+    @apply bg-blue-100
   .wpcf7-not-valid-tip
-    @apply font-transducer text-sm text-red-600 font-normal leading-[29px] tracking-[0.34px] mt-2
+    @apply  text-sm text-red-600 font-normal leading-[29px] tracking-[0.34px] mt-2
 
   form
     .wpcf7-response-output
-      @apply font-transducer text-sm text-dark-blue font-normal leading-[29px] tracking-[0.34px] border-blue bg-blue rounded-[10px] mt-6
+      @apply  text-sm  font-normal leading-[29px] tracking-[0.34px] rounded-[10px] mt-6
     &.sent
       .wpcf7-response-output
         @apply border-green-400 bg-green-400
@@ -35,10 +32,3 @@
       .wpcf7-response-output 
         @apply border-yellow-400 bg-yellow-400
 
-.st-contact-form
-  @apply grid grid-cols-10 xl:gap-9
-  &--left,
-  &--right
-    @apply col-span-9 xl:col-span-5
-  &--button
-    @apply col-span-9 xl:col-span-10 flex justify-end items-center

@@ -19,7 +19,7 @@ mix
 
   .browserSync({
     proxy: {
-      target: "http://dominicstricker.digid",
+      target: "http://aare.digid/",
       ws: true
     },
     files: ["./**/*.php", "./dist/js/*.js", "./dist/css/*.css"]

@@ -11,24 +11,24 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      transducer: ['transducer', 'sans-serif'],
-      transducerCondensed: ['transducer-condensed', 'sans-serif'],
-      transducerExtended: ['transducer-extended', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif'],
+      miller: [ 'miller-headline', 'serif']
     },
 
     extend: {
       letterSpacing: {
-        wide: '.038em',
-        wider: '.06em',
+        //wide: '.038em',
+        //wider: '.06em',
       },
       colors: {
-        'blue': '#14A5BB',
-        'dark-blue': '#001A26',
-        'light-blue': '#D0EDF1',
-        'page-bg-light': '#DFF4F7',
+        'blue-shade-5': '#0E324A',
+        'blue-shade-4': '#1D4763',
+        'blue-shade-3': '#3E6C8A',
+        'blue-shade-2': '#D2E9F7',
+        'blue-shade-1': '#F2FAFF'
       },
       transitionTimingFunction: {
-        'out-expo': 'cubic-bezier(0.16, 1, 0.3, 1)',
+        //'out-expo': 'cubic-bezier(0.16, 1, 0.3, 1)',
       }
     },
   },

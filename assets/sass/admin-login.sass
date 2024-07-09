@@ -19,19 +19,15 @@ body
   form
     @apply shadow-none p-10 border-white/0 bg-white mt-0
     label
-      @apply font-transducer uppercase text-xs mb-2 tracking-wide
+      @apply uppercase text-xs mb-2 tracking-wide
     input#user_pass,
     input#user_login
       @apply rounded-none w-full
-      &:focus-visible
-        @apply outline-blue
     input[type="submit"]
-      @apply inline-block font-transducer font-normal text-sm leading-[18px] tracking-[0.08em] border border-blue text-blue uppercase py-[10px] px-[22px] transition-all duration-300 ease-in-out hover:bg-blue hover:text-white bg-white rounded-none
+      @apply inline-block font-normal text-sm leading-[18px] tracking-[0.08em] border uppercase py-[10px] px-[22px] transition-all duration-300 ease-in-out hover:text-white bg-white rounded-none
 
   #backtoblog, #nav
-    @apply font-transducer text-center
-    a
-       @apply font-transducer 
+    @apply text-center
 
   input:-webkit-autofill
     -webkit-box-shadow: 0 0 0 30px white inset
@@ -40,6 +36,6 @@ body
 .wpml-login-ls
   form#wpml-login-ls-form
     select#wpml-language-switcher-locales
-      @apply rounded-none border border-solid uppercase text-xs font-transducer transition-all duration-300 ease-in hover:bg-white
+      @apply rounded-none border border-solid uppercase text-xs transition-all duration-300 ease-in hover:bg-white
     input.button
-      @apply rounded-none border border-solid uppercase text-xs font-transducer px-4 py-1 transition-all duration-300 ease-in hover:bg-white
+      @apply rounded-none border border-solid uppercase text-xs px-4 py-1 transition-all duration-300 ease-in hover:bg-white

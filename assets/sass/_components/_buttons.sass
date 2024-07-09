@@ -1,33 +1,53 @@
-.btn
-    @apply inline-block w-[92px] md:w-[176px] h-[32px] md:h-[61px] bg-blue rounded-[40.5px] transition-all duration-150 relative
-    &::after
-        content: url('/wp-content/themes/stricker/assets/svg/btn-arrow.svg')
-        @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[42px] md:w-[81px]
+.btn-internal
+  @apply font-miller text-lg border rounded-full py-4 px-16  outline-none whitespace-nowrap break-keep transition-all duration-300 ease-in-out
+  &--shade-1
+    @apply text-blue-shade-5 border-blue-shade-5 bg-blue-shade-1
     &:hover
-        @apply bg-[#0D6A78]
+      @apply bg-blue-shade-3 text-blue-shade-1
     &:focus-visible
-        @apply bg-[#08414A] outline-0
+      @apply text-blue-shade-5 bg-blue-shade-1 border-4 border-blue-shade-3
+    &:active
+      @apply text-blue-shade-1 bg-blue-shade-5
+  &--shade-2
+    @apply text-blue-shade-5 border-blue-shade-5 bg-blue-shade-1
+    &:hover
+      @apply bg-blue-shade-3 text-blue-shade-1
+    &:focus
+      @apply text-blue-shade-5 bg-blue-shade-1 border-4 border-blue-shade-3
+    &:active
+      @apply text-blue-shade-1 bg-blue-shade-5
+  &--shade-3
+    @apply text-blue-shade-5 border-blue-shade-5 bg-blue-shade-1
+    &:hover
+      @apply bg-blue-shade-3 text-blue-shade-1
+    &:focus
+      @apply text-blue-shade-5 bg-blue-shade-1 border-4 border-blue-shade-3
+    &:active
+      @apply text-blue-shade-1 bg-blue-shade-5
 
-    &-arrow
-        @apply inline-block transition-all duration-150 relative font-transducerCondensed text-[16px] md:text-[32px] italic font-[545]
-        &::after
-            content: url('/wp-content/themes/stricker/assets/svg/after-arrow.svg')
-            @apply absolute -right-[36px] -bottom-[20px] w-[52px] md:w-[104px]
-        &:hover
-            @apply text-[#08414A]
-        &:focus-visible
-            outline: 0
-            -webkit-text-stroke-width: 1px
-            -webkit-text-stroke-color: #8AE2EF
-
-    &-arrow-caps
-        @apply inline-block transition-all duration-150 relative font-transducerCondensed text-[18px] md:text-[36px] lg:text-[40px] italic font-[545] uppercase
-        &::after
-            content: url('/wp-content/themes/stricker/assets/svg/after-arrow-blue.svg')
-            @apply absolute -right-[16px] md:-right-[36px] -bottom-[10px] md:-bottom-[20px] w-[52px] md:w-[104px]
-        &:hover
-            @apply text-[#08414A]
-        &:focus-visible
-            outline: 0
-            -webkit-text-stroke-width: 1px
-            -webkit-text-stroke-color: #8AE2EF
+.btn-external
+  @apply font-poppins text-lg uppercase outline-none whitespace-nowrap break-keep transition-all duration-300 ease-in-out
+  &--shade-1
+    @apply text-blue-shade-5 border-blue-shade-5 bg-blue-shade-1
+    &:hover
+      @apply bg-blue-shade-3 text-blue-shade-1
+    &:focus
+      @apply text-blue-shade-5 bg-blue-shade-1 border-4 border-blue-shade-3 outline-none
+    &:active
+      @apply text-blue-shade-1 bg-blue-shade-5
+  &--shade-2
+    @apply text-blue-shade-5 border-blue-shade-5 bg-blue-shade-1
+    &:hover
+      @apply bg-blue-shade-3 text-blue-shade-1
+    &:focus
+      @apply text-blue-shade-5 bg-blue-shade-1 border-4 border-blue-shade-3 outline-none
+    &:active
+      @apply text-blue-shade-1 bg-blue-shade-5
+  &--shade-3
+    @apply text-blue-shade-5 border-blue-shade-5 bg-blue-shade-1
+    &:hover
+      @apply bg-blue-shade-3 text-blue-shade-1
+    &:focus
+      @apply text-blue-shade-5 bg-blue-shade-1 border-4 border-blue-shade-3 outline-none
+    &:active
+      @apply text-blue-shade-1 bg-blue-shade-5
