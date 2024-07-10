@@ -6,8 +6,7 @@ function aare_theme_setup() {
 
 	register_nav_menus(
 		array(
-			'main-menu'        => __( 'Main Menu', 'stricker' ),
-			'menu-footer'      => __( 'Menu Footer', 'stricker' ),
+			'main-menu'        => __( 'Main Menu', 'aare' ),
 		)
 	);
 
@@ -20,18 +19,6 @@ function aare_theme_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
-
-	add_image_size( 'news-thumb', 454, 350, array( 'center', 'center' ) );
-
-	add_image_size( 'news-thumb-bigger', 950, 350, array( 'top', 'center' ) );
-
-	add_image_size( 'team-picture', 530, 650, array( 'top', 'center' ) );
-
-	add_image_size( 'media-full', 1280 );
-
-	add_image_size( 'media-thumbnail', 600, 480, array( 'center', 'center' ) );
-
-	//add_image_size( 'image-square', 1024, 1024, array( 'center', 'center' ) );
 
 }
 
@@ -227,7 +214,7 @@ add_filter( 'wpcf7_autop_or_not', '__return_false' );
  *
  * @return string $priority The potentially altered priority.
  */
-function stricker_theme_lower_yoast_metabox_priority( $priority ) {
+function aare_theme_lower_yoast_metabox_priority( $priority ) {
 	return 'core';
 }
 

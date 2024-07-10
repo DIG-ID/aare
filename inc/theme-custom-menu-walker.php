@@ -2,7 +2,7 @@
 /**
  * Custom Menu Walker for Stricker WordPress Theme.
  */
-class Stricker_Menu_Walker extends Walker_Nav_Menu {
+class Aare_Menu_Walker extends Walker_Nav_Menu {
 
 	/**
 	 * Undocumented function
