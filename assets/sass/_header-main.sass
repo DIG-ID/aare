@@ -1,0 +1,21 @@
+#header-main
+    .menu-toggle
+        @apply flex items-center gap-x-4
+        &__text
+            @apply text-blue-shade-2 font-poppins text-[16px] uppercase font-[500] leading-none tracking-[0.32px] transition-all duration-500 ease-out hidden invisible md:block md:visible
+        &__bars
+            @apply relative flex flex-col justify-center items-center overflow-hidden w-8 h-8
+            .bar
+                @apply block w-6 h-[3px] bg-blue-shade-2 relative opacity-100 rounded-full transition-all duration-500 ease-out
+                &:nth-child(1)
+                    @apply left-0 mb-[6px]
+                &:nth-child(2)
+                    @apply left-0 mb-[6px]
+                &:nth-child(3)
+                    @apply left-0
+
+#main-menu
+    @apply flex flex-row justify-around items-center
+    .menu-item
+        a
+            @apply font-poppins text-[16px] text-blue-shade-2 uppercase
