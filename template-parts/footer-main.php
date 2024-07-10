@@ -1,26 +1,33 @@
-<footer class="footer-main bg-dark-blue">
-	<div class="st-grid py-40">
+<footer class="footer-main bg-blue-shade-2 text-body">
+	<section class="grid grid-cols-3 gap-x-8 max-w-2xl mx-auto py-36">
+		<div class="col-span-3 flex justify-center items-center mb-14">
+			logo
+		</div>
+		<div class="col-span-1 address">
+			<p>
+				Hotel an der Aare <br>
+				Oberer Winkel 2 <br>
+				CH-4500 Solothurn
+			</p>
+		</div>
+		<div class="col-span-1 contact">
+			<p><a href="tel:+41 32 626 24 00">Phone +41 32 626 24 00</a></p>
+			<p><a href="fax:+41 32 626 24 10">Fax +41 32 626 24 10</a></p>
+			<p><a href="mailto:info@hotelaare.ch">info@hotelaare.ch</a></p>
+		</div>
+		<div class="col-span-1 partner">
+			logo partner
+		</div>
+	</section>
+	<section class="bg-blue-shade-5 text-blue-shade-1 py-32 text-body">
+		<div class="max-w-xl flex flex-col justify-center items-center mx-auto">
+			<h4 class="text-title mb-8">Superior Komfort mit Flussblick</h4>
+			<div class="flex justify-between items-center">
+				<p class="mr-16">Erleben Sie eine einzigartige Auszeit im Hotel an der Aare in Solothurn.</p>
+				<a href="" class="btn-internal btn-internal--shade-3">Jetzt Buchen</a>
+			</div>
+		</div>
 
-		<div class="col-span-2 md:col-span-6 xl:col-span-4 xl:col-start-2">
-			
-		</div>
-		<div class="col-span-2 md:col-span-6 xl:col-span-2 xl:col-start-7 flex flex-col justify-between items-center px-1">
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location'  => 'menu-footer',
-					'menu_id'         => 'menu-footer',
-					'container_class' => '',
-					'menu_class'      => 'menu-footer-top-level',
-					'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-					'fallback_cb'     => '__return_false',
-				)
-			);
-			?>
-		</div>
-		<div class="col-span-2 md:col-span-6 xl:col-span-3 flex flex-col items-center xl:items-start xl:flex-row xl:justify-end mx-auto xl:mx-0">
-			
-		</div>
-		
-	</div>
+	</section>
+
 </footer>
