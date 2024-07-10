@@ -1,40 +1,43 @@
 .btn-internal
-  @apply font-miller text-lg border rounded-full py-4 px-16  outline-none whitespace-nowrap break-keep transition-all duration-300 ease-in-out
+  @apply font-miller text-lg border rounded-full py-4 px-16 outline-none whitespace-nowrap break-keep transition-all duration-300 ease-in-out inline-block
   &--shade-1
-    @apply text-blue-shade-5 border-blue-shade-5 bg-blue-shade-1
+    @apply text-blue-shade-5 border-blue-shade-5 bg-blue-shade-2
     &:hover
       @apply bg-blue-shade-3 text-blue-shade-1
-    &:focus-visible
+    &:focus
       @apply text-blue-shade-5 bg-blue-shade-1 border-4 border-blue-shade-3
     &:active
       @apply text-blue-shade-1 bg-blue-shade-5
   &--shade-2
-    @apply text-blue-shade-5 border-blue-shade-5 bg-blue-shade-1
+    @apply text-blue-shade-1 border-blue-shade-1 bg-blue-shade-3
     &:hover
-      @apply bg-blue-shade-3 text-blue-shade-1
+      @apply bg-blue-shade-4
     &:focus
-      @apply text-blue-shade-5 bg-blue-shade-1 border-4 border-blue-shade-3
+      @apply border-4 border-blue-shade-5
     &:active
-      @apply text-blue-shade-1 bg-blue-shade-5
+      @apply bg-blue-shade-5
   &--shade-3
-    @apply text-blue-shade-5 border-blue-shade-5 bg-blue-shade-1
+    @apply text-blue-shade-1 border-blue-shade-1 bg-blue-shade-5
     &:hover
-      @apply bg-blue-shade-3 text-blue-shade-1
+      @apply bg-blue-shade-4 text-blue-shade-1
     &:focus
-      @apply text-blue-shade-5 bg-blue-shade-1 border-4 border-blue-shade-3
+      @apply border-4 border-blue-shade-3
     &:active
-      @apply text-blue-shade-1 bg-blue-shade-5
+      @apply text-blue-shade-5 bg-blue-shade-2 border-blue-shade-2
 
 .btn-external
-  @apply font-poppins text-lg uppercase outline-none whitespace-nowrap break-keep transition-all duration-300 ease-in-out
+  @apply font-poppins font-semibold text-sm uppercase outline-none whitespace-nowrap break-keep transition-all duration-300 ease-in-out 
+  &:after
+    content: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 12'%3E%3Cpath d='M59.361 6.53a.75.75 0 0 0 0-1.06L54.59.697a.75.75 0 0 0-1.061 1.06L57.77 6l-4.242 4.243a.75.75 0 0 0 1.06 1.06l4.773-4.773ZM.95 6.75h57.882v-1.5H.95v1.5Z' fill='%233E6C8A'/%3E%3C/svg%3E")
+    @apply inline-block w-full max-w-16 ml-4
   &--shade-1
-    @apply text-blue-shade-5 border-blue-shade-5 bg-blue-shade-1
+    @apply text-blue-shade-3
     &:hover
-      @apply bg-blue-shade-3 text-blue-shade-1
+      @apply underline
     &:focus
-      @apply text-blue-shade-5 bg-blue-shade-1 border-4 border-blue-shade-3 outline-none
+      text-stroke: 1px #3E6C8A
     &:active
-      @apply text-blue-shade-1 bg-blue-shade-5
+      @apply font-bold underline
   &--shade-2
     @apply text-blue-shade-5 border-blue-shade-5 bg-blue-shade-1
     &:hover
