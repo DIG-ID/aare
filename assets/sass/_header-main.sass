@@ -13,9 +13,48 @@
                     @apply left-0 mb-[6px]
                 &:nth-child(3)
                     @apply left-0
+        &-wrapper
+            @apply mr-5
+    .wpml-ls-legacy-list-horizontal
+        a
+            @apply px-[10px] py-[5px]
+    .wpml-ls-statics-shortcode_actions
+        @apply border-none p-0
+        ul
+            .wpml-ls-current-language
+                .wpml-ls-link
+                    font-weight: 700 !important
+            .wpml-ls-first-item
+                @apply border-l-2 border-blue-shade-2 pl-[10px]
+            .wpml-ls-item
+                .wpml-ls-link
+                    @apply font-poppins font-normal text-[16px] text-blue-shade-2 leading-[16px] uppercase transition-all duration-500 ease-out xl:flex
+    .menu-bg
+        clip-path: rect(0% at 4% 4%)
+        @apply fixed w-full h-svh bg-blue-shade-4 left-0 top-0 -z-[1] transition-all duration-700 ease-in-out
 
 #main-menu
     @apply flex flex-row justify-around items-center
     .menu-item
+        @apply min-w-36 text-center
         a
             @apply font-poppins text-[16px] text-blue-shade-2 uppercase
+            &:hover
+                @apply font-semibold
+    &.main-menu-top-level
+        @apply flex-col items-start
+        .menu-item
+            @apply text-left mt-11
+            a
+                @apply font-miller text-[30px] font-light text-blue-shade-2 normal-case
+                &:hover
+                    @apply font-semibold
+
+#header-main.menu-open
+    &__text
+        @apply text-blue-shade-2
+    .menu-bg
+        clip-path: rect(300vw at 4% 5%)
+    .mega-menu
+        &__logo
+            @apply mb-14
