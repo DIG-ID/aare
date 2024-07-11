@@ -1,7 +1,7 @@
 <header id="header-main" class="header-main bg-blue-shade-5 absolute top-0 left-0 w-full z-50 overflow-hidden" itemscope itemtype="http://schema.org/WebSite">
 
 	<nav class="navbar relative overflow-hidden" role="navigation" aria-label="<?php esc_attr_e( 'Main menu', 'aare' ); ?>">
-		<div class="grid grid-cols-3 px-6 md:px-8 xl:px-16 py-6 md:py-8 xl:py-6">
+		<div class="header-wrapper grid grid-cols-3 px-6 md:px-8 xl:px-16 py-6 md:py-8 xl:py-6">
 			<div class="col-span-1 flex justify-start items-center">
 				<div class="menu-toggle-wrapper">
 					<button class="menu-toggle">
@@ -34,12 +34,11 @@
 					'menu_class'      => 'main-menu-out-top-level',
 					'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 					'fallback_cb'     => '__return_false',
-					//'walker'          => new Stricker_Menu_Walker(),
 				)
 			);
 			?>
 		</div>
-		<div class="menu-wrapper w-full top-0 left-0 bottom-0 hidden fixed">
+		<div id="menu-wrapper" class="menu-wrapper w-full top-0 left-0 bottom-0 hidden fixed">
 			<div class="menu-bg"></div>
 			<div class="grid grid-cols-12 px-0 py-0 h-full">
 				<div class="col-span-8 pl-48 pt-44">
@@ -55,12 +54,40 @@
 							'menu_class'      => 'main-menu-top-level',
 							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 							'fallback_cb'     => '__return_false',
-							//'walker'          => new Stricker_Menu_Walker(),
 						)
 					);
 					?>
 				</div>
-				<div class="col-span-4 bg-blue-shade-3"></div>
+				<div class="col-span-4 bg-blue-shade-3 pt-44 text-center">
+					<div class="w-full mb-20">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/paper-boat.svg" class="mx-auto" alt="Paper boat" title="Paper boat" />
+					</div>
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location'  => 'secondary-menu',
+							'menu_id'         => 'secondary-menu',
+							'container_class' => 'secondary-menu-container pt-20 md:pt-0',
+							'menu_class'      => 'secondary-menu-top-level',
+							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+							'fallback_cb'     => '__return_false',
+						)
+					);
+					?>
+					<?php do_action( 'wpml_add_language_selector' ); ?>
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location'  => 'copyright-menu',
+							'menu_id'         => 'copyright-menu',
+							'container_class' => 'copyright-menu-container pt-20 md:pt-0',
+							'menu_class'      => 'copyright-menu-top-level',
+							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+							'fallback_cb'     => '__return_false',
+						)
+					);
+					?>
+				</div>
 			</div>
 		</div>
 	</nav>

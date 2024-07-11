@@ -15,20 +15,37 @@
                     @apply left-0
         &-wrapper
             @apply mr-5
-    .wpml-ls-legacy-list-horizontal
-        a
-            @apply px-[10px] py-[5px]
-    .wpml-ls-statics-shortcode_actions
-        @apply border-none p-0
-        ul
-            .wpml-ls-current-language
-                .wpml-ls-link
-                    font-weight: 700 !important
-            .wpml-ls-first-item
-                @apply border-l-2 border-blue-shade-2 pl-[10px]
-            .wpml-ls-item
-                .wpml-ls-link
-                    @apply font-poppins font-normal text-[16px] text-blue-shade-2 leading-[16px] uppercase transition-all duration-500 ease-out xl:flex
+    .header-wrapper
+        .wpml-ls-legacy-list-horizontal
+            a
+                @apply px-[10px] py-[5px]
+        .wpml-ls-statics-shortcode_actions
+            @apply border-none p-0
+            ul
+                .wpml-ls-current-language
+                    .wpml-ls-link
+                        font-weight: 700 !important
+                .wpml-ls-first-item
+                    @apply border-l-2 border-blue-shade-2 pl-[10px]
+                .wpml-ls-item
+                    .wpml-ls-link
+                        @apply font-poppins font-normal text-[16px] text-blue-shade-2 leading-[16px] uppercase transition-all duration-500 ease-out xl:flex
+    .menu-wrapper
+        .wpml-ls-legacy-list-horizontal
+            a
+                @apply px-[10px] py-0
+        .wpml-ls-statics-shortcode_actions
+            @apply border-none px-0 py-12
+            ul
+                .wpml-ls-current-language
+                    .wpml-ls-link
+                        font-weight: 700 !important
+                .wpml-ls-item:not(.wpml-ls-first-item):not(.wpml-ls-last-item)
+                    @apply border-x-2 border-blue-shade-2
+                .wpml-ls-item
+                    .wpml-ls-link
+                        @apply font-miller font-light text-[20px] text-blue-shade-2 tracking-[0.4px] leading-[20px] uppercase transition-all duration-500 ease-out xl:flex
+        
     .menu-bg
         clip-path: rect(0% at 4% 4%)
         @apply fixed w-full h-svh bg-blue-shade-4 left-0 top-0 -z-[1] transition-all duration-700 ease-in-out
@@ -46,7 +63,7 @@
         .menu-item
             @apply text-left mt-11
             a
-                @apply font-miller text-[30px] font-light text-blue-shade-2 normal-case
+                @apply font-miller text-[30px] tracking-[0.3px] font-light text-blue-shade-2 normal-case
                 &:hover
                     @apply font-semibold
 
@@ -58,3 +75,15 @@
     .mega-menu
         &__logo
             @apply mb-14
+
+#menu-wrapper
+    #secondary-menu, #copyright-menu
+        @apply flex flex-col justify-center items-center
+        .menu-item
+            @apply text-center
+            &:not(:nth-child(1))
+                @apply mt-5
+            a
+                @apply font-miller text-[20px] text-blue-shade-2 tracking-[0.4px]
+                &:hover
+                    @apply font-semibold

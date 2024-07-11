@@ -7,6 +7,8 @@ function aare_theme_setup() {
 	register_nav_menus(
 		array(
 			'main-menu'        => __( 'Main Menu', 'aare' ),
+			'secondary-menu'   => __( 'Secondary Menu', 'aare' ),
+			'copyright-menu'   => __( 'Copyright Menu', 'aare' ),
 		)
 	);
 
