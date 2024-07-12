@@ -15,6 +15,7 @@ mix
   .sass('assets/sass/admin-login.sass', 'css')
   .options({
     postCss: [ tailwindcss('./tailwind.config.js') ],
+    processCssUrls: false,
   })
 
   .browserSync({

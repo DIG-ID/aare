@@ -1,15 +1,21 @@
+$blue-shade-1: #F2FAFF
+$blue-shade-2: #D2E9F7
+$blue-shade-3: #3E6C8A
+$blue-shade-4: #1D4763
+$blue-shade-5: #0E324A
+  
 :root
   --swiper-navigation-size: 24px
   --swiper-theme-color: #fff
 
 ::-moz-selection
-  @apply bg-[#dcdcdc] text-black
+  @apply bg-blue-shade-1 text-blue-shade-5
 
 ::selection
-  @apply bg-[#dcdcdc] text-black
+  @apply bg-blue-shade-1 text-blue-shade-5
 
 html
-  //scroll-behavior: smooth
+  scroll-behavior: smooth
 
 body
   text-rendering: optimizelegibility
