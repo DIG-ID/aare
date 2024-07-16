@@ -48,10 +48,10 @@
 					<?php
 					wp_nav_menu(
 						array(
-							'theme_location'  => 'main-menu',
+							'theme_location'  => 'main-mega-menu',
 							'menu_id'         => 'main-menu',
 							'container_class' => 'main-menu-container pt-20 md:pt-0',
-							'menu_class'      => 'main-menu-top-level',
+							'menu_class'      => 'main-menu-top-level relative',
 							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 							'fallback_cb'     => '__return_false',
 						)

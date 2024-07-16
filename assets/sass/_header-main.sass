@@ -61,11 +61,26 @@
     &.main-menu-top-level
         @apply flex-col items-start
         .menu-item
-            @apply text-left mt-11
+            @apply text-left mt-11 relative
             a
                 @apply font-miller text-[30px] tracking-[0.3px] font-light text-blue-shade-2 normal-case
                 &:hover
                     @apply font-semibold
+            .sub-menu
+                @apply hidden absolute left-[200%] top-0 mt-0 ml-5 xl:min-w-72
+                .menu-item:not(.menu-label)
+                    @apply text-left mt-3
+                    a
+                        @apply font-miller text-[16px] tracking-[0.32px] font-light text-blue-shade-2 normal-case
+                        &:hover:not(.menu-label)
+                            @apply font-semibold
+                .menu-label
+                    @apply text-left mt-3
+                    a
+                        @apply font-miller text-[24px] tracking-[0.24px] font-light text-blue-shade-2 normal-case                     
+
+            &.menu-item-hover .sub-menu
+                @apply block
 
 #header-main.menu-open
     &__text

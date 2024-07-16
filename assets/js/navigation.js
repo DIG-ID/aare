@@ -20,5 +20,18 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
+    /* Sub-menu add classes */
+    const menuItems = document.querySelectorAll('#main-menu > .menu-item');
+
+    menuItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            // Remove the 'menu-item-hover' class from all menu items
+            menuItems.forEach(item => item.classList.remove('menu-item-hover'));
+
+            // Add the 'menu-item-hover' class to the current menu item
+            this.classList.add('menu-item-hover');
+        });
+    });
+
   }, false);
 });
