@@ -115,9 +115,8 @@
     $font-size: 16px
     $font-weight: 500
     $padding: 10px 15px 15px 15px
-    $background-color-first-level: transparent
-    $background-color-second-level: #c56cf0
-    $background-color-third-level: #18dcff
+    $background-color-first-level: #0E324A
+    $background-color-second-level: #3E6C8A
     $hover-color: white
 
     /* General styles */
@@ -164,12 +163,12 @@
             /* List items in the first level menu */
             li
                 width: 100%
-                background: #7efff5
-                border-bottom: 3px solid #47e3d7
+                background: #0E324A
+                border-bottom: 3px solid #0E324A
 
                 /* Hover effect for first level menu items */
                 &:hover
-                    background: rgba(126, 255, 245, 0.65)
+                    background: #1D4763
 
                 a
                     &:hover
@@ -189,20 +188,30 @@
 
                 /* List items in the second level menu */
                 li
-                    background: #cd84f1
-                    border-bottom: 3px solid #9e44cb
+                    background: #3E6C8A
+                    border-bottom: 3px solid #3E6C8A
 
                     /* Hover effect for second level menu items */
                     &:hover
-                        background: rgba(205, 132, 241, 0.78)
+                        background: #1D4763
 
                     a
                         &:hover
                             color: $hover-color
+                        
+                /* Back menu link style */
+                li.back__menu > a
+                    padding-left: 50px
+
+                    /* Left arrow for back links */
+                    &::after
+                        content: "◀"
+                        position: absolute
+                        left: 0
 
                 /* Active state */
                 &.active
-                    transform: translateX(0%)
+                    transform: translateX(-30px)
 
             /* Data level id link style */
             .menu-item-has-children > a
@@ -213,12 +222,3 @@
                     content: "▶"
                     position: absolute
                     margin-left: 20px
-
-            /* Back menu link style */
-            a.back__menu
-                padding-left: 50px
-
-                /* Left arrow for back links */
-                &::after
-                    content: "◀"
-                    left: 0
