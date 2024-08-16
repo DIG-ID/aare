@@ -38,10 +38,13 @@
 			);
 			?>
 		</div>
+		<?php
+			require_once get_stylesheet_directory() . '/inc/theme-custom-menu-walker.php';
+		?>
 		<div id="menu-wrapper" class="menu-wrapper w-full top-0 left-0 bottom-0 hidden fixed">
 			<div class="menu-bg"></div>
 			<div class="grid grid-cols-12 px-0 py-0 h-full">
-				<div class="col-span-8 pl-48 pt-44">
+				<div class="col-span-8 pl-48 pt-44 hidden xl:block">
 					<div class="site-branding mega-menu__logo">
 						<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url" class="navbar-brand custom-logo-link"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/mega-menu__logo.svg" alt="Hotel Aaren Logo" title="Hotel Aaren Logo" /></a>
 					</div>
@@ -54,11 +57,32 @@
 							'menu_class'      => 'main-menu-top-level relative',
 							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 							'fallback_cb'     => '__return_false',
+							//'walker'          => new Custom_Walker_Nav_Menu(),
 						)
 					);
 					?>
 				</div>
-				<div class="col-span-4 bg-blue-shade-3 pt-44 text-center">
+				<div class="col-span-12 pl-8 pt-12 block xl:hidden mobile__nav">
+					<div class="site-branding mega-menu__logo">
+						<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url" class="navbar-brand custom-logo-link"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/mega-menu__logo.svg" alt="Hotel Aaren Logo" title="Hotel Aaren Logo" /></a>
+					</div>
+					<nav>
+						<?php
+						wp_nav_menu(
+							array(
+								'theme_location'  => 'main-mega-menu',
+								'menu_id'         => 'main-menu',
+								'container_class' => 'main-menu-container pt-20 md:pt-0',
+								'menu_class'      => 'main-menu-top-level relative',
+								'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+								'fallback_cb'     => '__return_false',
+								'walker'          => new Custom_Walker_Nav_Menu(),
+							)
+						);
+						?>
+					</nav>
+				</div>
+				<div class="col-span-4 bg-blue-shade-3 pt-44 text-center hidden xl:block">
 					<div class="w-full mb-20">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/paper-boat.svg" class="mx-auto" alt="Paper boat" title="Paper boat" />
 					</div>

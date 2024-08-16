@@ -33,5 +33,22 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    /* Mobile Nav */
+    let attrLists = document.querySelectorAll(".menu-item-has-children > a");
+
+    attrLists.forEach(attr => {
+        attr.addEventListener("click", function (e) {
+            e.preventDefault(); // Prevent the default action (navigation)
+
+            // Find the next sibling 'ul' element, which should be the submenu
+            let submenu = attr.nextElementSibling;
+
+            if (submenu && submenu.tagName.toLowerCase() === 'ul') {
+                // Toggle the 'active' class to show/hide the submenu
+                submenu.classList.toggle("active");
+            }
+        });
+    });
+
   }, false);
 });
