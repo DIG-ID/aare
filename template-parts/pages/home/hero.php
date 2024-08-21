@@ -11,15 +11,14 @@
 		<div class="absolute bottom-0 left-0 w-full h-[35vh]" style="background: linear-gradient(180deg, rgba(14, 50, 74, 0.00) 0%, #0E324A 100%);"></div>
 	</div>
 	<div class="hero-title text-blue-shade-2 bg-blue-shade-5 -mt-[3px] pb-12">
-		<div class="grid grid-cols-12">
-			<div class="col-span-3 flex items-center justify-end">
+		<div class="grid grid-cols-2 xl:grid-cols-12">
+			<div class="col-span-2 xl:col-span-10 col-start-1 xl:col-start-2 flex flex-col xl:flex-row justify-center items-center text-center">
 				<p class="font-miller font-normal text-sm xl:text-2xl"><?php echo get_field( 'hero_section_before_title' ); ?></p>
-			</div>
-			<div class="col-span-6 text-center">
-				<p class="text-hero-title pb-6"><?php echo get_field( 'hero_section_title' ); ?></p>
+				<p class="text-hero-title pb-6 xl:mx-12"><?php echo get_field( 'hero_section_title' ); ?></p>
+				<p class="font-miller font-normal text-sm xl:text-2xl"><?php echo get_field( 'hero_section_after_title' ); ?></p>
 			</div>
 			<div class="col-span-3 flex items-center justify-start">
-				<p class="font-miller font-normal text-sm xl:text-2xl"><?php echo get_field( 'hero_section_after_title' ); ?></p>
+				
 			</div>
 		</div>
 		<div class="w-full text-center pt-7">

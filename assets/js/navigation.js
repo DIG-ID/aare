@@ -5,19 +5,26 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("load", () => {
 
     /* Hamburguer toggle */
-    const $toggleBtn = $('.menu-toggle')
+    const $toggleBtn = $('.menu-toggle');
+
     $toggleBtn.on('click', (e) => {
+        const $header = $('#header-main');
 
+        if ($header.hasClass('menu-open')) {
+            $header.removeClass('menu-open');
+            $('body').css('overflow', 'auto');
+            $('.menu-wrapper').slideUp(700);
 
-      if( $('#header-main').hasClass( 'menu-open' ) ) {
-        $('#header-main').removeClass('menu-open');
-        $('body').css('overflow', 'auto');
-        $('.menu-wrapper').slideUp(700);
-      } else {
-        $('#header-main').addClass('menu-open');
-        $('body').css('overflow', 'hidden');
-        $('.menu-wrapper').slideDown(700);
-      }
+            // Remove the cross animation
+            $toggleBtn.removeClass('menu-toggle-active');
+        } else {
+            $header.addClass('menu-open');
+            $('body').css('overflow', 'hidden');
+            $('.menu-wrapper').slideDown(700);
+
+            // Add the cross animation
+            $toggleBtn.addClass('menu-toggle-active');
+        }
     });
 
     /* Sub-menu add classes */
