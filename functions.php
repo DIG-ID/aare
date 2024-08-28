@@ -6,10 +6,10 @@ function aare_theme_setup() {
 
 	register_nav_menus(
 		array(
-			'main-menu'        => __( 'Main Menu', 'aare' ),
-			'main-mega-menu'   => __( 'Main Mega Menu', 'aare' ),
-			'secondary-menu'   => __( 'Secondary Menu', 'aare' ),
-			'copyright-menu'   => __( 'Copyright Menu', 'aare' ),
+			'main-menu'      => __( 'Main Menu', 'aare' ),
+			'main-mega-menu' => __( 'Main Mega Menu', 'aare' ),
+			'secondary-menu' => __( 'Secondary Menu', 'aare' ),
+			'copyright-menu' => __( 'Copyright Menu', 'aare' ),
 		)
 	);
 
