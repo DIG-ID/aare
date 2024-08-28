@@ -93,10 +93,10 @@ add_action( 'theme_logo_mobile', 'theme_logo_mobile' );
 /**
  * Implement and customize Yoast Breadcrumbs.
  */
-function st_theme_breadcrumbs() {
+function theme_breadcrumbs() {
 	if ( function_exists( 'yoast_breadcrumb' ) ) :
 		yoast_breadcrumb( '<p id="breadcrumbs">', '</p>' );
 	endif;
 }
 
-add_action( 'breadcrumbs', 'st_theme_breadcrumbs' );
+add_action( 'breadcrumbs', 'theme_breadcrumbs' );
