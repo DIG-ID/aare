@@ -14,7 +14,7 @@
 		<div class="grid grid-cols-2 xl:grid-cols-12">
 			<div class="col-span-2 xl:col-span-10 col-start-1 xl:col-start-2 flex flex-col xl:flex-row justify-center items-center text-center">
 				<p class="font-miller font-normal text-sm xl:text-2xl"><?php echo get_field( 'hero_section_before_title' ); ?></p>
-				<p class="text-hero-title pb-6 xl:mx-12"><?php echo get_field( 'hero_section_title' ); ?></p>
+				<h1 class="text-hero-title pb-6 xl:mx-12"><?php echo get_field( 'hero_section_title' ); ?></h1>
 				<p class="font-miller font-normal text-sm xl:text-2xl"><?php echo get_field( 'hero_section_after_title' ); ?></p>
 			</div>
 			<div class="col-span-3 flex items-center justify-start">

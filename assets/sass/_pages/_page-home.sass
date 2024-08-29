@@ -1,0 +1,34 @@
+.after-vertical-line
+    &::after
+        content: ""
+        position: absolute
+        top: 0
+        right: -13px
+        height: 100%
+        width: 1px
+        background-color: #3E6C8A
+
+.tab-content
+    opacity: 0
+    visibility: hidden
+    transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s
+
+.tab-content.active
+    opacity: 1
+    visibility: visible
+    transition-delay: 0s
+
+.tab-button
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        left: 0
+        right: 0
+        bottom: -14px
+        height: 2px
+        background-color: #3E6C8A
+        opacity: 0
+        transition: opacity 0.3s ease
+    &.active::after
+        opacity: 1
