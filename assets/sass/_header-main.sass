@@ -77,9 +77,11 @@
         .second-level
             .menu-item
                 a
-                    @apply font-poppins md:font-miller text-[16px] md:text-[30px] tracking-[0.16px] md:tracking-[0.3px] font-light text-blue-shade-2 normal-case
+                    @apply font-poppins text-[16px] md:text-[30px] tracking-[0.16px] md:tracking-[0.3px] font-light text-blue-shade-2 normal-case
+        .menu-item:not(:nth-child(1))
+            @apply md:mt-11
         .menu-item
-            @apply text-left mt-6 md:mt-11
+            @apply text-left mt-6
             a
                 @apply font-miller text-[20px] md:text-[30px] tracking-[0.3px] font-light text-blue-shade-2 normal-case
                 &:hover
@@ -89,13 +91,13 @@
                 .menu-item:not(.menu-label)
                     @apply text-left mt-3
                     a
-                        @apply font-miller text-[16px] tracking-[0.32px] font-light text-blue-shade-2 normal-case
+                        @apply font-poppins text-[16px] tracking-[0.32px] font-light text-blue-shade-2 normal-case
                         &:hover:not(.menu-label)
                             @apply font-semibold
                 .menu-label
                     @apply text-left mt-3
                     a
-                        @apply font-miller text-[24px] tracking-[0.24px] font-semibold xl:font-light text-blue-shade-2 normal-case cursor-default                  
+                        @apply font-poppins text-[24px] tracking-[0.24px] font-semibold text-blue-shade-2 normal-case cursor-default                  
 
             &.menu-item-hover .sub-menu
                 @apply block
@@ -107,7 +109,8 @@
         clip-path: rect(300vw at 4% 5%)
     .mega-menu
         &__logo
-            @apply mb-14
+            a
+                @apply mb-14
 
 #menu-wrapper
     #secondary-menu, #copyright-menu
