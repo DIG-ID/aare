@@ -72,6 +72,8 @@
             @apply font-poppins text-[16px] text-blue-shade-2 uppercase
             &:hover
                 @apply font-semibold
+    &.main-menu-top-level > .menu-item > a
+        @apply inline-block min-w-[185px]
     &.main-menu-top-level
         @apply flex-col items-start
         .second-level
@@ -87,7 +89,7 @@
                 &:hover
                     @apply font-semibold
             .sub-menu
-                @apply hidden absolute left-[200%] top-0 mt-0 ml-5 xl:min-w-72
+                @apply hidden absolute left-[165%] top-0 mt-0 ml-5 xl:min-w-72
                 .menu-item:not(.menu-label)
                     @apply text-left mt-3
                     a
@@ -97,7 +99,30 @@
                 .menu-label
                     @apply text-left mt-3
                     a
-                        @apply font-poppins text-[24px] tracking-[0.24px] font-semibold text-blue-shade-2 normal-case cursor-default                  
+                        @apply font-poppins text-[24px] tracking-[0.24px] font-semibold text-blue-shade-2 normal-case cursor-default
+                        &::after
+                            content: ""
+                            position: absolute
+                            width: 29px
+                            height: 8px
+                            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="29" height="8" viewBox="0 0 29 8" fill="none"><path d="M28.3536 4.35355C28.5488 4.15829 28.5488 3.84171 28.3536 3.64645L25.1716 0.464466C24.9763 0.269204 24.6597 0.269204 24.4645 0.464466C24.2692 0.659728 24.2692 0.976311 24.4645 1.17157L27.2929 4L24.4645 6.82843C24.2692 7.02369 24.2692 7.34027 24.4645 7.53553C24.6597 7.7308 24.9763 7.7308 25.1716 7.53553L28.3536 4.35355ZM0 4.5H28V3.5H0V4.5Z" fill="%2380A8C4"/></svg>')
+                            background-repeat: no-repeat
+                            background-size: contain
+                            margin-left: 10px
+                            top: 50%
+                            transform: translateY(-40%)
+                            left: unset
+                        &::before
+                            content: ""
+                            position: absolute
+                            width: 45%
+                            height: 2px
+                            background-color: #3E6C8A
+                            margin-right: 20px
+                            top: 50%
+                            transform: translateY(-40%)
+                            left: auto
+                            right: 100%
 
             &.menu-item-hover .sub-menu
                 @apply block
