@@ -1,7 +1,7 @@
 <?php
 if( have_rows('teasers_boxes') ):
     while( have_rows('teasers_boxes') ) : the_row(); ?>
-    <div class="col-span-2 xl:col-span-6 grid grid-cols-2 xl:grid-cols-6 gap-x-6">
+    <div class="col-span-2 xl:col-span-6 grid grid-cols-2 xl:grid-cols-6 gap-x-6 mt-32 xl:mt-0">
         <div class="col-span-2 xl:col-span-4 col-start-1 xl:col-start-2">
             <?php 
                 $teasers_image = get_sub_field('image');
@@ -11,7 +11,7 @@ if( have_rows('teasers_boxes') ):
                 } 
             ?>
             <h3 class="text-title-h3 text-blue-shade-5 mt-10 mb-6"><?php echo get_sub_field( 'title' ); ?></h3>
-            <p class="text-body text-blue-shade-5 mb-8"><?php echo get_sub_field( 'text' ); ?></p>
+            <p class="text-body !leading-[26px] text-blue-shade-5 mb-8"><?php echo get_sub_field( 'text' ); ?></p>
             <?php 
             $teasers_btn = get_sub_field('button');
             if( $teasers_btn ): 

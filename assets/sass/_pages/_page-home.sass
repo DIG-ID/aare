@@ -1,13 +1,3 @@
-.after-vertical-line
-    &::after
-        content: ""
-        position: absolute
-        top: 0
-        right: -13px
-        height: 100%
-        width: 1px
-        background-color: #3E6C8A
-
 .tab-content
     opacity: 0
     visibility: hidden
@@ -32,3 +22,25 @@
         transition: opacity 0.3s ease
     &.active::after
         opacity: 1
+
+@media (min-width:1200px)
+    .after-vertical-line
+        &::after
+            content: ""
+            position: absolute
+            top: 0
+            right: -13px
+            height: 100%
+            width: 1px
+            background-color: #3E6C8A
+
+@media (max-width:1200px)
+    .after-vertical-line
+        &::after
+            content: ""
+            position: absolute
+            bottom: 0
+            right: 0
+            height: 1px
+            width: 100%
+            background-color: #3E6C8A

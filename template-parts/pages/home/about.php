@@ -1,6 +1,6 @@
-<section class="section-about bg-blue-shade-1 pt-0 xl:pt-14 pb-0 relative overflow-hidden">
+<section class="section-about bg-blue-shade-1 pt-14 xl:pt-14 pb-12 xl:pb-0 relative overflow-hidden">
     <div class="theme-container grid grid-cols-2 xl:grid-cols-12 gap-x-6">
-        <div class="col-span-2 xl:col-span-10 col-start-1 xl:col-start-2 text-center mb-12">
+        <div class="col-span-2 xl:col-span-10 col-start-1 xl:col-start-2 text-center mb-7 xl:mb-12">
             <img class="pb-12 mx-auto" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/waves.svg" alt="waves" title="waves" />
             <h2 class="text-title text-blue-shade-5 mb-16"><?php echo get_field( 'about_title' ); ?></h2>
             <?php 
@@ -14,7 +14,7 @@
         <div class="col-span-2 xl:col-span-4 col-start-1 xl:col-start-2">
             <p class="text-body !leading-[26px] text-blue-shade-5"><?php echo get_field( 'about_text' ); ?></p>
         </div>
-        <div class="col-span-2 xl:col-span-3 col-start-1 xl:col-start-9 mb-32">
+        <div class="col-span-2 xl:col-span-3 col-start-1 xl:col-start-9 mt-7 xl:mt-0 xl:mb-32">
         <?php 
             $about_btn = get_field('about_button');
             if( $about_btn ): 
