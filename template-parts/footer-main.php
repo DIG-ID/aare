@@ -1,7 +1,9 @@
 <footer class="footer-main bg-blue-shade-2 text-body">
 	<section class="grid grid-cols-3 gap-x-8 max-w-2xl mx-auto py-36">
 		<div class="col-span-3 flex justify-center items-center mb-14">
-			logo
+			<div class="site-branding">
+				<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url" class="navbar-brand custom-logo-link"><?php do_action( 'theme_logo_dark' ); ?></a>
+			</div>
 		</div>
 		<div class="col-span-1 address">
 			<p>

@@ -1,11 +1,11 @@
 <section class="section-contact bg-blue-shade-2 pt-0 pb-0 relative overflow-hidden">
     <hr class="wave-separator__inverted--light border-0" />
 
-    <div class="theme-container grid xl:grid-cols-12 gap-x-6 xl:pt-40 xl:pb-32">
+    <div class="theme-container grid grid-cols-2 xl:grid-cols-12 gap-x-6 xl:pt-40 xl:pb-32">
         <div class="after-vertical-line relative xl:col-span-5 col-start-1 xl:col-start-2 flex flex-col items-center justify-start">
             <p class="text-title text-blue-shade-5 xl:leading-[68px] text-center xl:max-w-[412px]"><?php echo get_field( 'contact_title_1' ); ?></p>
         </div>
-        <div class="xl:col-span-5 col-start-1 xl:col-start-7 flex flex-col items-center justify-start">
+        <div class="col-span-2 xl:col-span-5 col-start-1 xl:col-start-7 flex flex-col items-center justify-start">
             <p class="text-title text-blue-shade-5 xl:leading-[68px]"><?php echo get_field( 'contact_title_2' ); ?></p>
             <?php 
             $contact = get_field('contact_button');

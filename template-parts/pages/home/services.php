@@ -1,5 +1,5 @@
 <section class="section-tabs bg-blue-shade-3 pt-24 pb-28 relative overflow-hidden">
-    <div class="theme-container grid xl:grid-cols-12 gap-x-6">
+    <div class="theme-container grid grid-cols-2 xl:grid-cols-12 gap-x-6">
         <div class="col-span-2 xl:col-span-12">
             <h2 class="text-title text-blue-shade-2 text-center"><?php echo get_field( 'services_title' ); ?></h2>
         </div>

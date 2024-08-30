@@ -1,5 +1,5 @@
 <section class="section-tabs bg-blue-shade-5 pt-20 pb-28 relative overflow-hidden">
-    <div class="theme-container grid xl:grid-cols-12 gap-x-6">
+    <div class="theme-container grid grid-cols-2 xl:grid-cols-12 gap-x-6">
         <?php if( have_rows('offers_list') ):
         while( have_rows('offers_list') ) : the_row(); ?>
             <div class="offers-box col-span-2 xl:col-span-6 rounded-[22px] bg-blue-shade-1">

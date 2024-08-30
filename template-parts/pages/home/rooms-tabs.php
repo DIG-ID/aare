@@ -1,15 +1,15 @@
 <section class="section-tabs bg-blue-shade-5 pt-0 pb-28 relative overflow-hidden">
-    <div class="theme-container grid xl:grid-cols-12 gap-x-6">
+    <div class="theme-container grid grid-cols-2 xl:grid-cols-12 gap-x-6">
             <!-- Tabs Navigation -->
-            <div class="tabs-navigation xl:col-span-12 pt-20 flex justify-center mb-24">
+            <div class="tabs-navigation col-span-2 xl:col-span-12 pt-20 flex justify-center mb-24">
                 <button class="tab-button text-title text-blue-shade-2 active mr-9" data-tab="hotelzimmer"><?php echo get_field( 'zimmer_title' ); ?></button>
                 <button class="tab-button text-title text-blue-shade-2 ml-9" data-tab="apartments"><?php echo get_field( 'apartments_title' ); ?></button>
             </div>
 
             <!-- Tabs Content -->
-            <div class="tabs-content xl:col-span-10 col-start-1 xl:col-start-2">
+            <div class="tabs-content col-span-2 xl:col-span-10 col-start-1 xl:col-start-2">
                 <div id="tab-hotelzimmer" class="tab-content active opacity-100 transition-opacity duration-500 ease-in-out">
-                    <div class="grid grid-cols-10 gap-x-6">
+                    <div class="grid grid-cols-2 xl:grid-cols-10 gap-x-6">
                         <div class="col-span-2 xl:col-span-5">
                             <?php 
                                 $zimmer_image_1 = get_field('zimmer_image_1');
@@ -19,7 +19,7 @@
                                 } 
                             ?>
                             <div class="grid grid-cols-5 pt-14">
-                                <div class="col-span-3">
+                                <div class="col-span-2 xl:col-span-3">
                                     <p class="font-miller font-light text-sm xl:text-2xl text-blue-shade-2 xl:pr-8"><?php echo get_field( 'zimmer_description_2' ); ?></p>
                                 </div>
                                 <div class="col-span-2 col-start-4">
@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div id="tab-apartments" class="tab-content hidden opacity-0 transition-opacity duration-500 ease-in-out">
-                    <div class="grid grid-cols-10 gap-x-6">
+                    <div class="grid grid-cols-2 xl:grid-cols-10 gap-x-6">
                         <div class="col-span-2 xl:col-span-3">
                             <?php 
                                 $apart_image_1 = get_field('apartments_image_1');
