@@ -6,7 +6,7 @@
 					<h2 class="text-title-h2 text-blue-shade-1 mb-9 lg:mb-16 text-center lg:text-left"><?php the_field( 'info_included_services_title' );?></h2>
 					<?php
 					if ( have_rows( 'info_included_services_list' ) ) :
-						?><ul class="list list__include-services flex flex-col"><?php
+						?><ul class="list__include-services flex flex-col"><?php
 						while ( have_rows( 'info_included_services_list' ) ) :
 							the_row();
 							?>
@@ -24,7 +24,7 @@
 					<h2 class="text-title-h2 text-blue-shade-1 mb-9 lg:mb-16 text-center lg:text-left"><?php the_field( 'info_equipment_title' );?></h2>
 					<?php
 					if ( have_rows( 'info_equipment_list' ) ) :
-						?><ul class="list list__include-services flex flex-col"><?php
+						?><ul class="list__include-services flex flex-col"><?php
 						while ( have_rows( 'info_equipment_list' ) ) :
 							the_row();
 							?>
