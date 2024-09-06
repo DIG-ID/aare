@@ -30,7 +30,11 @@ module.exports = {
       },
       transitionTimingFunction: {
         //'out-expo': 'cubic-bezier(0.16, 1, 0.3, 1)',
-      }
+      },
+      gridTemplateRows: {
+        // Allow grid rows to auto size based on content
+        'masonry': 'masonry',
+      },
     },
   },
   plugins: [

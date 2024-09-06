@@ -1,0 +1,24 @@
+.single-zimmer
+  .single-zimmer-header
+    background: linear-gradient(180deg, $blue-shade-5 0%, $blue-shade-5 90%, $blue-shade-1 90%)
+  .section-zimmer-description
+    .zimmerSwiperThumbs
+      @apply w-full
+      .swiper-wrapper
+        @apply w-full flex-row gap-6
+        .swiper-slide
+          @apply opacity-60 max-w-[85px] max-h-[85px] hover:cursor-pointer transition-all duration-300 ease-in-out
+        .swiper-slide.swiper-slide-thumb-active
+          @apply opacity-100
+  .section-amenities-lists
+    @apply flex justify-between
+    .amenities-list
+      @apply max-w-[219px] mb-8
+      li
+        @apply  font-poppins font-normal text-sm text-blue-shade-5 tracking-[0.14px] relative ml-4
+        &:last-of-type
+          @apply mb-0
+        &::before
+          @apply absolute -left-4 inline-block
+          content: '•'
+

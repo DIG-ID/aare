@@ -1,14 +1,32 @@
-<section class="page-header bg-blue-shade-5 text-blue-shade-1 pt-64 pb-40">
+<section class="page-header bg-blue-shade-5 text-blue-shade-1 pt-28 lg:pt-64 pb-20 lg:pb-40">
 	<div class="theme-container">
 		<div class="flex flex-col w-full text-center">
 			<div class="page-header--breadcrumbs">
 				<?php do_action( 'breadcrumbs' ); ?>
 			</div>
 			<div class="page-header--title">
-				<h1 class="text-title py-10"><?php the_title(); ?></h1>
+				<?php
+				$page_header_title = get_field( 'page_header_title' );
+				if ( $page_header_title ) :
+					?>
+					<h1 class="text-title py-5 lg:py-10"><?php the_field( 'page_header_title' ); ?></h1>
+					<?php
+				else :
+					?>
+					<h1 class="text-title py-5 lg:py-10"><?php the_title(); ?></h1>
+					<?php
+				endif;
+				?>
 			</div>
-			<div class="page-header--description">
-				<p class="text-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod voluptates nulla quae eius in saepe excepturi omnis soluta blanditiis, nostrum quis quidem officia voluptas nobis magni eligendi commodi optio rerum?</p>
+			<div class="page-header--description w-3/4 lg:w-1/3 mx-auto">
+				<?php
+				$page_header_desc = get_field( 'page_header_description' );
+				if ( $page_header_desc ) :
+					?>
+					<p class="text-description"><?php the_field( 'page_header_description' ); ?></p>
+					<?php
+				endif;
+				?>
 			</div>
 		</div>
 	</div>

@@ -1,0 +1,17 @@
+<?php
+/**
+ * Template Name: Stay - Long Term Template
+ */
+
+get_header();
+if ( have_posts() ) :
+	while ( have_posts() ) :
+		the_post();
+		do_action( 'before_main_content' );
+			get_template_part( 'template-parts/pages/page-header' );
+			get_template_part( 'template-parts/pages/stay/long-term/loop' );
+			get_template_part( 'template-parts/pages/stay/long-term/informations' );
+		do_action( 'after_main_content' );
+	endwhile;
+endif;
+get_footer();

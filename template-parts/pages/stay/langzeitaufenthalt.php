@@ -1,14 +1,29 @@
-<section class="section-langzeitaufenthalt-teaser bg-blue-shade-1 text-blue-shade-5 py-40">
+<section class="section-langzeitaufenthalt-teaser bg-blue-shade-1 text-blue-shade-5 pt-0 pb-11 lg:py-40">
 	<div class="theme-container">
-		<h2 class="text-title text-center mb-20">Langzeitaufenthalt</h2>
+		<h2 class="text-title text-center mb-6 lg:mb-20"><?php the_field( 'langzeitaufenthalt_title' ); ?></h2>
 		<div class="theme-grid">
-			<div class="col-span-4 col-start-2">
-				<h3 class="text-title-h3 mb-5">Serviced Langzeit Studios in der Altstadt</h3>
-				<p class="text-body mb-16">Wir vermieten vier möblierte Langzeit Studios mit kompletter Küchenzeile an der Schmiedengasse 20 in Solothurn - nicht im gleichen Gebäude wie das Hotel an der Aare.</p>
-				<a class="btn-internal btn-internal--shade-1 !bg-blue-shade-1" href="">Mehr Informationen</a>
+			<div class="col-span-2 lg:col-span-4 lg:col-start-2 order-2 lg:order-1">
+				<h3 class="text-title-h3 mb-5"><?php the_field( 'langzeitaufenthalt_subtitle' ); ?></h3>
+				<p class="text-body mb-8 lg:mb-16"><?php the_field( 'langzeitaufenthalt_description' ); ?></p>
+				<?php
+				$zlink = get_field( 'zimmer_link' );
+				if ( $zlink ) :
+					$link_url    = $zlink['url'];
+					$link_title  = $zlink['title'];
+					$link_target = $zlink['target'] ? $zlink['target'] : '_self';
+					?>
+					<a class="btn-internal btn-internal--shade-1 !bg-blue-shade-1" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+					<?php
+				endif;
+				?>
 			</div>
-			<div class="col-start-7 col-span-5">
-				img
+			<div class="col-span-2 lg:col-start-7 lg:col-span-5 order-1 lg:order-2">
+			<?php
+				$limage = get_field( 'langzeitaufenthalt_image' );
+				if ( $limage ) :
+					echo wp_get_attachment_image( $limage, 'full', false, array( 'class' => 'w-full object-cover rounded-[20px] mb-10 lg:mb-0' ) );
+				endif;
+				?>
 			</div>
 		</div>
 	</div>
