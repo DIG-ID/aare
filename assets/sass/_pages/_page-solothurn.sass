@@ -1,0 +1,28 @@
+.page-template-page-solothurn
+  .section-solothurn-content
+    background: linear-gradient(180deg, $blue-shade-5 0%, $blue-shade-5 10%, $blue-shade-3 10%)
+    .card-solothurn-content,
+    .card-solothurn-image
+      grid-row: 1 / 2
+    .card-solothurn-content
+      position: relative
+      grid-column: 1/7
+      z-index: 2
+    .card-solothurn-image
+      position: relative
+      grid-column: 6/-1
+      z-index: 1
+@media (max-width: 1024px)
+  .page-template-page-solothurn
+    .section-solothurn-content
+      .card-solothurn-content,
+      .card-solothurn-image
+        grid-row: initial
+      .card-solothurn-content
+        position: relative
+        grid-column: 1/3
+        order: 2
+      .card-solothurn-image
+        position: relative
+        grid-column: 1/3
+        order: 1

@@ -5,7 +5,7 @@
 			$intro = get_field( 'intro' );
 			if ( $intro ) :
 				?>
-				<div class="col-span-12 card-cs w-full bg-white overflow-hidden rounded-[20px] order-5 lg:order-3">
+				<div class="col-span-12 card-cs w-full bg-white overflow-hidden rounded-[20px]">
 					<?php
 					$iimage = get_field( 'intro_image' );
 					if ( $iimage ) :
@@ -23,12 +23,12 @@
 							<?php
 							$ilink = get_field( 'intro_link' );
 							if ( $ilink ) :
-									$link_url    = $ilink['url'];
-									$link_title  = $ilink['title'];
-									$link_target = $ilink['target'] ? $ilink['target'] : '_self';
-									?>
-									<a class="btn-external btn-external--shade-1" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-							<?php
+								$link_url    = $ilink['url'];
+								$link_title  = $ilink['title'];
+								$link_target = $ilink['target'] ? $ilink['target'] : '_self';
+								?>
+								<a class="btn-external btn-external--shade-1" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+								<?php
 							endif;
 							?>
 						</div>
