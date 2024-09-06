@@ -43,3 +43,12 @@
 
 .text-breadcrumbs
   @apply font-poppins font-normal text-xs
+
+.list
+  li
+    @apply  font-poppins font-normal text-sm text-blue-shade-5 tracking-[0.14px] relative ml-4 mb-4
+    &:last-of-type
+      @apply mb-0
+    &::before
+      @apply absolute -left-4 inline-block
+      content: '•'
