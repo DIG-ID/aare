@@ -34,7 +34,14 @@
 							<div class="card-studio__content col-span-2 lg:col-span-4 lg:col-start-7 flex flex-col lg:justify-between">
 								<h2 class="text-title-h2 text-blue-shade-1 invisible hidden lg:visible lg:block"><?php the_title(); ?></h2>
 								<p class="text-body text-blue-shade-1 pr-16"><?php echo esc_html( wp_strip_all_tags( get_the_content() ) ); ?></p>
-								<a class="btn-internal btn-internal--shade-3 self-start mt-8 lg:mt-0" href="<?php the_permalink(); ?>"><?php esc_html_e( 'Jetzt anfragen', 'aare' ); ?></a>
+								<?php
+								$blink = get_field( 'booking_link' );
+								if ( $blink ) :
+								?>
+								<a class="btn-internal btn-internal--shade-3 self-start mt-8 lg:mt-0" href="<?php echo esc_url( $blink ); ?>" target="_blank"><?php esc_html_e( 'Jetzt anfragen', 'aare' ); ?></a>
+								<?php
+								endif;
+								?>
 							</div>
 						</article>
 						<?php
