@@ -26,7 +26,9 @@ module.exports = {
         'blue-shade-4': '#1D4763',
         'blue-shade-3': '#3E6C8A',
         'blue-shade-2': '#D2E9F7',
-        'blue-shade-1': '#F2FAFF'
+        'blue-shade-1': '#F2FAFF',
+        'green-shade-1': '#0E434A',
+        'purple-shade-1': '#3B1C43'
       },
       transitionTimingFunction: {
         //'out-expo': 'cubic-bezier(0.16, 1, 0.3, 1)',
