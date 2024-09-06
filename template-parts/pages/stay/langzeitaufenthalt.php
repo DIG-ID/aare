@@ -6,7 +6,7 @@
 				<h3 class="text-title-h3 mb-5"><?php the_field( 'langzeitaufenthalt_subtitle' ); ?></h3>
 				<p class="text-body mb-8 lg:mb-16"><?php the_field( 'langzeitaufenthalt_description' ); ?></p>
 				<?php
-				$zlink = get_field( 'zimmer_link' );
+				$zlink = get_field( 'langzeitaufenthalt_link' );
 				if ( $zlink ) :
 					$link_url    = $zlink['url'];
 					$link_title  = $zlink['title'];
