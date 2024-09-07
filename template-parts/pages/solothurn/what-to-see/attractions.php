@@ -1,0 +1,58 @@
+<section class="section-what-to-see-content">
+	<div class="theme-container">
+		<div class="theme-grid">
+			<?php
+			$attractions = get_field( 'attractions' );
+			if ( $attractions ) :
+				?>
+				<div class="col-span-2 lg:col-span-12 relative mb-6 lg:mb-20">
+					<div class="hidden invisible lg:block lg:visible">
+						<?php
+						$attractions_image = get_field( 'attractions_hero_image' );
+						if ( $attractions_image ) :
+							echo wp_get_attachment_image( $attractions_image, 'full', false, array( 'class' => 'w-full object-cover rounded-[20px]' ) );
+						endif;
+						?>
+					</div>
+					<div class="lg:absolute lg:top-0 lg:left-0 lg:bottom-0 lg:right-0 flex justify-center items-center">
+						<div class=" bg-white rounded-[20px] lg:w-[840px] flex flex-col justify-center items-center py-9 px-9 lg:py-20 lg:px-9">
+							<h2 class="text-title-h2 text-blue-shade-5 text-center mb-6 lg:mb-9 lg:max-w-[645px]"><?php the_field( 'attractions_hero_title' ); ?></h2>
+							<p class="text-body text-blu-shade-5 text-center lg:max-w-[410px]"><?php the_field( 'attractions_hero_description' ); ?></p>
+						</div>
+					</div>
+				</div>
+				<?php
+			endif;
+			?>
+		</div>
+	</div>
+</section>
+<div class="section-what-do-see--attractions-list bg-blue-shade-4">
+	<div class="theme-container">
+		<div class="theme-grid">
+		<?php
+			if ( have_rows( 'attractions_list' ) ) :
+				while ( have_rows( 'attractions_list' ) ) :
+					the_row();
+					?>
+					<div class="col-span-2 lg:col-span-12 flex flex-col lg:flex-row  mb-6 lg:mb-20 bg-white rounded-[20px]">
+						<div class="">
+							<?php
+							$img = get_sub_field( 'image' );
+							if ( $img ) :
+								echo wp_get_attachment_image( $img, 'full', false, array( 'class' => 'w-full object-cover rounded-t-[20px] lg:rounded-[20px] min-h-[274px] lg:h-auto' ) );
+							endif;
+							?>
+						</div>
+						<div class="flex flex-col justify-center lg:ml-28 px-8 pt-6 pb-14 lg:px-0 lg:py-0">
+							<h2 class="text-title-h3 text-blue-shade-5 mb-6"><?php the_sub_field( 'title' ); ?></h2>
+							<p class="text-body text-blue-shade-5 lg:max-w-[433px]"><?php the_sub_field( 'description' ); ?></p>
+						</div>
+					</div>
+					<?php
+				endwhile;
+			endif;
+			?>
+		</div>
+	</div>
+</div>
