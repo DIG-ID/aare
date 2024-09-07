@@ -26,7 +26,7 @@
 							<?php
 							$iimage = get_sub_field( 'image' );
 							if ( $iimage ) :
-								echo wp_get_attachment_image( $iimage, 'full', false, array( 'class' => 'w-full object-fit rounded-t-[20px] lg:rounded-[20px] min-h-[327px] lg:min-h-[490px]' ) );
+								echo wp_get_attachment_image( $iimage, 'full', false, array( 'class' => 'w-full object-fit rounded-t-[20px] lg:rounded-[20px] min-h-[327px] max-h-[327px] lg:min-h-[490px] lg:max-h-[490px]' ) );
 							endif;
 							?>
 						</div>
