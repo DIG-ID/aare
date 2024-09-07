@@ -22,7 +22,7 @@
 							endif;
 							?>
 						</div>
-						<div class="card-perfect-for---business-image col-span-2 lg:col-start-7 lg:col-end-13 lg:col-span-6 relative lg:z-10 lg:row-span-full order-1 lg:order-2">
+						<div class="card-perfect-for---business-image col-span-2 lg:col-span-6 lg:col-start-7 lg:col-end-13  relative lg:z-10 lg:row-span-full order-1 lg:order-2">
 							<?php
 							$iimage = get_sub_field( 'image' );
 							if ( $iimage ) :
