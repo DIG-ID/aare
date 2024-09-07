@@ -9,7 +9,7 @@
 					<div class="card-perfect-for grid grid-cols-2 lg:grid-cols-12 col-span-2 lg:col-span-12 gap-x-6 mb-8 lg:mb-40 rounded-[20px]">
 						<div class="card-perfect-for-content col-span-5 py-7 lg:pb-14 px-9 lg:px-28 self-end">
 							<h2 class="text-title-h2 text-blue-shade-1 mb-4 lg:mb-7"><?php the_sub_field( 'title' ); ?></h2>
-							<h2 class="text-title-h3 text-blue-shade-1 mb-4 lg:mb-7"><?php the_sub_field( 'subtitle' ); ?></h2>
+							<h3 class="text-title-h3 text-blue-shade-1 mb-4 lg:mb-7"><?php the_sub_field( 'subtitle' ); ?></h3>
 							<div class="text-body text-blue-shade-1 mb-12"><?php the_sub_field( 'description' ); ?></div>
 							<?php
 							$ilink = get_sub_field( 'link' );
@@ -31,9 +31,7 @@
 							endif;
 							?>
 						</div>
-
 					</div>
-
 					<?php
 				endwhile;
 			endif;

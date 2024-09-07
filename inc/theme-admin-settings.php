@@ -48,7 +48,7 @@ add_filter( 'login_headertext', 'theme_login_title' );
 
 // Custom Backend Footer.
 function theme_custom_admin_footer() {
-	_e( '<span id="footer-thankyou">Developed by <a href="https://dig.id" target="_blank">dig.id</a></span>.', 'hotel-inside' );
+	_e( '<span id="footer-thankyou">Developed by <a href="https://dig.id" target="_blank">dig.id</a></span>.', 'aare' );
 }
 
 add_filter( 'admin_footer_text', 'theme_custom_admin_footer' );
@@ -58,7 +58,7 @@ add_filter( 'admin_footer_text', 'theme_custom_admin_footer' );
 function theme_login_logo() {
 	echo '<style type="text/css">
 	h1 a {
-		background-image: url(' . get_template_directory_uri() . '/assets/images/schoenegg-logo.svg) !important;
+		background-image: url(' . get_template_directory_uri() . '/assets/svg/mega-menu__logo.svg) !important;
 	}
 	</style>';
 }

@@ -9,7 +9,8 @@ if ( have_posts() ) :
 		the_post();
 		do_action( 'before_main_content' );
 			get_template_part( 'template-parts/pages/page-header' );
-			get_template_part( 'template-parts/pages/business/perfect-for/content' );
+			get_template_part( 'template-parts/pages/perfect-for/business/intro' );
+			get_template_part( 'template-parts/pages/perfect-for/business/blocks' );
 		do_action( 'after_main_content' );
 	endwhile;
 endif;
