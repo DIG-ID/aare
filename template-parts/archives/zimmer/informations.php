@@ -6,7 +6,7 @@
 					<h2 class="text-title-h2 text-blue-shade-1 mb-9 lg:mb-16 text-center lg:text-left"><?php the_field( 'archive_zimmer_info_equipment_title', 'options' );?></h2>
 					<?php
 					if ( have_rows( 'archive_zimmer_info_equipment_list', 'options' ) ) :
-						?><ul class="list list__include-services flex flex-col"><?php
+						?><ul class="list__include-services flex flex-col"><?php
 						while ( have_rows( 'archive_zimmer_info_equipment_list', 'options' ) ) :
 							the_row();
 							?>

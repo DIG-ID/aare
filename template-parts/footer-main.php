@@ -17,8 +17,13 @@
 			<p class="text-body"><a href="fax:+41 32 626 24 10">Fax +41 32 626 24 10</a></p>
 			<p class="text-body"><a href="mailto:info@hotelaare.ch">info@hotelaare.ch</a></p>
 		</div>
-		<div class="col-span-2 lg:col-span-1 text-center mt-10">
-			logo partner
+		<div class="col-span-2 lg:col-span-1 text-center mt-10 lg:mt-0 flex justify-center lg:block" style="mix-blend-mode: multiply;">
+			<?php
+			$partner_logo = get_field( 'footer_partner_logo', 'options' );
+			if ( $partner_logo ) :
+				echo wp_get_attachment_image( $partner_logo, 'full', false, array( 'class' => 'max-w-full object-cover' ) );
+			endif;
+			?>
 		</div>
 	</section>
 	<section class="footer-bunchen bg-blue-shade-5 text-blue-shade-1 py-32 ">
