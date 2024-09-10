@@ -4,19 +4,21 @@
   .wpcf7-form-control
     &.wpcf7-text,
     &.wpcf7-textarea
-      @apply w-full rounded-[10px]  py-2 px-3 md:py-4 md:px-7  text-xs md:text-[17px]  font-normal leading-3 md:leading-[29px] tracking-[0.16px] md:tracking-[0.34px] opacity-100
+      @apply w-full rounded-[50px] py-4 px-6 text-sm text-blue-shade-5 font-poppins font-normal tracking-[0.14px]  opacity-100 border border-blue-shade-5
       &::placeholder
-        @apply  text-xs md:text-[17px] uppercase  font-normal leading-3 md:leading-[29px] tracking-[0.34px] opacity-100
+        @apply font-poppins font-normal text-sm tracking-[0.14px] opacity-100 text-blue-shade-3
+    &.wpcf7-textarea
+      @apply rounded-[20px]
     &.wpcf7-submit
-      @apply inline-block transition-all duration-150 text-base md:text-[31px] italic font-[545] relative
+      @apply inline-block transition-all duration-150 font-miller font-normal text-xl text-blue-shade-5 text-center tracking-[0.2px] py-3 px-28 relative border border-blue-shade-5 rounded-[48px]
   .wpcf7-spinner
-    @apply bg-blue-100
+    @apply bg-blue-shade-3
   .wpcf7-not-valid-tip
-    @apply  text-sm text-red-600 font-normal leading-[29px] tracking-[0.34px] mt-2
+    @apply  text-sm text-red-600 font-poppins font-normal tracking-[0.14px] mt-2 pl-6
 
   form
     .wpcf7-response-output
-      @apply  text-sm  font-normal leading-[29px] tracking-[0.34px] rounded-[10px] mt-6
+      @apply  text-sm font-poppins font-normal tracking-[0.14px] rounded-[10px] mt-6
     &.sent
       .wpcf7-response-output
         @apply border-green-400 bg-green-400

@@ -214,6 +214,7 @@ function aare_theme_google_map_init() {
 		acf_update_setting( 'google_api_key', 'AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0' );
 	endif;
 }
+
 add_action( 'acf/init', 'aare_theme_google_map_init' );
 
 /**
