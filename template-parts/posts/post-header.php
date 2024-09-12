@@ -1,32 +1,8 @@
-<section class="page-header bg-blue-shade-5 text-blue-shade-1 pt-28 lg:pt-64 pb-20 lg:pb-40">
+<section class="section-post-header bg-blue-shade-5 text-blue-shade-1 pt-28 lg:pt-64">
 	<div class="theme-container">
 		<div class="flex flex-col w-full text-center">
-			<div class="page-header--breadcrumbs">
+			<div class="page-header--breadcrumbs mb-8 lg:mb-14">
 				<?php do_action( 'breadcrumbs' ); ?>
-			</div>
-			<div class="page-header--title">
-				<?php
-				$page_header_title = get_field( 'page_header_title' );
-				if ( $page_header_title ) :
-					?>
-					<h1 class="text-title py-5 lg:py-10"><?php the_field( 'page_header_title' ); ?></h1>
-					<?php
-				else :
-					?>
-					<h1 class="text-title py-5 lg:py-10"><?php the_title(); ?></h1>
-					<?php
-				endif;
-				?>
-			</div>
-			<div class="page-header--description w-3/4 lg:w-1/3 mx-auto">
-				<?php
-				$page_header_desc = get_field( 'page_header_description' );
-				if ( $page_header_desc ) :
-					?>
-					<p class="text-description"><?php the_field( 'page_header_description' ); ?></p>
-					<?php
-				endif;
-				?>
 			</div>
 		</div>
 	</div>
