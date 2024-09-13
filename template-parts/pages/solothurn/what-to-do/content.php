@@ -41,8 +41,8 @@
 	</div>
 </section>
 
-<section class="section-what-to-do-activites bg-blue-shade-4 pt-28 pb-28">
-	<div class="theme-container mb-28">
+<section class="section-what-to-do-activites bg-blue-shade-4 pt-28 lg:pt-40 pb-28 lg:pb-40">
+	<div class="theme-container mb-28 lg:mb-40">
 		<div class="theme-grid">
 			<div class="col-span-2 lg:col-span-12 flex flex-col justify-center items-center">
 				<h2 class="text-title-h2 text-blue-shade-2 text-center mb-6"><?php the_field( 'activites_title' ); ?></h2>

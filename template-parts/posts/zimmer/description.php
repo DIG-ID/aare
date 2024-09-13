@@ -8,9 +8,14 @@
 					<?php
 					$blink = get_field( 'booking_link' );
 					if ( $blink ) :
-					?>
-					<a class="btn-internal btn-internal--shade-3" href="<?php echo esc_url( $blink ); ?>" target="_blank"><?php esc_html_e( 'Jetzt Buchen', 'aare' ); ?></a>
-					<?php
+						?>
+						<a class="btn-internal btn-internal--shade-3" href="<?php echo esc_url( $blink ); ?>" target="_blank"><?php esc_html_e( 'Jetzt Buchen', 'aare' ); ?></a>
+						<?php
+					else :
+						$booking_url = get_field( 'booking_url', 'options' );
+						if ( $booking_url ) :
+							?><a href="<?php echo esc_url( $booking_url ); ?>" target="_blank" class="btn-internal btn-internal--shade-3"><?php esc_html_e( 'Jetzt Buchen', 'aare' ); ?></a><?php
+						endif;
 					endif;
 					?>
 				</div>

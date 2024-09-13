@@ -6,15 +6,19 @@
 			</div>
 		</div>
 		<div class="col-span-1 lg:col-span-1 address">
-			<p class="text-body">
-				Hotel an der Aare <br>
-				Oberer Winkel 2 <br>
-				CH-4500 Solothurn
-			</p>
+			<p class="text-body text-blue-shade-5"><?php the_field( 'footer_address', 'options' ); ?></p>
 		</div>
 		<div class="col-span-1 lg:col-span-1 contact">
-			<p class="text-body"><a href="tel:+41 32 626 24 00">Phone +41 32 626 24 00</a></p>
-			<p class="text-body"><a href="mailto:info@hotelaare.ch">info@hotelaare.ch</a></p>
+			<?php
+			$phone = get_field( 'footer_phone', 'options' );
+			if ( $phone ) :
+				?> <p class="text-body text-blue-shade-5"><a href="tel:<?php echo esc_url( $phone ); ?>"><?php esc_html_e( 'Phone', 'aare' );?> <?php echo $phone; ?></a></p><?php
+			endif;
+			$email = get_field( 'footer_phone', 'options' );
+			if ( $email ) :
+				?> <p class="text-body text-blue-shade-5"><a href="mailto:<?php echo esc_url( $email ); ?>"><?php echo $email ; ?></a></p><?php
+			endif;
+			?>
 		</div>
 		<div class="col-span-2 lg:col-span-1 text-center mt-10 lg:mt-0 flex justify-center lg:block" style="mix-blend-mode: multiply;">
 			<?php
@@ -25,12 +29,21 @@
 			?>
 		</div>
 	</section>
-	<section class="footer-bunchen bg-blue-shade-5 text-blue-shade-1 py-32 ">
-		<div class="lg:max-w-xl flex flex-col justify-center items-center mx-auto px-6">
-			<h4 class="text-title mb-8">Superior Komfort mit Flussblick</h4>
-			<div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center">
-				<p class="text-body lg:mr-16 mb-8 lg:mb-0 text-center lg:text-left w-3/5 lg:w-full">Erleben Sie eine einzigartige Auszeit im Hotel an der Aare in Solothurn.</p>
-				<a href="" class="btn-internal btn-internal--shade-3">Jetzt Buchen</a>
+	<section class="footer-bunchen bg-blue-shade-5 text-blue-shade-1 pt-16 pb-32 lg:py-32 ">
+		<div class="theme-container">
+			<div class="theme-grid">
+				<div class="col-span-2 lg:col-span-6 lg:col-start-4 flex flex-col justify-center items-center gap-x-6">
+					<h4 class="text-title text-blue-shade-2 mb-8 text-center"><?php the_field( 'footer_call_to_action_title', 'options' ); ?></h4>
+					<div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:max-w-[589px] gap-x-6">
+						<p class="text-body text-blue-shade-2 mb-8 lg:mb-0 text-center lg:text-left w-3/5 lg:w-full"><?php the_field( 'footer_call_to_action_description', 'options' ); ?></p>
+						<?php
+						$booking_url = get_field( 'booking_url', 'options' );
+						if ( $booking_url ) :
+							?><a href="<?php echo esc_url( $booking_url ); ?>" target="_blank" class="btn-internal btn-internal--shade-3"><?php esc_html_e( 'Jetzt Buchen', 'aare' ); ?></a><?php
+						endif;
+						?>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>

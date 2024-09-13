@@ -21,7 +21,12 @@
 				</div>
 			</div>
 			<div class="col-span-1 hidden md:flex justify-end items-center gap-x-8 order-3">
-				<a class="btn-internal btn-internal--shade-3 !text-[16px] !font-poppins uppercase font-medium tracking-[0.16px] !px-8 !py-[0.35rem] !bg-transparent"  href="#"><?php esc_html_e( 'Jetzt Buchen', 'aare' ); ?></a>
+				<?php
+				$booking_url = get_field( 'booking_url', 'options' );
+				if ( $booking_url ) :
+					?><a href="<?php echo esc_url( $booking_url ); ?>" target="_blank" class="btn-internal btn-internal--shade-3 !text-[16px] !font-poppins uppercase font-medium tracking-[0.16px] !px-8 !py-[0.35rem] !bg-transparent"><?php esc_html_e( 'Jetzt Buchen', 'aare' ); ?></a><?php
+				endif;
+				?>
 			</div>
 		</div>
 		<div class="px-6 md:px-8 xl:px-16 py-6 md:py-8 xl:py-3 border-t-[0.5px] border-b-[0.5px] border-blue-shade-2 border-opacity-80 hidden md:block">

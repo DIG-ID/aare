@@ -69,7 +69,7 @@
     .menu-item
         @apply min-w-36 text-center
         a
-            @apply font-poppins text-[16px] text-blue-shade-2 uppercase
+            @apply font-poppins text-[16px] text-blue-shade-2 uppercase transition-all duration-500 ease-in-out
             &:hover
                 @apply font-semibold
     &.main-menu-top-level > .menu-item > a
@@ -79,19 +79,19 @@
         .second-level
             .menu-item
                 a
-                    @apply font-poppins text-[16px] md:text-[30px] tracking-[0.16px] md:tracking-[0.3px] font-light text-blue-shade-2 normal-case
+                    @apply font-poppins text-[16px] md:text-[30px] tracking-[0.16px] md:tracking-[0.3px] font-light text-blue-shade-2 normal-case transition-all duration-500 ease-in-out
         .menu-item:not(:nth-child(1))
             @apply md:mt-11
         .menu-item
             @apply text-left mt-6
             a
-                @apply font-miller text-[20px] md:text-[30px] tracking-[0.3px] font-light text-blue-shade-2 normal-case
+                @apply font-miller text-[20px] md:text-[30px] tracking-[0.3px] font-light text-blue-shade-2 normal-case transition-all duration-500 ease-in-out
                 &:hover
                     @apply font-semibold
             .sub-menu
                 @apply hidden absolute left-[165%] top-0 mt-0 ml-5 xl:min-w-72
                 .menu-item:nth-child(1)
-                        @apply mt-2
+                        @apply mt-2 text-nowrap 
                 .menu-item:not(.menu-label)
                     @apply text-left mt-3
                     a
@@ -101,7 +101,7 @@
                 .menu-label
                     @apply text-left mt-3
                     a
-                        @apply font-poppins text-[24px] tracking-[0.24px] font-semibold text-blue-shade-2 normal-case cursor-default
+                        @apply font-poppins text-[24px] tracking-[0.24px] font-semibold text-blue-shade-2 normal-case cursor-default transition-all duration-500 ease-in-out
                         &::after
                             content: ""
                             position: absolute
