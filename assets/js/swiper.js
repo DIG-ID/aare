@@ -5,7 +5,46 @@ document.addEventListener("DOMContentLoaded", () => {
 	//wait until images, links, fonts, stylesheets, and js is loaded
 	window.addEventListener("load", () => {
 
-			
+		if ( $(".page-template-page-solothurn-what-to-do")[0] ) {
+			var eventSwiper = new Swiper(".eventSwiper", {
+				slidesPerView: 1.2,
+				spaceBetween: 24,
+				breakpoints: {
+					640: {
+						slidesPerView: 1.2,
+						spaceBetween: 24,
+					},
+					768: {
+						slidesPerView: 1.2,
+						spaceBetween: 24,
+					},
+					1024: {
+						slidesPerView: 3.2,
+						spaceBetween: 24,
+					},
+				},
+			});
+		}
+		if ( $(".page-template-page-solothurn-what-to-do")[0] ) {
+			var activitiesSwiper = new Swiper(".activitesSwiper", {
+				slidesPerView: 1.2,
+				spaceBetween: 24,
+				breakpoints: {
+					640: {
+						slidesPerView: 1.2,
+						spaceBetween: 24,
+					},
+					768: {
+						slidesPerView: 1.2,
+						spaceBetween: 24,
+					},
+					1024: {
+						slidesPerView: 2.2,
+						spaceBetween: 24,
+					},
+				},
+			});
+		}
 		if ( $(".page-template-page-stay-long-term")[0] ) {
 			var sutdioSwiper0 = new Swiper(".studioSwiper0", {
 				slidesPerView: 1,
