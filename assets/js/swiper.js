@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			var eventSwiper = new Swiper(".eventSwiper", {
 				slidesPerView: 1.2,
 				spaceBetween: 24,
+				grabCursor: true,
 				breakpoints: {
 					640: {
 						slidesPerView: 1.2,
@@ -29,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			var activitiesSwiper = new Swiper(".activitesSwiper", {
 				slidesPerView: 1.2,
 				spaceBetween: 24,
+				grabCursor: true,
 				breakpoints: {
 					640: {
 						slidesPerView: 1.2,
