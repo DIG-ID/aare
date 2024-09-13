@@ -39,7 +39,7 @@
 						<?php
 						$booking_url = get_field( 'booking_url', 'options' );
 						if ( $booking_url ) :
-							?><a href="<?php echo esc_url( $booking_url ); ?>" target="_blank" class="btn-internal btn-internal--shade-3"><?php esc_html_e( 'Jetzt Buchen', 'aare' ); ?></a><?php
+							?><a href="<?php echo esc_url( $booking_url ); ?>" target="_blank" class="btn-internal btn-internal--shade-3 !text-[16px] !font-poppins uppercase font-medium tracking-[0.16px]"><?php esc_html_e( 'Jetzt Buchen', 'aare' ); ?></a><?php
 						endif;
 						?>
 					</div>
