@@ -18,7 +18,7 @@
 				endif;
 				?>
 			</div>
-			<div class="page-header--description w-3/4 lg:w-1/3 mx-auto">
+			<div class="page-header--description w-3/4 lg:w-[40%] mx-auto">
 				<?php
 				$page_header_desc = get_field( 'archive_jobs_header_description', 'options' );
 				if ( $page_header_desc ) :
