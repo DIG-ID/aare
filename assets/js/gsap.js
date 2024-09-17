@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // GSAP horizontal scroll effect (this will still run on the about page)
   gsap.registerPlugin(ScrollTrigger);
 
-  const scrollContainer = document.querySelector('.section-history-hospital div');
+  const scrollContainer = document.querySelector('.history-hospital div');
   
   if (scrollContainer) {
     const scrollWidth = scrollContainer.scrollWidth;
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
       x: -(scrollWidth - viewportWidth),
       ease: 'none',
       scrollTrigger: {
-        trigger: '.section-history-hospital',
+        trigger: '.history-hospital',
         start: 'bottom bottom', // Start horizontal scroll when the bottom of the section hits the bottom of the viewport
         pin: true,
         scrub: 1,
