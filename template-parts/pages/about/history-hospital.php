@@ -20,14 +20,14 @@
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4"><?php the_field( 'hospital_timeline_2_year' ); ?></h3>
                 <p class="text-body text-blue-shade-5 mb-0 lg:max-w-[410px]"><?php the_field( 'hospital_timeline_2_description' ); ?></p>
             </div>
-            <div class="col-span-1 pl-8 pt-20 bg-blue-shade-1">
+            <div class="col-span-1 pl-8 pt-20 bg-blue-shade-1 lg:-ml-[2px]">
                 Image
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4"><?php the_field( 'hospital_timeline_3_year' ); ?></h3>
                 <p class="text-body text-blue-shade-5 mb-32 lg:max-w-[410px]"><?php the_field( 'hospital_timeline_3_description' ); ?></p>
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4"><?php the_field( 'hospital_timeline_4_year' ); ?></h3>
                 <p class="text-body text-blue-shade-5 mb-0 lg:max-w-[410px]"><?php the_field( 'hospital_timeline_4_description' ); ?></p>
             </div>
-            <div class="col-span-1 pl-8 pt-20 bg-blue-shade-1">
+            <div class="col-span-1 pl-8 pt-20 bg-blue-shade-1 lg:-ml-[2px]">
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4"><?php the_field( 'hospital_timeline_5_year' ); ?></h3>
                 <p class="text-body text-blue-shade-5 mb-20 lg:max-w-[410px]"><?php the_field( 'hospital_timeline_5_description' ); ?></p>
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4"><?php the_field( 'hospital_timeline_6_year' ); ?></h3>
@@ -35,12 +35,12 @@
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4"><?php the_field( 'hospital_timeline_7_year' ); ?></h3>
                 <p class="text-body text-blue-shade-5 mb-0 lg:max-w-[410px]"><?php the_field( 'hospital_timeline_7_description' ); ?></p>
             </div>
-            <div class="col-span-1 pl-8 pt-20 bg-blue-shade-1">
+            <div class="col-span-1 pl-8 pt-20 bg-blue-shade-1 lg:-ml-[2px]">
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4"><?php the_field( 'hospital_timeline_8_year' ); ?></h3>
                 <p class="text-body text-blue-shade-5 mb-8 lg:max-w-[410px]"><?php the_field( 'hospital_timeline_8_description' ); ?></p>
                 Image
             </div>
-            <div class="col-span-1 pl-8 pt-20 bg-blue-shade-1">
+            <div class="col-span-1 pl-8 pt-20 bg-blue-shade-1 lg:-ml-[2px]">
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4"><?php the_field( 'hospital_timeline_9_year' ); ?></h3>
                 <p class="text-body text-blue-shade-5 mb-20 lg:max-w-[410px]"><?php the_field( 'hospital_timeline_9_description' ); ?></p>
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4"><?php the_field( 'hospital_timeline_10_year' ); ?></h3>
@@ -48,8 +48,8 @@
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4"><?php the_field( 'hospital_timeline_11_year' ); ?></h3>
                 <p class="text-body text-blue-shade-5 mb-0 lg:max-w-[410px]"><?php the_field( 'hospital_timeline_11_description' ); ?></p>
             </div>
-            <div class="col-span-1 pl-8 pt-20 bg-blue-shade-1">Image 1<br>Image 2</div>
-            <div class="col-span-1 pl-8 pt-20 bg-blue-shade-1">
+            <div class="col-span-1 pl-8 pt-20 bg-blue-shade-1 lg:-ml-[2px]">Image 1<br>Image 2</div>
+            <div class="col-span-1 pl-8 pt-20 bg-blue-shade-1 lg:-ml-[2px]">
             <h3 class="text-title-h3 text-blue-shade-5 mb-4"><?php the_field( 'hospital_timeline_12_year' ); ?></h3>
                 <p class="text-body text-blue-shade-5 mb-20 lg:max-w-[410px]"><?php the_field( 'hospital_timeline_12_description' ); ?></p>
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4"><?php the_field( 'hospital_timeline_13_year' ); ?></h3>
@@ -57,7 +57,7 @@
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4"><?php the_field( 'hospital_timeline_14_year' ); ?></h3>
                 <p class="text-body text-blue-shade-5 mb-0 lg:max-w-[410px]"><?php the_field( 'hospital_timeline_14_description' ); ?></p>
             </div>
-            <div class="col-span-1 pl-8 pt-20 bg-blue-shade-1">
+            <div class="col-span-1 pl-8 pt-20 bg-blue-shade-1 lg:-ml-[2px]">
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4"><?php the_field( 'hospital_timeline_15_year' ); ?></h3>
                 <p class="text-body text-blue-shade-5 mb-8 lg:max-w-[410px]"><?php the_field( 'hospital_timeline_15_description' ); ?></p>
                 Image
