@@ -1,4 +1,4 @@
-<section class="section-sustainability bg-blue-shade-5 text-blue-shade-1 pb-20 lg:pb-24">
+<section class="section-sustainability bg-blue-shade-4 text-blue-shade-1 pb-20 lg:pb-24">
 	<div class="theme-container">
 		<div class="theme-grid">
             <div class="col-span-2 lg:col-span-12 flex flex-col justify-center items-center">

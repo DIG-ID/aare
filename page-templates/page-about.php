@@ -11,6 +11,8 @@ if ( have_posts() ) :
 			get_template_part( 'template-parts/pages/page-header' );
 			get_template_part( 'template-parts/pages/about/philosophie' );
 			get_template_part( 'template-parts/pages/about/team' );
+			get_template_part( 'template-parts/pages/about/history-hospital' );
+			get_template_part( 'template-parts/pages/about/history-building' );
 			get_template_part( 'template-parts/pages/about/architecture' );
 			get_template_part( 'template-parts/pages/about/sustainability' );
 			get_template_part( 'template-parts/pages/about/testimonials' );

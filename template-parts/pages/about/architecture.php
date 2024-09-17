@@ -1,4 +1,4 @@
-<section class="section-architecture bg-blue-shade-5 pb-52">
+<section class="section-architecture bg-blue-shade-4 pb-52">
 	<div class="theme-container">
 		<div class="theme-grid">
             <div class="col-span-2 lg:col-start-2 lg:col-span-10 grid grid-cols-2 lg:grid-cols-10">
