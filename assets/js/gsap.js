@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
   gsap.registerPlugin(ScrollTrigger);
 
   const scrollContainer = document.querySelector('.section-history-hospital div');
-
+  
   if (scrollContainer) {
     const scrollWidth = scrollContainer.scrollWidth;
     const viewportWidth = window.innerWidth;
@@ -55,9 +55,10 @@ document.addEventListener("DOMContentLoaded", function() {
       ease: 'none',
       scrollTrigger: {
         trigger: '.section-history-hospital',
+        start: 'bottom bottom', // Start horizontal scroll when the bottom of the section hits the bottom of the viewport
         pin: true,
         scrub: 1,
-        end: () => "+=" + scrollWidth // sets the scrolling distance
+        end: () => "+=" + scrollWidth // Sets the scrolling distance
       }
     });
   }
