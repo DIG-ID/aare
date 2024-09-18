@@ -1,0 +1,45 @@
+.page-template-page-about
+    @apply bg-blue-shade-5
+.history-hospital
+    background: linear-gradient(to bottom, #0E324A 25%, #1D4763 25%)
+
+//Line with both dots
+.line-with-dots
+    position: relative
+    border-bottom: 1px solid #3E6C8A
+    height: 1px
+    width: 100%
+
+.line-with-dots::before, .line-with-dots::after
+    content: ''
+    position: absolute
+    background-color: #3E6C8A
+    border-radius: 50%
+    width: 6px
+    height: 6px
+    top: -3px
+
+.line-with-dots::before
+    left: 0
+
+.line-with-dots::after
+    right: 0
+
+//line with a single dot to fit the line with both dots
+.line-single-dot
+    position: relative
+    border-bottom: 1px solid #3E6C8A
+    height: 1px
+    width: 100%
+
+.line-single-dot::after
+    content: ''
+    position: absolute
+    background-color: #3E6C8A
+    border-radius: 50%
+    width: 6px
+    height: 6px
+    top: -3px
+
+.line-single-dot::after
+    right: 0
