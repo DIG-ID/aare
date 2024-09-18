@@ -1,5 +1,5 @@
 <section class="section-history-building bg-blue-shade-4 relative overflow-hidden">
-<div class="history-building py-12 relative pr-20">    
+    <div class="history-building py-12 relative pr-20">    
         <div class="h-[90vh] w-[6000px] grid grid-cols-9 my-auto">
             <div class="col-span-1 text-right">
             <?php 
@@ -17,73 +17,80 @@
             ?>
 
             </div>
-            <div class="col-span-1 pl-28 pt-20 bg-blue-shade-1 rounded-l-[24px]">
+            <div class="col-span-1 pl-28 pt-20 bg-blue-shade-1 rounded-l-[24px] relative">
                 <h2 class="font-miller font-light text-2xl xl:text-5xl leading-7 w-[60%] text-blue-shade-5"><?php echo get_field( 'building_title' ); ?></h2>
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/waves.svg" class="w-[143px] py-11" alt="waves" title="waves" />
-                <h3 class="text-title-h3 text-blue-shade-5 mb-4 mt-[8%] lg:max-w-[410px]"><?php the_field( 'building_timeline_1_year' ); ?></h3>
-                <p class="text-body text-blue-shade-5 mb-[28%] lg:max-w-[410px]"><?php the_field( 'building_timeline_1_description' ); ?></p>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/waves-vertical.svg" class="w-[60px] py-8" alt="waves" title="waves" />
+                <h3 class="text-title-h3 text-blue-shade-5 mb-4 mt-0 lg:max-w-[410px]"><?php the_field( 'building_timeline_1_year' ); ?></h3>
+                <p class="text-body text-blue-shade-5 mb-[4%] lg:max-w-[410px]"><?php the_field( 'building_timeline_1_description' ); ?></p>
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4 lg:max-w-[410px]"><?php the_field( 'building_timeline_2_year' ); ?></h3>
                 <p class="text-body text-blue-shade-5 mb-0 lg:max-w-[410px]"><?php the_field( 'building_timeline_2_description' ); ?></p>
+                <div class="w-full absolute bottom-[8%] right-0 pl-28 z-10"><div class="line-with-dots"></div></div>
             </div>
-            <div class="col-span-1 pt-20 bg-blue-shade-1 lg:-ml-[2px]">
+            <div class="col-span-1 pt-20 bg-blue-shade-1 lg:-ml-[2px] relative">
+                <h3 class="text-title-h3 text-blue-shade-5 mb-4 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_3_year' ); ?></h3>
+                <p class="text-body text-blue-shade-5 mb-[18%] lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_3_description' ); ?></p>
                 <?php
-                $himage1 = get_field( 'building_image_1' );
-                if ( $himage1 ) :
-                    echo wp_get_attachment_image( $himage1, 'full', false, array( 'class' => 'w-full object-cover rounded-[24px] lg:max-w-[650px] lg:min-w-[650px] lg:mb-0 lg:-mt-[20%] lg:-ml-[18%] lg:mb-[10%]' ) );
+                $bimage1 = get_field( 'building_image_1' );
+                if ( $bimage1 ) :
+                    echo wp_get_attachment_image( $bimage1, 'full', false, array( 'class' => 'w-full object-cover rounded-[24px] mx-auto lg:max-w-[520px] lg:mb-0' ) );
                 endif;
                 ?>
-                <h3 class="text-title-h3 text-blue-shade-5 mb-4 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_3_year' ); ?></h3>
-                <p class="text-body text-blue-shade-5 mb-[10%] lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_3_description' ); ?></p>
+                <div class="w-full absolute bottom-[8%] right-0 z-10"><div class="line-single-dot"></div></div>
+            </div>
+            <div class="col-span-1 pt-20 bg-blue-shade-1 lg:-ml-[2px] relative">
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_4_year' ); ?></h3>
-                <p class="text-body text-blue-shade-5 mb-0 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_4_description' ); ?></p>
-            </div>
-            <div class="col-span-1 pt-20 bg-blue-shade-1 lg:-ml-[2px]">
+                <p class="text-body text-blue-shade-5 mb-[15%] lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_4_description' ); ?></p>
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_5_year' ); ?></h3>
-                <p class="text-body text-blue-shade-5 mb-20 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_5_description' ); ?></p>
+                <p class="text-body text-blue-shade-5 mb-[13%] lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_5_description' ); ?></p>
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_6_year' ); ?></h3>
-                <p class="text-body text-blue-shade-5 mb-32 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_6_description' ); ?></p>
-                <h3 class="text-title-h3 text-blue-shade-5 mb-4 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_7_year' ); ?></h3>
-                <p class="text-body text-blue-shade-5 mb-0 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_7_description' ); ?></p>
+                <p class="text-body text-blue-shade-5 mb-0 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_6_description' ); ?></p>
+                <div class="w-full absolute bottom-[8%] right-0 z-10"><div class="line-single-dot"></div></div>
             </div>
-            <div class="col-span-1 pt-20 bg-blue-shade-1 lg:-ml-[2px]">
+            <div class="col-span-1 pt-20 bg-blue-shade-1 lg:-ml-[2px] relative">
+                <?php
+                $bimage2 = get_field( 'building_image_2' );
+                if ( $bimage2 ) :
+                    echo wp_get_attachment_image( $bimage2, 'full', false, array( 'class' => 'w-full object-cover rounded-[24px] mx-auto lg:max-w-[520px] mb-10 lg:mb-[9%] lg:-mt-[18%]' ) );
+                endif;
+                ?>
+                <?php
+                $bimage3 = get_field( 'building_image_3' );
+                if ( $bimage3 ) :
+                    echo wp_get_attachment_image( $bimage3, 'full', false, array( 'class' => 'w-full object-cover rounded-[24px] mx-auto lg:max-w-[520px] lg:mb-0' ) );
+                endif;
+                ?>
+                <div class="w-full absolute bottom-[8%] right-0 z-10"><div class="line-single-dot"></div></div>
+            </div>
+            <div class="col-span-1 pt-20 bg-blue-shade-1 lg:-ml-[2px] relative">
+                <h3 class="text-title-h3 text-blue-shade-5 mb-4 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_7_year' ); ?></h3>
+                <p class="text-body text-blue-shade-5 mb-[24%] lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_7_description' ); ?></p>
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_8_year' ); ?></h3>
                 <p class="text-body text-blue-shade-5 mb-[13%] lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_8_description' ); ?></p>
+                <h3 class="text-title-h3 text-blue-shade-5 mb-4 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_9_year' ); ?></h3>
+                <p class="text-body text-blue-shade-5 mb-0 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_9_description' ); ?></p>
+                <div class="w-full absolute bottom-[8%] right-0 z-10"><div class="line-single-dot"></div></div>
+            </div>
+            <div class="col-span-1 pt-20 bg-blue-shade-1 lg:-ml-[2px] relative">
                 <?php
-                $himage2 = get_field( 'building_image_2' );
-                if ( $himage2 ) :
-                    echo wp_get_attachment_image( $himage2, 'full', false, array( 'class' => 'w-full object-cover rounded-[24px] mx-auto lg:max-w-[520px] lg:mb-0' ) );
+                $bimage4 = get_field( 'building_image_4' );
+                if ( $bimage4 ) :
+                    echo wp_get_attachment_image( $bimage4, 'full', false, array( 'class' => 'w-full object-cover rounded-[24px] mx-auto lg:max-w-[520px] mb-10 lg:mb-[4%] lg:-mt-[18%]' ) );
                 endif;
                 ?>
-            </div>
-            <div class="col-span-1 pt-20 bg-blue-shade-1 lg:-ml-[2px]">
-                <h3 class="text-title-h3 text-blue-shade-5 mb-4 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_9_year' ); ?></h3>
-                <p class="text-body text-blue-shade-5 mb-20 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_9_description' ); ?></p>
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_10_year' ); ?></h3>
-                <p class="text-body text-blue-shade-5 mb-28 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_10_description' ); ?></p>
+                <p class="text-body text-blue-shade-5 mb-[15%] lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_10_description' ); ?></p>
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_11_year' ); ?></h3>
                 <p class="text-body text-blue-shade-5 mb-0 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_11_description' ); ?></p>
+                <div class="w-full absolute bottom-[8%] right-0 z-10"><div class="line-single-dot"></div></div>
             </div>
-            <div class="col-span-1 pt-20 bg-blue-shade-1 lg:-ml-[2px]">
-            <?php
-                $himage3 = get_field( 'building_image_3' );
-                if ( $himage3 ) :
-                    echo wp_get_attachment_image( $himage3, 'full', false, array( 'class' => 'w-full object-cover rounded-[24px] mx-auto lg:max-w-[520px] mb-10 lg:mb-[18%] lg:-mt-[20%]' ) );
-                endif;
-                ?>
-                <?php
-                $himage4 = get_field( 'building_image_4' );
-                if ( $himage4 ) :
-                    echo wp_get_attachment_image( $himage4, 'full', false, array( 'class' => 'w-full object-cover rounded-[24px] mx-auto lg:max-w-[520px] lg:mb-0' ) );
-                endif;
-                ?>
-            </div>
-            <div class="col-span-1 pt-20 bg-blue-shade-1 lg:-ml-[2px]">
+            <div class="col-span-1 pt-20 bg-blue-shade-1 lg:-ml-[2px] relative">
             <h3 class="text-title-h3 text-blue-shade-5 mb-4 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_12_year' ); ?></h3>
-                <p class="text-body text-blue-shade-5 mb-20 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_12_description' ); ?></p>
+                <p class="text-body text-blue-shade-5 mb-[19%] lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_12_description' ); ?></p>
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_13_year' ); ?></h3>
-                <p class="text-body text-blue-shade-5 mb-28 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_13_description' ); ?></p>
+                <p class="text-body text-blue-shade-5 mb-[18%] lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_13_description' ); ?></p>
                 <h3 class="text-title-h3 text-blue-shade-5 mb-4 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_14_year' ); ?></h3>
                 <p class="text-body text-blue-shade-5 mb-0 lg:max-w-[410px] mx-auto"><?php the_field( 'building_timeline_14_description' ); ?></p>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/paper-boat.svg" class="w-[66px] absolute bottom-[10%] -right-16" alt="paper boat" title="paper boat" />
             </div>
             <div class="col-span-1 pt-20 lg:-ml-[2px] bg-blue-shade-1 rounded-r-[24px] w-1/3">
 

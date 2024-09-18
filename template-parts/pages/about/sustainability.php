@@ -14,7 +14,7 @@
                     $sust_btn_title = $sust_btn['title'];
                     $sust_btn_target = $sust_btn['target'] ? $sust_btn['target'] : '_self';
                     ?>
-                    <a class="btn-internal btn-internal--shade-3 self-start mx-auto" href="<?php echo esc_url( $sust_btn_url ); ?>" target="<?php echo esc_attr( $sust_btn_target ); ?>"><?php echo esc_html( $sust_btn_title ); ?></a>
+                    <a class="btn-internal btn-internal--shade-4 self-start mx-auto" href="<?php echo esc_url( $sust_btn_url ); ?>" target="<?php echo esc_attr( $sust_btn_target ); ?>"><?php echo esc_html( $sust_btn_title ); ?></a>
                 <?php endif; ?>
 			</div>
 		</div>
