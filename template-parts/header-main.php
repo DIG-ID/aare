@@ -29,7 +29,7 @@
 				?>
 			</div>
 		</div>
-		<div class="px-6 md:px-8 xl:px-16 py-6 md:py-8 xl:py-3 border-t-[0.5px] border-b-[0.5px] border-blue-shade-2 border-opacity-80 hidden md:block">
+		<div class="menu-app px-6 md:px-8 xl:px-16 py-6 md:py-8 xl:py-3 border-t-[0.5px] border-b-[0.5px] border-blue-shade-2 border-opacity-80 hidden md:block">
 			<?php
 			wp_nav_menu(
 				array(
