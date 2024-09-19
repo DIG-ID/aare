@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
         if (!aboutPage && header) {
         window.addEventListener('scroll', function() {
-            if (window.scrollY > 150) {
+            if (window.scrollY > 100) {
             header.classList.add('bg-blue-shade-5');
             header.classList.remove('bg-transparent');
             } else {

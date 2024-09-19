@@ -14,7 +14,7 @@
                 $contact_title = $contact['title'];
                 $contact_target = $contact['target'] ? $contact['target'] : '_self';
                 ?>
-                <a class="btn-internal btn-internal--shade-1 text-center mb-9 mt-7" href="<?php echo esc_url( $contact_url ); ?>" target="<?php echo esc_attr( $contact_target ); ?>"><?php echo esc_html( $contact_title ); ?></a>
+                <a class="btn-custom btn-custom--only-arrow text-center mb-9 mt-7" href="<?php echo esc_url( $contact_url ); ?>" target="<?php echo esc_attr( $contact_target ); ?>"><?php echo esc_html( $contact_title ); ?></a>
             <?php endif; ?>
             <p class="font-miller font-light text-sm xl:text-2xl text-blue-shade-5 text-center xl:max-w-[350px] w-[50%] xl:w-full"><?php echo get_field( 'contact_disclaimer' ); ?></p>
         </div>
