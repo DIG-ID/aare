@@ -21,7 +21,7 @@
                 $location_btn_title = $location_btn['title'];
                 $location_btn_target = $location_btn['target'] ? $location_btn['target'] : '_self';
                 ?>
-                <a class="btn-internal btn-internal--shade-3 text-center !hidden xl:!inline-block" href="<?php echo esc_url( $location_btn_url ); ?>" target="<?php echo esc_attr( $location_btn_target ); ?>"><?php echo esc_html( $location_btn_title ); ?></a>
+                <a class="btn-internal btn-internal--shade-3 !py-3 !px-0 !font-light text-center !hidden xl:!inline-block" href="<?php echo esc_url( $location_btn_url ); ?>" target="<?php echo esc_attr( $location_btn_target ); ?>"><?php echo esc_html( $location_btn_title ); ?></a>
             <?php endif; ?>
         </div>
         <div class="col-span-2 xl:hidden text-center">
@@ -32,7 +32,7 @@
                 $location_btn_title = $location_btn['title'];
                 $location_btn_target = $location_btn['target'] ? $location_btn['target'] : '_self';
                 ?>
-                <a class="btn-internal btn-internal--shade-3 text-center" href="<?php echo esc_url( $location_btn_url ); ?>" target="<?php echo esc_attr( $location_btn_target ); ?>"><?php echo esc_html( $location_btn_title ); ?></a>
+                <a class="btn-internal btn-internal--shade-3 !py-3 !px-0 !font-light text-center" href="<?php echo esc_url( $location_btn_url ); ?>" target="<?php echo esc_attr( $location_btn_target ); ?>"><?php echo esc_html( $location_btn_title ); ?></a>
             <?php endif; ?>
         </div>
     </div>

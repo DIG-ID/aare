@@ -20,5 +20,5 @@
         </div>
     </div>
 
-    <hr class="wave-separator__inverted border-0" />
+    <hr class="wave-separator__inverted border-0 -mb-[2px]" />
 </section>

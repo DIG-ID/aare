@@ -1,5 +1,5 @@
 <section class="single-zimmer-header  text-blue-shade-1 pt-28 lg:pt-64">
-	<div class="theme-container">
+	<div class="theme-container relative">
 		<div class="flex flex-col w-full text-center">
 			<div class="page-header--breadcrumbs mb-14">
 				<?php do_action( 'breadcrumbs' ); ?>
@@ -22,9 +22,10 @@
 					endforeach;
 					?>
 					</div>
-					<div class="swiper-button-next zimmerSwiper-button-next"></div>
-					<div class="swiper-button-prev zimmerSwiper-button-prev"></div>
+					
 				</div>
+				<div class="swiper-button-next zimmerSwiper-button-next -right-3"></div>
+				<div class="swiper-button-prev zimmerSwiper-button-prev -left-3"></div>
 			</div>
 			<?php
 		endif;
