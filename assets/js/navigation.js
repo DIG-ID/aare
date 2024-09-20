@@ -9,18 +9,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
     $toggleBtn.on('click', (e) => {
         const $header = $('#header-main');
+        const $body = $('body');
 
         if ($header.hasClass('menu-open')) {
+            // Close the mega menu
             $header.removeClass('menu-open');
-            $('body').css('overflow', 'auto');
-            $('.menu-wrapper').fadeOut(500);
+            $header.css({
+                'overflow': 'auto',
+                'padding-right': '0px' // Reset padding
+            });
+            $('.menu-wrapper').fadeOut(300);
 
             // Remove the cross animation
             $toggleBtn.removeClass('menu-toggle-active');
         } else {
+            // Open the mega menu
             $header.addClass('menu-open');
-            $('body').css('overflow', 'hidden');
-            $('.menu-wrapper').fadeIn(500);
+
+            // Calculate scrollbar width
+            const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+
+            $header.css({
+                'overflow': 'hidden',
+                'padding-right': scrollBarWidth + 'px' // Compensate for the missing scrollbar
+            });
+
+            $('.menu-wrapper').fadeIn(300);
 
             // Add the cross animation
             $toggleBtn.addClass('menu-toggle-active');
