@@ -84,7 +84,7 @@
 						?>
 					</nav>
 				</div>
-				<div class="col-span-4 bg-blue-shade-3 pt-44 text-center hidden xl:block">
+				<div id="menu-secondary-col" class="col-span-4 bg-blue-shade-3 pt-44 text-center hidden xl:block">
 					<div class="w-full mb-20">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/paper-boat.svg" class="mx-auto" alt="Paper boat" title="Paper boat" />
 					</div>

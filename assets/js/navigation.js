@@ -10,14 +10,18 @@ document.addEventListener("DOMContentLoaded", () => {
     $toggleBtn.on('click', (e) => {
         const $header = $('#header-main');
         const $body = $('body');
+        const $menuWrapper = $('#menu-secondary-col');
 
         if ($header.hasClass('menu-open')) {
             // Close the mega menu
             $header.removeClass('menu-open');
-            $header.css({
-                'overflow': 'auto',
-                'padding-right': '0px' // Reset padding
-            });
+            setTimeout(() => {
+                $body.css('overflow', 'auto');
+            }, 100);
+            setTimeout(() => {
+                $menuWrapper.css('padding-right', '0px'); // Reset padding
+            }, 300);
+            
             $('.menu-wrapper').fadeOut(300);
 
             // Remove the cross animation
@@ -29,17 +33,16 @@ document.addEventListener("DOMContentLoaded", () => {
             // Calculate scrollbar width
             const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
 
-            $header.css({
-                'overflow': 'hidden',
-                'padding-right': scrollBarWidth + 'px' // Compensate for the missing scrollbar
-            });
+            $body.css('overflow', 'hidden');
 
+            $menuWrapper.css('padding-right', scrollBarWidth + 'px'); // Compensate for missing scrollbar
             $('.menu-wrapper').fadeIn(300);
 
             // Add the cross animation
             $toggleBtn.addClass('menu-toggle-active');
         }
     });
+
 
     /* Sub-menu add classes */
     const menuItems = document.querySelectorAll('#main-menu > .menu-item');
