@@ -5,22 +5,24 @@ document.addEventListener("DOMContentLoaded", () => {
         const menuApp = document.querySelector('.menu-app'); // Select the menu-app element
 
         if (header && menuApp) {
-            window.addEventListener('scroll', function() {
+            // Function to handle the scroll behavior
+            function handleScroll() {
                 if (window.scrollY > 100) {
                     header.classList.add('bg-blue-shade-5');
                     header.classList.remove('bg-transparent');
-
-                    // Hide the menu-app immediately when scrolling
-                    menuApp.style.display = 'none';
+                    menuApp.style.display = 'none'; // Hide the menu-app when scrolling
                 } else {
                     header.classList.remove('bg-blue-shade-5');
                     header.classList.add('bg-transparent');
-
-                    // Show the menu-app again when scrolling back to the top
-                    menuApp.style.display = 'block';
+                    menuApp.style.display = 'block'; // Show the menu-app when back at the top
                 }
-            });
+            }
+
+            // Check the scroll position when the page loads or refreshes
+            handleScroll();
+
+            // Add the scroll event listener to update styles on scroll
+            window.addEventListener('scroll', handleScroll);
         }
     });
 });
-  
