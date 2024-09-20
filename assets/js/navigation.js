@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if ($header.hasClass('menu-open')) {
             $header.removeClass('menu-open');
             $('body').css('overflow', 'auto');
-            $('.menu-wrapper').slideUp(700);
+            $('.menu-wrapper').fadeOut(700);
 
             // Remove the cross animation
             $toggleBtn.removeClass('menu-toggle-active');
