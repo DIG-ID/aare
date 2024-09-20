@@ -13,14 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
         if ($header.hasClass('menu-open')) {
             $header.removeClass('menu-open');
             $('body').css('overflow', 'auto');
-            $('.menu-wrapper').fadeOut(700);
+            $('.menu-wrapper').fadeOut(500);
 
             // Remove the cross animation
             $toggleBtn.removeClass('menu-toggle-active');
         } else {
             $header.addClass('menu-open');
             $('body').css('overflow', 'hidden');
-            $('.menu-wrapper').slideDown(700);
+            $('.menu-wrapper').fadeIn(500);
 
             // Add the cross animation
             $toggleBtn.addClass('menu-toggle-active');
