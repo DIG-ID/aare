@@ -1,3 +1,4 @@
+<hr class="wave-separator__inverted border-0 -mb-[2px]" />
 <section class="section-tabs bg-blue-shade-5 pt-0 pb-28 relative overflow-hidden">
     <div class="theme-container grid grid-cols-2 xl:grid-cols-12 gap-x-6">
             <!-- Tabs Navigation -->

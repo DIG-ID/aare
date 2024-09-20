@@ -19,6 +19,4 @@
             <p class="font-miller font-light text-sm xl:text-2xl text-blue-shade-5 text-center xl:max-w-[350px] w-[50%] xl:w-full"><?php echo get_field( 'contact_disclaimer' ); ?></p>
         </div>
     </div>
-
-    <hr class="wave-separator__inverted border-0 -mb-[2px]" />
 </section>

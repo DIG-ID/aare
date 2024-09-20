@@ -10,8 +10,8 @@ if ( have_posts() ) :
 		do_action( 'before_main_content' );
 			get_template_part( 'template-parts/pages/home/hero' );
 			get_template_part( 'template-parts/pages/home/intro' );
-			get_template_part( 'template-parts/pages/home/contact' );
 			get_template_part( 'template-parts/pages/home/rooms-tabs' );
+			get_template_part( 'template-parts/pages/home/contact' );
 			get_template_part( 'template-parts/pages/home/services' );
 			$showOffers = get_field('show_offers');
 			if( $showOffers ):
