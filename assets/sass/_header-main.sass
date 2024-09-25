@@ -6,9 +6,9 @@
     .menu-toggle
         @apply flex items-center gap-x-4
         &__text
-            @apply text-blue-shade-2 font-poppins text-[16px] uppercase font-[500] leading-none tracking-[0.32px] transition-all duration-500 ease-out hidden invisible md:block md:visible
+            @apply text-blue-shade-2 font-poppins text-[16px] uppercase font-[500] leading-none tracking-[0.32px] transition-all duration-500 ease-out hidden invisible xl:block xl:visible
         &__bars
-            @apply relative flex flex-col justify-center items-center overflow-hidden w-6 md:w-8 h-6 md:h-8
+            @apply relative flex flex-col justify-center items-center overflow-hidden w-6 xl:w-8 h-6 xl:h-8
             .bar
                 @apply block w-6 h-[3px] bg-blue-shade-2 relative opacity-100 rounded-full transition-all duration-500 ease-out
                 &:nth-child(1)
@@ -28,7 +28,7 @@
             .bar:nth-child(3)
                 transform: translateY(-9px) rotate(-45deg)
         &-wrapper
-            @apply md:mr-5
+            @apply xl:mr-5
     .header-wrapper
         .wpml-ls-legacy-list-horizontal
             a
@@ -83,13 +83,13 @@
         .second-level
             .menu-item
                 a
-                    @apply font-poppins text-[16px] md:text-[30px] tracking-[0.16px] md:tracking-[0.3px] font-light text-blue-shade-2 normal-case transition-all duration-500 ease-in-out
+                    @apply font-poppins text-[16px] xl:text-[30px] tracking-[0.16px] xl:tracking-[0.3px] font-light text-blue-shade-2 normal-case transition-all duration-500 ease-in-out
         .menu-item:not(:nth-child(1))
-            @apply md:mt-11
+            @apply xl:mt-11
         .menu-item
             @apply text-left mt-6
             a
-                @apply font-miller text-[20px] md:text-[30px] tracking-[0.3px] font-light text-blue-shade-2 normal-case transition-all duration-500 ease-in-out
+                @apply font-miller text-[20px] xl:text-[30px] tracking-[0.3px] font-light text-blue-shade-2 normal-case transition-all duration-500 ease-in-out
                 &:hover
                     @apply font-semibold
             .sub-menu

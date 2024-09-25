@@ -7,14 +7,22 @@ document.addEventListener("DOMContentLoaded", () => {
         if (header && menuApp) {
             // Function to handle the scroll behavior
             function handleScroll() {
-                if (window.scrollY > 100) {
-                    header.classList.add('bg-blue-shade-5');
-                    header.classList.remove('bg-transparent');
-                    menuApp.style.display = 'none'; // Hide the menu-app when scrolling
+                // Only apply the logic if the window width is greater than 1280px
+                if (window.innerWidth > 1280) {
+                    if (window.scrollY > 100) {
+                        header.classList.add('bg-blue-shade-5');
+                        header.classList.remove('bg-transparent');
+                        menuApp.style.display = 'none'; // Hide the menu-app when scrolling
+                    } else {
+                        header.classList.remove('bg-blue-shade-5');
+                        header.classList.add('bg-transparent');
+                        menuApp.style.display = 'block'; // Show the menu-app when back at the top
+                    }
                 } else {
-                    header.classList.remove('bg-blue-shade-5');
-                    header.classList.add('bg-transparent');
-                    menuApp.style.display = 'block'; // Show the menu-app when back at the top
+                    // Reset styles if below 1280px
+                    header.classList.remove('bg-transparent');
+                    header.classList.add('bg-blue-shade-5');
+                    menuApp.style.display = 'none'; // Show the menu-app for lower resolutions
                 }
             }
 
@@ -23,6 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Add the scroll event listener to update styles on scroll
             window.addEventListener('scroll', handleScroll);
+
+            // Also check window resize to adjust behavior if the width changes
+            window.addEventListener('resize', handleScroll);
         }
     });
 });
