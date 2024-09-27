@@ -1,6 +1,6 @@
-<section class="section-about bg-blue-shade-1 pt-14 xl:pt-14 pb-12 xl:pb-0 relative overflow-hidden">
-    <div class="theme-container grid grid-cols-2 xl:grid-cols-12 gap-x-6">
-        <div class="col-span-2 xl:col-span-10 col-start-1 xl:col-start-2 text-center mb-7 xl:mb-12">
+<section class="section-about bg-blue-shade-1 pt-14 md:pt-14 pb-12 md:pb-0 relative overflow-hidden">
+    <div class="theme-container grid grid-cols-2 md:grid-cols-12 gap-x-6">
+        <div class="col-span-2 md:col-span-10 col-start-1 md:col-start-2 text-center mb-7 md:mb-12">
             <img class="pb-12 mx-auto" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/waves.svg" alt="waves" title="waves" />
             <h2 class="text-title text-blue-shade-5 mb-16"><?php echo get_field( 'about_title' ); ?></h2>
             <?php 
@@ -11,10 +11,10 @@
                 } 
             ?>
         </div>
-        <div class="col-span-2 xl:col-span-4 col-start-1 xl:col-start-2">
+        <div class="col-span-2 md:col-span-7 xl:col-span-4 col-start-1 md:col-start-2">
             <p class="text-body !leading-[26px] text-blue-shade-5"><?php echo get_field( 'about_text' ); ?></p>
         </div>
-        <div class="col-span-2 xl:col-span-3 col-start-1 xl:col-start-9 mt-7 xl:mt-0 xl:mb-32">
+        <div class="col-span-2 md:col-span-3 col-start-1 md:col-start-9 mt-7 md:mt-0 md:mb-32">
         <?php 
             $about_btn = get_field('about_button');
             if( $about_btn ): 
@@ -27,7 +27,7 @@
         </div>
     </div>
 
-    <div class="theme-container grid grid-cols-2 xl:grid-cols-12 gap-x-6 xl:pb-32">
+    <div class="theme-container grid grid-cols-2 md:grid-cols-12 gap-x-6 md:pb-32">
         <?php
             get_template_part( 'template-parts/components/teaser-default' );
         ?>

@@ -30,13 +30,13 @@
 			?>
 		</div>
 	</section>
-	<section class="footer-bunchen bg-blue-shade-5 text-blue-shade-1 pt-16 pb-32 lg:py-32 ">
+	<section class="footer-bunchen bg-blue-shade-5 text-blue-shade-1 pt-16 pb-32 lg:py-32">
 		<div class="theme-container">
 			<div class="theme-grid">
-				<div class="col-span-2 lg:col-span-6 lg:col-start-4 flex flex-col justify-center items-center gap-x-6">
+				<div class="col-span-2 xl:col-span-6 xl:col-start-4 flex flex-col justify-center items-center gap-x-6">
 					<h4 class="text-title text-blue-shade-2 mb-8 text-center"><?php the_field( 'footer_call_to_action_title', 'options' ); ?></h4>
-					<div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:max-w-[589px] gap-x-6">
-						<p class="text-body text-blue-shade-2 mb-8 lg:mb-0 text-center lg:text-left w-3/5 lg:w-full"><?php the_field( 'footer_call_to_action_description', 'options' ); ?></p>
+					<div class="flex flex-col xl:flex-row justify-center xl:justify-between items-center xl:max-w-[589px] gap-x-6">
+						<p class="text-body text-blue-shade-2 mb-8 xl:mb-0 text-center xl:text-left w-3/5 xl:w-full"><?php the_field( 'footer_call_to_action_description', 'options' ); ?></p>
 						<?php
 						$booking_url = get_field( 'booking_url', 'options' );
 						if ( $booking_url ) :

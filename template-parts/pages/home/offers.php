@@ -1,8 +1,8 @@
-<section class="section-tabs bg-blue-shade-5 pt-16 xl:pt-20 xl:pb-28 relative overflow-hidden">
-    <div class="theme-container grid grid-cols-2 xl:grid-cols-12 gap-x-6">
+<section class="section-tabs bg-blue-shade-5 pt-16 lg:pt-20 lg:pb-28 relative overflow-hidden">
+    <div class="theme-container grid grid-cols-2 lg:grid-cols-12 gap-x-6">
         <?php if( have_rows('offers_list') ):
         while( have_rows('offers_list') ) : the_row(); ?>
-            <div class="offers-box col-span-2 xl:col-span-6 rounded-[22px] bg-blue-shade-1 mb-16 xl:mb-0">
+            <div class="offers-box col-span-2 lg:col-span-6 rounded-[22px] bg-blue-shade-1 mb-16 lg:mb-0">
                 <?php 
                     $offer_img = get_sub_field('image');
                     $size = 'full';
@@ -10,9 +10,9 @@
                         echo wp_get_attachment_image( $offer_img, $size, false, array( 'class' => 'w-full rounded-t-[22px]' ) );
                     } 
                 ?>
-                <div class="px-9 xl:px-16 pb-12 xl:pb-9">
+                <div class="px-9 lg:px-16 pb-12 lg:pb-9">
                     <h3 class="text-bullets--primary text-blue-shade-5 my-7"><?php echo get_sub_field( 'title' ); ?></h3>
-                    <p class="text-body text-blue-shade-5 mb-9 xl:mb-9"><?php echo get_sub_field( 'text' ); ?></p>
+                    <p class="text-body text-blue-shade-5 mb-9 lg:mb-9"><?php echo get_sub_field( 'text' ); ?></p>
                     <?php 
                     $offers_btn = get_sub_field('button');
                     if( $offers_btn ): 

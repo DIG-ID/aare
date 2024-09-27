@@ -1,8 +1,8 @@
 <?php
 if ( have_rows( 'teasers_boxes' ) ) :
 	while ( have_rows( 'teasers_boxes' ) ) : the_row(); ?>
-	<div class="col-span-2 xl:col-span-6 grid grid-cols-2 xl:grid-cols-6 gap-x-6 mt-8 xl:mt-0">
-		<div class="col-span-2 xl:col-span-4 col-start-1 xl:col-start-2">
+	<div class="col-span-2 md:col-span-6 grid grid-cols-2 md:grid-cols-6 gap-x-6 mt-8 md:mt-0">
+		<div class="col-span-2 md:col-span-4 col-start-1 md:col-start-2">
 			<?php
 			$teasers_image = get_sub_field('image');
 			$size = 'full';
