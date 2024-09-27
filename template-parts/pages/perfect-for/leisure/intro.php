@@ -1,4 +1,4 @@
-<section class="section-business-intro bg-green-shade-1 pb-28 lg:pb-56">
+<section class="section-business-intro bg-green-shade-1 pb-16 lg:pb-56">
 	<div class="theme-container">
 		<div class="theme-grid lg:grid-rows-2 lg:grid-flow-col gap-y-0">
 			<div class="col-span-2  lg:col-span-7 lg:row-span-2 pt-12 lg:py-20 pl-9 pr-14 lg:px-28 bg-white rounded-[20px]  mb-28 lg:mb-0 self-start ">
@@ -11,7 +11,7 @@
 				endif;
 				?>
 			</div>
-			<div class="col-span-2 lg:col-span-5 self-start order-3 lg:order-2">
+			<div class="col-span-2 lg:col-span-5 self-start mt-10 xl:mt-0 order-3 lg:order-2">
 				<?php
 				$image = get_field( 'intro_image' );
 				if ( $image ) :

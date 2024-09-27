@@ -1,7 +1,7 @@
-<section class="section-zimmer-description bg-blue-shade-1 pt-10">
+<section class="section-zimmer-description bg-blue-shade-1 xl:pt-10">
 	<div class="theme-container">
 		<div class="theme-grid">
-			<div class="col-span-6">
+			<div class="col-span-2 xl:col-span-6 order-2 xl:order-1">
 				<div class="max-w-[552px]">
 					<h1 class="text-title mb-7 text-blue-shade-5"><?php the_title(); ?></h1>
 					<p class="text-body mb-10 text-blue-shade-5"><?php echo esc_html( wp_strip_all_tags( get_the_content() ) ); ?></p>
@@ -21,7 +21,7 @@
 				</div>
 
 			</div>
-			<div class="col-span-6">
+			<div class="col-span-2 xl:col-span-6 order-1 xl:order-2 pb-11 xl:pb-0">
 				<?php
 				$gallery = get_field( 'gallery' );
 				if ( $gallery ) :

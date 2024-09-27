@@ -1,4 +1,4 @@
-<section class="section-culture-intro bg-purple-shade-1 pb-28 lg:pb-56">
+<section class="section-culture-intro bg-purple-shade-1 pb-16 lg:pb-56">
 	<div class="theme-container">
 		<div class="theme-grid lg:grid-rows-2 lg:grid-flow-col gap-y-0">
 			<div class="col-span-2 lg:col-span-5 self-start">

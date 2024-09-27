@@ -1,7 +1,7 @@
 <section class="section-jobs-content bg-blue-shade-5 text-blue-shade-2 pb-28">
 	<div class="theme-container">
 		<div class="theme-grid">
-			<div class="col-span-2 lg:col-span-6 px-24 py-28 bg-white rounded-[20px] self-start order-2 lg:order-1">
+			<div class="col-span-2 lg:col-span-6 px-7 lg:px-24 py-16 lg:py-28 bg-white rounded-[20px] self-start order-2 lg:order-1">
 				<p class="text-body--serif text-blue-shade-5 !font-semibold mb-11 lg:mb-28 !leading-8"><?php the_field( 'single_jobs_note_1', 'options' ); ?></p>
 				<p class="text-body--serif text-blue-shade-5 !leading-8 "><?php the_field( 'single_jobs_note_2', 'options' ); ?></p>
 			</div>

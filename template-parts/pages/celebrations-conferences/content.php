@@ -1,4 +1,4 @@
-<section class="section-celebrations-conference-content pb-28">
+<section class="section-celebrations-conference-content pb-16 xl:pb-28">
 	<div class="theme-container">
 		<div class="theme-grid">
 			<?php
@@ -46,7 +46,7 @@
 		</div>
 	</div>
 </section>
-<section class="section-page-teasers pb-32 lg:py-36">
+<section class="section-page-teasers pb-28 xl:pb-32 lg:py-36">
 	<div class="theme-container">
 		<div class="theme-grid">
 			<?php get_template_part( 'template-parts/components/teaser-default' ); ?>

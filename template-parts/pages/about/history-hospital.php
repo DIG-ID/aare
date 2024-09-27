@@ -1,4 +1,4 @@
-<section class="section-history-hospital relative overflow-hidden">
+<section class="section-history-hospital relative overflow-hidden hidden xl:block">
     <div class="history-hospital pb-8 pt-32 relative pr-20">    
         <div class="h-[84vh] w-[6000px] grid grid-cols-10 my-auto">
             <div class="col-span-1 text-right">

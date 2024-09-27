@@ -24,8 +24,8 @@
 					</div>
 					
 				</div>
-				<div class="swiper-button-next zimmerSwiper-button-next -right-3"></div>
-				<div class="swiper-button-prev zimmerSwiper-button-prev -left-3"></div>
+				<div class="swiper-button-next zimmerSwiper-button-next -right-3 hidden xl:block"></div>
+				<div class="swiper-button-prev zimmerSwiper-button-prev -left-3 hidden xl:block"></div>
 			</div>
 			<?php
 		endif;

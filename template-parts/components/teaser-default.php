@@ -1,7 +1,7 @@
 <?php
 if ( have_rows( 'teasers_boxes' ) ) :
 	while ( have_rows( 'teasers_boxes' ) ) : the_row(); ?>
-	<div class="col-span-2 xl:col-span-6 grid grid-cols-2 xl:grid-cols-6 gap-x-6 mt-32 xl:mt-0">
+	<div class="col-span-2 xl:col-span-6 grid grid-cols-2 xl:grid-cols-6 gap-x-6 mt-8 xl:mt-0">
 		<div class="col-span-2 xl:col-span-4 col-start-1 xl:col-start-2">
 			<?php
 			$teasers_image = get_sub_field('image');

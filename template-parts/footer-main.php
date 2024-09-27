@@ -1,5 +1,5 @@
 <footer class="footer-main bg-blue-shade-2 ">
-	<section class="grid grid-cols-2 lg:grid-cols-3 gap-x-6 lg:gap-x-8 lg:max-w-2xl mx-auto py-36 px-6">
+	<section class="grid grid-cols-2 lg:grid-cols-3 gap-x-6 lg:gap-x-8 lg:max-w-2xl mx-auto pt-12 pb-24 xl:py-36 px-6">
 		<div class="col-span-2 lg:col-span-3 flex justify-center items-center mb-14">
 			<div class="site-branding">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/paper-boat.svg" class="w-[66px] mb-5 mx-auto" alt="paper boat" title="paper boat" />

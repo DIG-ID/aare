@@ -1,4 +1,4 @@
-<section class="section-long-term bg-blue-shade-5 pb-96">
+<section class="section-long-term bg-blue-shade-5 xl:pb-96">
 	<div class="theme-container">
 		<div class="theme-grid">
 			<?php
@@ -47,7 +47,7 @@
 						<?php
 					else :
 						?>
-						<article class="card-studio col-span-2 lg:col-start-2 lg:col-span-10 grid grid-cols-2 lg:grid-cols-10 mb-32 lg:mb-64">
+						<article class="card-studio col-span-2 lg:col-start-2 lg:col-span-10 grid grid-cols-2 lg:grid-cols-10 mb-20 lg:mb-64">
 							<div class="card-studio__content col-span-2 lg:col-span-4 flex flex-col lg:justify-between order-2 lg:order-1">
 								<h2 class="text-title-h2 text-blue-shade-1 invisible hidden lg:visible lg:block"><?php the_title(); ?></h2>
 								<p class="text-body text-blue-shade-1 pr-16"><?php echo esc_html( wp_strip_all_tags( get_the_content() ) ); ?></p>
