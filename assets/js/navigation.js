@@ -62,7 +62,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Function to toggle the 'active' class on submenus
     function toggleSubmenu(e) {
-        e.preventDefault(); // Prevent the default action (navigation)
+        if (window.innerWidth < 1280) {
+            e.preventDefault(); // Prevent the default action (navigation)
+        }
 
         // Find the next sibling 'ul' element, which should be the submenu
         let submenu = e.target.nextElementSibling;

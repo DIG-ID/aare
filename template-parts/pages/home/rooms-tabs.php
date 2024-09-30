@@ -20,10 +20,10 @@
                                 } 
                             ?>
                             <div class="hidden md:grid grid-cols-5 pt-14">
-                                <div class="col-span-2 md:col-span-3">
+                                <div class="col-span-2 md:col-span-5 xl:col-span-3">
                                     <p class="font-miller font-light text-sm md:text-2xl text-blue-shade-2 md:pr-8"><?php echo get_field( 'zimmer_description_2' ); ?></p>
                                 </div>
-                                <div class="col-span-2 col-start-4">
+                                <div class="col-span-2 md:col-span-5 xl:col-span-2 col-start-1 xl:col-start-4 mt-8 xl:mt-0">
                                     <?php 
                                     $zimmer_btn = get_field('zimmer_button');
                                     if( $zimmer_btn ): 
@@ -75,7 +75,7 @@
                 </div>
                 <div id="tab-apartments" class="tab-content hidden opacity-0 transition-opacity duration-500 ease-in-out">
                     <div class="grid grid-cols-2 md:grid-cols-10 gap-x-6">
-                        <div class="col-span-2 md:col-span-3 order-2 md:order-1">
+                        <div class="col-span-2 md:col-span-4 xl:col-span-3 order-2 md:order-1">
                             <?php 
                                 $apart_image_1 = get_field('apartments_image_1');
                                 $size = 'full';
@@ -96,11 +96,11 @@
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="col-span-2 md:col-span-7 grid md:grid-cols-7 gap-x-6 order-1 md:order-2">
-                            <div class="col-span-2 row-span-1 md:col-span-7 col-start-1 order-3 md:order-1">
+                        <div class="col-span-2 md:col-span-6 xl:col-span-7 grid md:grid-cols-7 gap-x-6 order-1 md:order-2">
+                            <div class="col-span-2 xl:row-span-1 md:col-span-7 col-start-1 order-3 md:order-1">
                                 <div class="font-poppins font-normal text-[12px] md:text-[14px] text-blue-shade-2 leading-normal md:max-w-[290px] text-center md:text-left my-12 md:my-0"><?php echo get_field( 'apartments_description_1' ); ?></div>
                             </div>
-                            <div class="col-span-2 row-span-1 md:col-span-2 col-start-1 hidden md:flex flex-col items-center justify-end order-2">
+                            <div class="col-span-2 xl:row-span-1 md:col-span-7 xl:col-span-2 col-start-1 hidden md:flex flex-col md:items-end xl:items-center justify-end order-2">
                                 <?php 
                                 $apartments_btn = get_field('apartments_button');
                                 if( $apartments_btn ): 
@@ -111,7 +111,7 @@
                                     <a class="btn-internal btn-internal--shade-3 text-center" href="<?php echo esc_url( $apartments_btn_url ); ?>" target="<?php echo esc_attr( $apartments_btn_target ); ?>"><?php echo esc_html( $apartments_btn_title ); ?></a>
                                 <?php endif; ?>
                             </div>
-                            <div class="col-span-2 row-span-1 md:col-span-5 col-start-1 md:col-start-3 flex flex-col items-center justify-end order-1 md:order-3">
+                            <div class="col-span-2 row-span-1 md:col-span-6 xl:col-span-5 col-start-1 md:col-start-2 xl:col-start-3 flex flex-col items-center justify-end order-1 md:order-3">
                                 <?php 
                                     $apart_image_2 = get_field('apartments_image_2');
                                     $size = 'full';
