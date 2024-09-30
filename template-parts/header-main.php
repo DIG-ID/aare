@@ -24,7 +24,7 @@
 				<?php
 				$booking_url = get_field( 'booking_url', 'options' );
 				if ( $booking_url ) :
-					?><a href="<?php echo esc_url( $booking_url ); ?>" target="_blank" class="btn-internal btn-internal--shade-3 !text-[16px] !font-poppins uppercase font-medium tracking-[0.16px] !px-8 !py-[0.35rem] !bg-transparent"><?php esc_html_e( 'Jetzt Buchen', 'aare' ); ?></a><?php
+					?><a href="<?php echo esc_url( $booking_url ); ?>" target="_blank" class="btn-header btn-header--booking uppercase"><?php esc_html_e( 'Jetzt Buchen', 'aare' ); ?></a><?php
 				endif;
 				?>
 			</div>
