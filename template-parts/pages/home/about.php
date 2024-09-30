@@ -11,7 +11,7 @@
                 } 
             ?>
         </div>
-        <div class="col-span-2 md:col-span-7 xl:col-span-4 col-start-1 md:col-start-2">
+        <div class="col-span-2 md:col-span-7 xl:col-span-4 col-start-1 md:col-start-2 xl:col-start-2">
             <p class="text-body !leading-[26px] text-blue-shade-5"><?php echo get_field( 'about_text' ); ?></p>
         </div>
         <div class="col-span-2 md:col-span-3 col-start-1 md:col-start-9 mt-7 md:mt-0 md:mb-32">

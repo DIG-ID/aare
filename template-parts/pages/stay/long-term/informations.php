@@ -1,7 +1,7 @@
-<section class="section-studios-info relative lg:-mb-64 bg-blue-shade-3 lg:bg-white">
+<section class="section-studios-info relative my-0 lg:my-11 xl:mt-0 xl:-mb-64 bg-blue-shade-3 lg:bg-white">
 	<div class="theme-container">
 		<div class="theme-grid">
-			<div class="studio-info col-span-2 lg:col-span-12 bg-blue-shade-3 flex flex-col lg:flex-row lg:justify-between lg:relative lg:-top-1/2 lg:rounded-[20px] pt-14 pb-20 lg:py-24 lg:px-28">
+			<div class="studio-info col-span-2 lg:col-span-12 bg-blue-shade-3 flex flex-col lg:flex-row lg:justify-between lg:relative xl:-top-1/2 lg:rounded-[20px] pt-14 pb-20 px-0 lg:px-16 xl:py-24 xl:px-28">
 				<div class="w-full">
 					<h2 class="text-title-h2 text-blue-shade-1 mb-9 lg:mb-16 text-center lg:text-left"><?php the_field( 'info_included_services_title' );?></h2>
 					<?php

@@ -9,7 +9,7 @@
 					setup_postdata( $post );
 					if ( 0 === $i ) :
 						?>
-						<article class="card-studio col-span-2 lg:col-start-2 lg:col-span-10 grid grid-cols-2 lg:grid-cols-10 mb-24 lg:mb-64">
+						<article class="card-studio col-span-2 lg:col-start-2 lg:col-span-10 grid grid-cols-2 lg:grid-cols-10 mb-24 lg:mb-32 xl:mb-64">
 							<div class="card-studio__swiper col-span-2 lg:col-span-5 mb-8 lg:mb-0">
 								<h2 class="text-title-h2 text-blue-shade-1 text-center mb-6 lg:invisible lg:hidden"><?php the_title(); ?></h2>
 								<div class="swiper studioSwiper<?php echo esc_attr( $i ); ?>">
@@ -47,7 +47,7 @@
 						<?php
 					else :
 						?>
-						<article class="card-studio col-span-2 lg:col-start-2 lg:col-span-10 grid grid-cols-2 lg:grid-cols-10 mb-20 lg:mb-64">
+						<article class="card-studio col-span-2 lg:col-start-2 lg:col-span-10 grid grid-cols-2 lg:grid-cols-10 mb-20 lg:mb-32 xl:mb-64">
 							<div class="card-studio__content col-span-2 lg:col-span-4 flex flex-col lg:justify-between order-2 lg:order-1">
 								<h2 class="text-title-h2 text-blue-shade-1 invisible hidden lg:visible lg:block"><?php the_title(); ?></h2>
 								<p class="text-body text-blue-shade-1 pr-16"><?php echo esc_html( wp_strip_all_tags( get_the_content() ) ); ?></p>

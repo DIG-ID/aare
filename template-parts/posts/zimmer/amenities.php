@@ -1,7 +1,7 @@
 <section class="section-amenities bg-blue-shade-1 pt-10">
 	<div class="theme-container">
-		<div class="theme-grid">
-			<div class="col-span-2 xl:col-span-7">
+		<div class="theme-grid px-0 lg:px-6 xl:px-0">
+			<div class="col-span-2 lg:col-span-7">
 				<h2 class="text-title-h3 text-blue-shade-5 mb-10"><?php the_field( 'amenities_title' ); ?></h2>
 				<ul class="section-amenities-lists">
 					<li>
@@ -66,7 +66,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="col-span-2 xl:col-span-4 col-start-1 xl:col-start-9">
+			<div class="col-span-2 lg:col-span-4 col-start-1 lg:col-start-9">
 				<h2 class="text-title-h3 text-blue-shade-5 mb-10"><?php the_field( 'single_zimmer_breakfast_title', 'options' ); ?></h2>
 				<p class="text-body text-blue-shade-5 mb-10"><?php the_field( 'single_zimmer_breakfast_description', 'options' ); ?></p>
 				<div class="note flex gap-x-2">
