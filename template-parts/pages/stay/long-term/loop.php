@@ -20,7 +20,7 @@
 										foreach ( $gallery as $gallery_item ) :
 											?>
 											<div class="swiper-slide">
-												<?php echo wp_get_attachment_image( $gallery_item, 'full', false, array( 'class' => 'w-full obecjt-cover rounded-[20px]' ) ); ?>
+												<?php echo wp_get_attachment_image( $gallery_item, 'full', false, array( 'class' => 'w-full object-cover lg:max-w-[578px] lg:max-h-[385px] rounded-[20px]' ) ); ?>
 											</div>
 											<?php
 										endforeach;
@@ -31,9 +31,9 @@
 									<div class="swiper-button-prev studioSwiper<?php echo esc_attr( $i ); ?>-button-prev"></div>
 								</div>
 							</div>
-							<div class="card-studio__content col-span-2 lg:col-span-4 lg:col-start-7 flex flex-col lg:justify-between">
+							<div class="card-studio__content col-span-2 lg:col-span-4 lg:col-start-7 flex flex-col xl:justify-between">
 								<h2 class="text-title-h2 text-blue-shade-1 invisible hidden lg:visible lg:block"><?php the_title(); ?></h2>
-								<p class="text-body text-blue-shade-1 pr-16"><?php echo esc_html( wp_strip_all_tags( get_the_content() ) ); ?></p>
+								<p class="text-body text-blue-shade-1 pr-16 py-0 lg:py-6 xl:py-0"><?php echo esc_html( wp_strip_all_tags( get_the_content() ) ); ?></p>
 								<?php
 								$blink = get_field( 'booking_link' );
 								if ( $blink ) :
@@ -48,9 +48,9 @@
 					else :
 						?>
 						<article class="card-studio col-span-2 lg:col-start-2 lg:col-span-10 grid grid-cols-2 lg:grid-cols-10 mb-20 lg:mb-32 xl:mb-64">
-							<div class="card-studio__content col-span-2 lg:col-span-4 flex flex-col lg:justify-between order-2 lg:order-1">
+							<div class="card-studio__content col-span-2 lg:col-span-4 flex flex-col xl:justify-between order-2 lg:order-1">
 								<h2 class="text-title-h2 text-blue-shade-1 invisible hidden lg:visible lg:block"><?php the_title(); ?></h2>
-								<p class="text-body text-blue-shade-1 pr-16"><?php echo esc_html( wp_strip_all_tags( get_the_content() ) ); ?></p>
+								<p class="text-body text-blue-shade-1 pr-16 py-0 lg:py-6 xl:py-0"><?php echo esc_html( wp_strip_all_tags( get_the_content() ) ); ?></p>
 								<?php
 								$blink = get_field( 'booking_link' );
 								if ( $blink ) :
@@ -70,7 +70,7 @@
 										foreach ( $gallery as $gallery_item ) :
 											?>
 											<div class="swiper-slide">
-												<?php echo wp_get_attachment_image( $gallery_item, 'full', false, array( 'class' => 'w-full obecjt-cover rounded-[20px]' ) ); ?>
+												<?php echo wp_get_attachment_image( $gallery_item, 'full', false, array( 'class' => 'w-full object-cover lg:max-w-[578px] lg:max-h-[385px] rounded-[20px]' ) ); ?>
 											</div>
 											<?php
 										endforeach;
