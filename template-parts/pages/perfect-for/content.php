@@ -1,7 +1,8 @@
 <section class="section-perfect-for-content pb-0">
 	<div class="theme-container !px-0 lg:!px-6">
+		<div class="block lg:hidden min-h-20 bg-blue-shade-5 w-full -mt-1"></div>
 		<div class="theme-grid">
-			<div class="col-span-2 block lg:hidden min-h-20 bg-blue-shade-5 w-full -mt-1"></div>
+			
 			<?php
 			if ( have_rows( 'child_pages' ) ) :
 				while ( have_rows( 'child_pages' ) ) :
@@ -40,7 +41,7 @@
 		</div>
 	</div>
 </section>
-<section class="section-page-teasers lg:pb-32 lg:pt-36">
+<section class="section-page-teasers py-8 lg:py-32 xl:pt-36">
 	<div class="theme-container">
 		<div class="theme-grid">
 			<?php get_template_part( 'template-parts/components/teaser-default' ); ?>
