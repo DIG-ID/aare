@@ -1,13 +1,14 @@
-<section class="section-perfect-for-content pb-20 lg:pb-0">
-	<div class="theme-container">
+<section class="section-perfect-for-content pb-0">
+	<div class="theme-container !px-0 lg:!px-6">
 		<div class="theme-grid">
+			<div class="col-span-2 block lg:hidden min-h-20 bg-blue-shade-5 w-full -mt-1"></div>
 			<?php
 			if ( have_rows( 'child_pages' ) ) :
 				while ( have_rows( 'child_pages' ) ) :
 					the_row();
 					?>
-					<div class="card-perfect-for grid grid-cols-2 lg:grid-cols-12 col-span-2 lg:col-span-12 gap-x-6 mb-8 lg:mb-40 rounded-[20px]">
-						<div class="card-perfect-for-content col-span-5 py-7 lg:pb-14 px-9 lg:px-28 self-end">
+					<div class="card-perfect-for grid grid-cols-2 lg:grid-cols-12 col-span-2 lg:col-span-12 gap-x-6 pb-14 lg:pb-0 lg:mb-40 lg:rounded-[20px]">
+						<div class="card-perfect-for-content col-span-2 lg:col-span-5 py-7 lg:pb-14 px-9 lg:px-28 self-end order-2 lg:order-1">
 							<h2 class="text-title-h2 text-blue-shade-1 mb-4 lg:mb-7"><?php the_sub_field( 'title' ); ?></h2>
 							<h3 class="text-title-h3 text-blue-shade-1 mb-4 lg:mb-7"><?php the_sub_field( 'subtitle' ); ?></h3>
 							<div class="text-body text-blue-shade-1 mb-12"><?php the_sub_field( 'description' ); ?></div>
@@ -23,11 +24,11 @@
 							endif;
 							?>
 						</div>
-						<div class="card-perfect-for-image col-start-6 col-span-6 relative">
+						<div class="card-perfect-for-image col-start-1 lg:col-start-6 col-span-2 lg:col-span-6 relative order-1 lg:order-2">
 							<?php
 							$iimage = get_sub_field( 'image' );
 							if ( $iimage ) :
-								echo wp_get_attachment_image( $iimage, 'full', false, array( 'class' => 'relative -top-14 w-full object-fit rounded-t-[20px] lg:rounded-[20px] min-h-[217px] lg:min-h-[432px]' ) );
+								echo wp_get_attachment_image( $iimage, 'full', false, array( 'class' => 'relative -mt-12 lg:mt-0 lg:-top-14 w-full object-fit px-6 lg:px-0  rounded-[20px] min-h-[217px] lg:min-h-[432px]' ) );
 							endif;
 							?>
 						</div>
@@ -39,7 +40,7 @@
 		</div>
 	</div>
 </section>
-<section class="section-page-teasers pb-32 lg:py-36">
+<section class="section-page-teasers lg:pb-32 lg:pt-36">
 	<div class="theme-container">
 		<div class="theme-grid">
 			<?php get_template_part( 'template-parts/components/teaser-default' ); ?>
