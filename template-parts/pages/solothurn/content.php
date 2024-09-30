@@ -1,4 +1,4 @@
-<section class="section-solothurn-content pb-20 lg:pb-0">
+<section class="section-solothurn-content pb-20 xl:pb-0">
 	<div class="theme-container">
 		<div class="theme-grid">
 			<?php
@@ -6,10 +6,10 @@
 				while ( have_rows( 'child_pages' ) ) :
 					the_row();
 					?>
-					<div class="card-solothurn grid grid-cols-2 lg:grid-cols-12 col-span-2 lg:col-span-12 gap-x-6 mb-8 lg:mb-32">
-						<div class="card-solothurn-content py-7 lg:py-20 px-9 lg:px-28 bg-white rounded-b-[20px] lg:rounded-[20px] self-start">
-							<h2 class="text-title-h2 text-blue-shade-5 mb-4 lg:mb-7"><?php the_sub_field( 'title' ); ?></h2>
-							<h2 class="text-title-h3 text-blue-shade-5 mb-4 lg:mb-7"><?php the_sub_field( 'subtitle' ); ?></h2>
+					<div class="card-solothurn grid grid-cols-2 lg:grid-cols-12 col-span-2 lg:col-span-12 gap-x-6 mb-8 xl:mb-32">
+						<div class="card-solothurn-content py-7 xl:py-20 px-9 xl:px-28 bg-white rounded-b-[20px] lg:rounded-[20px] self-start">
+							<h2 class="text-title-h2 text-blue-shade-5 mb-4 xl:mb-7"><?php the_sub_field( 'title' ); ?></h2>
+							<h2 class="text-title-h3 text-blue-shade-5 mb-4 xl:mb-7"><?php the_sub_field( 'subtitle' ); ?></h2>
 							<div class="text-body text-blue-shade-5 mb-12"><?php the_sub_field( 'description' ); ?></div>
 							<?php
 							$ilink = get_sub_field( 'link' );
@@ -27,7 +27,7 @@
 							<?php
 							$iimage = get_sub_field( 'image' );
 							if ( $iimage ) :
-								echo wp_get_attachment_image( $iimage, 'full', false, array( 'class' => ' w-full object-fit rounded-t-[20px] lg:rounded-[20px] min-h-[275px] lg:min-h-[672px]' ) );
+								echo wp_get_attachment_image( $iimage, 'full', false, array( 'class' => ' w-full object-fit rounded-t-[20px] lg:rounded-[20px] min-h-[275px] xl:min-h-[672px]' ) );
 							endif;
 							?>
 						</div>

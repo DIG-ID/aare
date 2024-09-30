@@ -1,7 +1,7 @@
 <section class="section-business-intro bg-green-shade-1 pb-16 lg:pb-56">
 	<div class="theme-container">
-		<div class="theme-grid lg:grid-rows-2 lg:grid-flow-col gap-y-0">
-			<div class="col-span-2  lg:col-span-7 lg:row-span-2 pt-12 lg:py-20 pl-9 pr-14 lg:px-28 bg-white rounded-[20px]  mb-28 lg:mb-0 self-start ">
+		<div class="theme-grid xl:grid-rows-2 lg:grid-flow-col gap-y-0">
+			<div class="col-span-2 lg:col-span-7 lg:row-span-2 pt-12 xl:py-20 pl-9 pr-14 xl:px-28 bg-white rounded-[20px]  mb-28 lg:mb-0 self-start ">
 				<h2 class="text-title-h2 text-blue-shade-5 mb-12"><?php the_field( 'intro_big_box_title' ); ?></h2>
 				<p class="text-body text-blue-shade-5 lg:max-w-[410px]"><?php the_field( 'intro_big_box_description' ); ?></p>
 				<?php
@@ -19,7 +19,7 @@
 				endif;
 				?>
 			</div>
-			<div class="col-span-2 lg:col-span-5 py-12 lg:py-20 pl-9 pr-14 lg:px-28 bg-white rounded-[20px] self-start order-2 lg:order-3">
+			<div class="col-span-2 lg:col-span-5 py-12 xl:py-20 pl-9 pr-14 xl:px-28 bg-white rounded-[20px] self-start order-2 lg:order-3">
 				<p class="text-body--serif text-blue-shade-5 mb-16"><?php the_field( 'intro_small_box_description' ); ?></p>
 				<?php
 				$mlink = get_field( 'intro_small_box_link' );

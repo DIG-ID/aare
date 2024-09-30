@@ -1,4 +1,4 @@
-<section class="section-culture-blocks bg-white pb-28 xl:pb-0 pt-6 lg:pt-40">
+<section class="section-culture-blocks bg-white pb-14 lg:pb-0 pt-8 lg:pt-28 xl:pt-40">
 	<div class="theme-container">
 		<div class="theme-grid">
 			<?php
@@ -7,7 +7,7 @@
 					the_row();
 					?>
 					<div class="card-perfect-for--culture grid grid-cols-2 lg:grid-cols-12 lg:grid-rows-1 col-span-2 lg:col-span-12 gap-x-6 mb-8 lg:mb-28">
-						<div class="card-perfect-for---culture-content col-span-2 lg:col-span-7 lg:col-start-1 py-7 lg:py-14 px-9 lg:px-28 -mt-4 xl:mt-0 bg-purple-shade-1 rounded-[20px] lg:row-span-full relative z-20 flex flex-col justify-center order-2 lg:order-1">
+						<div class="card-perfect-for---culture-content col-span-2 lg:col-span-7 lg:col-start-1 py-7 xl:py-14 px-9 xl:px-28 -mt-4 xl:mt-0 bg-purple-shade-1 rounded-[20px] lg:row-span-full relative z-20 flex flex-col justify-center order-2 lg:order-1">
 							<h2 class="text-title-h2 text-blue-shade-1 mb-4 lg:mb-7 lg:max-w-[450px]"><?php the_sub_field( 'title' ); ?></h2>
 							<div class="text-body text-blue-shade-1 mb-12 lg:max-w-[410px]"><?php the_sub_field( 'description' ); ?></div>
 							<?php
