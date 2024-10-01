@@ -21,7 +21,7 @@
 			<?php
 				$limage = get_field( 'langzeitaufenthalt_image' );
 				if ( $limage ) :
-					echo wp_get_attachment_image( $limage, 'full', false, array( 'class' => 'w-full object-cover rounded-[20px] mb-10 lg:mb-0' ) );
+					echo wp_get_attachment_image( $limage, 'long-term-image', false, array( 'class' => 'w-full object-cover rounded-[20px] mb-10 lg:mb-0' ) );
 				endif;
 				?>
 			</div>

@@ -16,7 +16,7 @@
 					foreach ( $gallery as $gallery_id ) :
 						?>
 						<div class="swiper-slide">
-							<?php echo wp_get_attachment_image( $gallery_id, 'full', false, array( 'class' => 'w-full object-cover rounded-[20px] max-h-[700px]' ) ); ?>
+							<?php echo wp_get_attachment_image( $gallery_id, 'zimmer-image', false, array( 'class' => 'w-full object-cover rounded-[20px] max-h-[700px]' ) ); ?>
 						</div>
 						<?php 
 					endforeach;

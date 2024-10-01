@@ -23,6 +23,10 @@ function aare_theme_setup() {
 
 	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
 
+	add_image_size( 'zimmer-image', 1400, 770, array( 'center', 'center' ) );
+
+	add_image_size( 'long-term-image', 975, 650, array( 'center', 'center' ) );
+
 }
 
 add_action( 'after_setup_theme', 'aare_theme_setup' );

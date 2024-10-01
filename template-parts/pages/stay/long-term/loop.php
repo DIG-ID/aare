@@ -20,7 +20,7 @@
 										foreach ( $gallery as $gallery_item ) :
 											?>
 											<div class="swiper-slide">
-												<?php echo wp_get_attachment_image( $gallery_item, 'full', false, array( 'class' => 'w-full object-cover lg:max-w-[578px] lg:max-h-[385px] rounded-[20px]' ) ); ?>
+												<?php echo wp_get_attachment_image( $gallery_item, 'long-term-image', false, array( 'class' => 'w-full object-cover lg:max-w-[578px] lg:max-h-[385px] rounded-[20px]' ) ); ?>
 											</div>
 											<?php
 										endforeach;
@@ -70,7 +70,7 @@
 										foreach ( $gallery as $gallery_item ) :
 											?>
 											<div class="swiper-slide">
-												<?php echo wp_get_attachment_image( $gallery_item, 'full', false, array( 'class' => 'w-full object-cover lg:max-w-[578px] lg:max-h-[385px] rounded-[20px]' ) ); ?>
+												<?php echo wp_get_attachment_image( $gallery_item, 'long-term-image', false, array( 'class' => 'w-full object-cover lg:max-w-[578px] lg:max-h-[385px] rounded-[20px]' ) ); ?>
 											</div>
 											<?php
 										endforeach;
