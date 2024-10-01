@@ -1,4 +1,4 @@
-<section class="section-tabs bg-blue-shade-5 pt-16 lg:pt-20 lg:pb-28 relative overflow-hidden">
+<section class="section-offers bg-blue-shade-5 pt-16 lg:pt-20 lg:pb-28 relative overflow-hidden">
     <div class="theme-container grid grid-cols-2 lg:grid-cols-12 gap-x-6">
         <?php if( have_rows('offers_list') ):
         while( have_rows('offers_list') ) : the_row(); ?>
