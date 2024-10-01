@@ -1,7 +1,7 @@
 <header id="header-main" class="header-main absolute top-0 left-0 w-full z-50 overflow-hidden" itemscope itemtype="http://schema.org/WebSite">
 
 	<nav class="navbar relative overflow-hidden" role="navigation" aria-label="<?php esc_attr_e( 'Main menu', 'aare' ); ?>">
-		<div class="header-wrapper relative grid grid-cols-3 px-6 md:px-8 xl:px-16 py-6 md:py-8 xl:py-6 z-40 border-b-[0.5px] border-blue-shade-2 border-opacity-80 xl:z-auto">
+		<div class="header-wrapper relative grid grid-cols-3 px-6 md:px-8 xl:px-16 py-6 md:py-8 xl:py-6 z-40 xl:z-auto">
 			<div class="col-span-1 flex justify-end xl:justify-start items-center order-3 xl:order-1 xl:z-50">
 				<div class="menu-toggle-wrapper">
 					<button class="menu-toggle">
@@ -29,7 +29,7 @@
 				?>
 			</div>
 		</div>
-		<div class="menu-app px-6 md:px-8 xl:px-16 py-6 md:py-8 xl:py-3 border-b-[0.5px] border-blue-shade-2 border-opacity-80 hidden xl:block">
+		<div class="menu-app px-6 md:px-8 xl:px-16 py-6 md:py-8 xl:py-3 border-y-[0.5px] border-blue-shade-2 border-opacity-80 hidden xl:block">
 			<?php
 			wp_nav_menu(
 				array(
