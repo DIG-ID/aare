@@ -10,7 +10,7 @@
 					if ( 0 === $i ) :
 						?>
 						<article class="card-studio col-span-2 lg:col-start-2 lg:col-span-10 grid grid-cols-2 lg:grid-cols-10 mb-24 lg:mb-32 xl:mb-64">
-							<div class="card-studio__swiper col-span-2 lg:col-span-5 mb-8 lg:mb-0">
+							<div class="card-studio__swiper col-span-2 lg:col-span-5 mb-8 lg:mb-0 relative">
 								<h2 class="text-title-h2 text-blue-shade-1 text-center mb-6 lg:invisible lg:hidden"><?php the_title(); ?></h2>
 								<div class="swiper studioSwiper<?php echo esc_attr( $i ); ?>">
 									<?php
@@ -27,9 +27,9 @@
 										?></div><?php
 									endif;
 									?>
-									<div class="swiper-button-next studioSwiper<?php echo esc_attr( $i ); ?>-button-next"></div>
-									<div class="swiper-button-prev studioSwiper<?php echo esc_attr( $i ); ?>-button-prev"></div>
 								</div>
+								<div class="swiper-button-next studioSwiper<?php echo esc_attr( $i ); ?>-button-next lg:-right-8"></div>
+								<div class="swiper-button-prev studioSwiper<?php echo esc_attr( $i ); ?>-button-prev lg:-left-8"></div>
 							</div>
 							<div class="card-studio__content col-span-2 lg:col-span-4 lg:col-start-7 flex flex-col xl:justify-between">
 								<h2 class="text-title-h2 text-blue-shade-1 invisible hidden lg:visible lg:block"><?php the_title(); ?></h2>
@@ -60,7 +60,7 @@
 								endif;
 								?>
 							</div>
-							<div class="card-studio__swiper col-span-2 lg:col-start-6 lg:col-span-5 order-1 lg:order-2 mb-8 lg:mb-0">
+							<div class="card-studio__swiper col-span-2 lg:col-start-6 lg:col-span-5 order-1 lg:order-2 mb-8 lg:mb-0 relative">
 								<h2 class="text-title-h2 text-blue-shade-1 text-center mb-6 lg:invisible lg:hidden"><?php the_title(); ?></h2>
 								<div class="swiper studioSwiper<?php echo esc_attr( $i ); ?>">
 									<?php
@@ -77,9 +77,10 @@
 										?></div><?php
 									endif;
 									?>
-									<div class="swiper-button-next studioSwiper<?php echo esc_attr( $i ); ?>-button-next"></div>
-									<div class="swiper-button-prev studioSwiper<?php echo esc_attr( $i ); ?>-button-prev"></div>
+									
 								</div>
+								<div class="swiper-button-next studioSwiper<?php echo esc_attr( $i ); ?>-button-next lg:-right-8"></div>
+								<div class="swiper-button-prev studioSwiper<?php echo esc_attr( $i ); ?>-button-prev lg:-left-8"></div>
 							</div>
 
 						</article>
