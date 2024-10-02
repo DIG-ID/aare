@@ -5,7 +5,7 @@
                 <div class="col-span-2 lg:col-span-10 mb-8 lg:mb-44 order-1 xl:order-1">
                     <div class="flex flex-col w-full text-center">
                         <div class="page-header--title">
-                            <h1 class="text-title text-blue-shade-1 py-5 lg:py-10"><?php the_field( 'architecture_title' ); ?></h1>
+                            <h2 class="text-title text-blue-shade-1 py-5 lg:py-10"><?php the_field( 'architecture_title' ); ?></h2>
                         </div>
                         <div class="page-header--description w-3/4 lg:w-[55%] mx-auto">
                             <p class="text-description text-blue-shade-1"><?php the_field( 'architecture_description' ); ?></p>

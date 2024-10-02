@@ -19,7 +19,7 @@
 				endif;
 				?>
 			</div>
-			<div class="col-span-2 lg:col-span-5 py-12 xl:py-20 pl-9 pr-14 xl:px-28 bg-white rounded-[20px] self-start order-2 lg:order-3">
+			<div class="col-span-2 lg:col-span-5 py-12 xl:py-20 pl-9 pr-14 xl:px-28 bg-white rounded-[20px] self-start order-2 lg:order-3 lg:mt-6 xl:-mt-4">
 				<p class="text-body--serif text-blue-shade-5 mb-16"><?php the_field( 'intro_small_box_description' ); ?></p>
 				<?php
 				$mlink = get_field( 'intro_small_box_link' );

@@ -1,7 +1,7 @@
 <section class="section-culture-intro bg-purple-shade-1 pb-16 lg:pb-56">
 	<div class="theme-container">
 		<div class="theme-grid xl:grid-rows-2 lg:grid-flow-col gap-y-0">
-			<div class="col-span-2 lg:col-span-5 self-start">
+			<div class="col-span-2 lg:col-span-5 self-start mb-8 lg:mb-0">
 				<?php
 				$image = get_field( 'intro_image' );
 				if ( $image ) :
@@ -9,7 +9,7 @@
 				endif;
 				?>
 			</div>
-			<div class="col-span-2 lg:col-span-5 py-12 xl:py-20 pl-9 pr-14 xl:px-28 bg-white rounded-[20px] self-start order-3 lg:order-2">
+			<div class="col-span-2 lg:col-span-5 py-12 xl:py-20 pl-9 pr-14 xl:px-28 bg-white rounded-[20px] self-start order-3 lg:order-2 lg:mt-6 xl:-mt-4">
 				<p class="text-body--serif text-blue-shade-5 mb-16"><?php the_field( 'intro_small_box_description' ); ?></p>
 				<?php
 				$mlink = get_field( 'intro_small_box_link' );
