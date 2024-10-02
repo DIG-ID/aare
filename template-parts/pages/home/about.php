@@ -1,7 +1,7 @@
 <section class="section-about bg-blue-shade-1 pt-14 md:pt-14 pb-12 md:pb-0 relative overflow-hidden">
     <div class="theme-container grid grid-cols-2 md:grid-cols-12 gap-x-6">
         <div class="col-span-2 md:col-span-10 col-start-1 md:col-start-2 text-center mb-7 md:mb-12">
-            <img class="pb-12 mx-auto" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/waves.svg" alt="waves" title="waves" />
+            <img class="pb-12 mx-auto" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/waves.gif" alt="waves" title="waves" />
             <h2 class="text-title text-blue-shade-5 mb-16"><?php echo get_field( 'about_title' ); ?></h2>
             <?php 
                 $about_image = get_field('about_image');

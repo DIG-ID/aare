@@ -88,6 +88,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		if ( $(".page-template-page-home")[0] ) {
 
+			gsap.from(['.section-hero--title', '.section-hero--boat'], {
+				duration: 1.2,
+				y: 50,
+				stagger: 0.2,
+				opacity: 0,
+				autoAlpha: 0
+			});
+
 			gsap.from(['.section-intro--title', '.section-intro--description', '.section-intro--description-2', '.section-intro--img'], {
 				scrollTrigger: {
 					trigger: '.section-intro',
@@ -95,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
 					start: 'top 60%', // when the top of the trigger hits the top of the viewport
 					end: 'bottom bottom', // end after scrolling 500px beyond the start
 					scrub: 1.2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-					markers: true,
+					//markers: true,
 					toggleActions: 'play none reverse none'
 				},
 				y: 100,
