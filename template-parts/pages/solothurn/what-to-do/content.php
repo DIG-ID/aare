@@ -10,6 +10,7 @@
 						the_row();
 						?>
 						<article class="card-event swiper-slide bg-white rounded-[20px] overflow-hidden">
+							<a href="<?php echo esc_url( get_sub_field( 'link' ) ); ?>">
 							<?php
 							$img = get_sub_field( 'image' );
 							if ( $img ) :
@@ -20,6 +21,7 @@
 								<?php
 							endif;
 							?>
+							</a>
 							<div class="card-event-content h-[175px] lg:h-[200px] flex flex-col justify-between px-7 lg:px-12 pt-6 lg:pt-9 pb-6 lg:pb-14">
 								<a href="<?php echo esc_url( get_sub_field( 'link' ) ); ?>" class="flex gap-x-3 items-center  mb-4 lg:mb-0">
 									<h2 class="text-title-h3 text-blue-shade-5 text-nowrap"><?php the_sub_field( 'title' ); ?></h2>
@@ -61,6 +63,7 @@
 						the_row();
 						?>
 						<article class="card-activities swiper-slide bg-white rounded-[20px] overflow-hidden">
+							<a href="<?php echo esc_url( get_sub_field( 'link' ) ); ?>">
 							<?php
 							$img = get_sub_field( 'image' );
 							if ( $img ) :
@@ -71,6 +74,7 @@
 								<?php
 							endif;
 							?>
+							</a>
 							<div class="card-activities-content h-[300px] lg:h-[200px] lg:flex lg:flex-col lg:justify-between px-7 lg:px-12 pt-6 lg:pt-9 pb-6 lg:pb-14">
 								<a href="<?php echo esc_url( get_sub_field( 'link' ) ); ?>" class="flex gap-x-3 items-center  mb-4 lg:mb-0">
 									<h2 class="text-title-h3 text-blue-shade-5"><?php the_sub_field( 'title' ); ?></h2>
