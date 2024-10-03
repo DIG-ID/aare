@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				autoAlpha: 0
 			});
 
-			gsap.from('.selector', {
+			/*gsap.from('.selector', {
 				autoAlpha: 0,
 				//opacity: 0,
 				x: 70,
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
 					markers: true
 					
 				},
-			});
+			});*/
 		}
 		if ( $(".fade-in")[0] ) {
 			var fadeInItems = gsap.utils.toArray('.fade-in');
