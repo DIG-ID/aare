@@ -5,7 +5,7 @@
 			$attractions = get_field( 'attractions' );
 			if ( $attractions ) :
 				?>
-				<div class="col-span-2 lg:col-span-12 relative mb-6 lg:mb-20">
+				<div class="col-span-2 lg:col-span-12 relative mb-6 lg:mb-20  invisible fade-in--noscroll">
 					<div class="hidden invisible lg:block lg:visible">
 						<?php
 						$attractions_image = get_field( 'attractions_hero_image' );
@@ -35,7 +35,7 @@
 				while ( have_rows( 'attractions_list' ) ) :
 					the_row();
 					?>
-					<div class="col-span-2 lg:col-span-12 flex flex-col lg:flex-row  mb-6 lg:mb-20 bg-white rounded-[20px]">
+					<div class="col-span-2 lg:col-span-12 flex flex-col lg:flex-row  mb-6 lg:mb-20 bg-white rounded-[20px] fade-in">
 						<div class="">
 							<?php
 							$img = get_sub_field( 'image' );

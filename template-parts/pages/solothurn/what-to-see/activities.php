@@ -5,7 +5,7 @@
 			$activities = get_field( 'activities' );
 			if ( $activities ) :
 				?>
-				<div class="col-span-2 lg:col-span-12 relative mb-6 lg:mb-20">
+				<div class="col-span-2 lg:col-span-12 relative mb-6 lg:mb-20 invisible fade-in">
 					<div class="invisible hidden lg:visible lg:block">
 						<?php
 						$activities_image = get_field( 'activities_hero_image' );
@@ -14,7 +14,7 @@
 						endif;
 						?>
 					</div>
-					<div class="lg:absolute lg:top-0 lg:left-0 lg:bottom-0 lg:right-0 flex justify-center items-center">
+					<div class="lg:absolute lg:top-0 lg:left-0 lg:bottom-0 lg:right-0 flex justify-center items-center ">
 						<div class=" bg-white rounded-[20px] lg:w-[840px] flex flex-col justify-center items-center py-9 px-9 lg:py-20 lg:px-9">
 							<h2 class="text-title-h2 text-blue-shade-5 text-center mb-9 lg:max-w-[645px]"><?php the_field( 'activities_hero_title' ); ?></h2>
 							<p class="text-body text-blu-shade-5 text-center lg:max-w-[410px]"><?php the_field( 'activities_hero_description' ); ?></p>
@@ -35,7 +35,7 @@
 				while ( have_rows( 'activities_list' ) ) :
 					the_row();
 					?>
-					<div class="col-span-2 lg:col-span-12 flex flex-col lg:flex-row  mb-6 lg:mb-20 bg-white rounded-[20px]">
+					<div class="col-span-2 lg:col-span-12 flex flex-col lg:flex-row  mb-6 lg:mb-20 bg-white rounded-[20px] fade-in">
 						<div class="">
 							<?php
 							$img = get_sub_field( 'image' );

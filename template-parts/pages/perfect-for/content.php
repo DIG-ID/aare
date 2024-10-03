@@ -8,7 +8,7 @@
 				while ( have_rows( 'child_pages' ) ) :
 					the_row();
 					?>
-					<div class="card-perfect-for grid grid-cols-2 lg:grid-cols-12 col-span-2 lg:col-span-12 gap-x-6 pb-14 lg:pb-0 lg:mb-40 lg:rounded-[20px]">
+					<div class="card-perfect-for grid grid-cols-2 lg:grid-cols-12 col-span-2 lg:col-span-12 gap-x-6 pb-14 lg:pb-0 lg:mb-40 lg:rounded-[20px] invisible fade-in">
 						<div class="card-perfect-for-content col-span-2 lg:col-span-5 py-7 lg:pb-14 px-9 lg:px-28 self-end order-2 lg:order-1">
 							<h2 class="text-title-h2 text-blue-shade-1 mb-4 lg:mb-7"><?php the_sub_field( 'title' ); ?></h2>
 							<h3 class="text-title-h3 text-blue-shade-1 mb-4 lg:mb-7"><?php the_sub_field( 'subtitle' ); ?></h3>

@@ -2,7 +2,7 @@
     <div class="theme-container grid grid-cols-2 lg:grid-cols-12 gap-x-6">
         <?php if( have_rows('offers_list') ):
         while( have_rows('offers_list') ) : the_row(); ?>
-            <div class="offers-box col-span-2 lg:col-span-6 rounded-[22px] bg-blue-shade-1 mb-16 lg:mb-0">
+            <div class="offers-box col-span-2 lg:col-span-6 rounded-[22px] bg-blue-shade-1 mb-16 lg:mb-0 fade-in">
                 <?php 
                     $offer_img = get_sub_field('image');
                     $size = 'full';

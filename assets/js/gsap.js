@@ -2,8 +2,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from 'lenis';
 
-//Lenis configuration
-let lenis;
+
 
 // wait until DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
@@ -13,9 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
 		const isAboutPage = document.body.classList.contains('page-template-page-about');
 	
 		if (!isAboutPage) {
+
 			// Initialize Lenis only if it's NOT the about page
-			lenis = new Lenis({
-				duration: 1,
+			const lenis = new Lenis({
+				duration: 1.1,
 				smooth: true,
 				//easing: easeOutExpo(),
 			});
@@ -88,61 +88,69 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		if ( $(".page-template-page-home")[0] ) {
 
+
 			gsap.from(['.section-hero--title', '.section-hero--boat'], {
-				duration: 1.2,
+				duration: 1,
 				y: 50,
-				stagger: 0.2,
+				stagger: 0.3,
 				opacity: 0,
 				autoAlpha: 0
 			});
 
-			gsap.from(['.section-intro--title', '.section-intro--description', '.section-intro--description-2', '.section-intro--img'], {
+			gsap.from('.selector', {
+				autoAlpha: 0,
+				//opacity: 0,
+				x: 70,
+				//stagger: 0.2,
 				scrollTrigger: {
-					trigger: '.section-intro',
-					//pin: true, // pin the trigger element while active
-					start: 'top 60%', // when the top of the trigger hits the top of the viewport
-					end: 'bottom bottom', // end after scrolling 500px beyond the start
-					scrub: 1.2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-					//markers: true,
-					toggleActions: 'play none reverse none'
+					trigger: '.selector',
+					start: 'top 60%',
+					scrub: true,
+					end: '+=400',
+					markers: true
+					
 				},
-				y: 100,
-				stagger: 0.2,
-				opacity: 0,
-				autoAlpha: 0
 			});
+		}
+		if ( $(".fade-in")[0] ) {
+			var fadeInItems = gsap.utils.toArray('.fade-in');
+			fadeInItems.forEach((fadeInItems) => {
+				gsap.from(fadeInItems, {
+					autoAlpha: 0,
+					//opacity: 0,
+					y: 60,
+					//stagger: 0.2,
+					scrollTrigger: {
+						trigger: fadeInItems,
+						start: 'top 70%',
+						scrub: true,
+						end: '+=400',
+						//markers: true
+						
+					},
 
-			gsap.from(['.section-services--title', '.section-services--item', '.section-services--button'], {
-				scrollTrigger: {
-					trigger: '.section-services',
-					//pin: true, // pin the trigger element while active
-					start: 'top 60%', // when the top of the trigger hits the top of the viewport
-					end: 'bottom bottom', // end after scrolling 500px beyond the start
-					scrub: 1.2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-					//markers: true,
-					toggleActions: 'play none reverse none'
-				},
-				y: 100,
-				stagger: 0.2,
-				opacity: 0,
-				autoAlpha: 0
+				});
 			});
+		}
+		if ( $(".fade-in--noscroll")[0] ) {
+			var fadeInItemsNs = gsap.utils.toArray('.fade-in--noscroll');
 
-			gsap.from('.offers-box', {
-				scrollTrigger: {
-					trigger: '.section-offers',
-					//pin: true, // pin the trigger element while active
-					start: 'top 60%', // when the top of the trigger hits the top of the viewport
-					end: 'bottom bottom', // end after scrolling 500px beyond the start
-					scrub: 1.2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-					//markers: true,
-					toggleActions: 'play none reverse none'
-				},
-				y: 100,
-				stagger: 0.2,
-				opacity: 0,
-				autoAlpha: 0
-			});
+				gsap.from(fadeInItemsNs, {
+					autoAlpha: 0,
+					//opacity: 0,
+					y: 50,
+					stagger: 0.3,
+					duration: 1,
+					/*scrollTrigger: {
+						trigger: fadeInItemsNs,
+						start: '50px 65%',
+						//scrub: true,
+						end: '+=400',
+						//markers: true
+						
+					},*/
+
+				});
 
 		}
 

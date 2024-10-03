@@ -1,10 +1,10 @@
 <section class="page-header bg-blue-shade-5 text-blue-shade-1 pt-28 lg:pt-64 pb-20 lg:pb-40">
 	<div class="theme-container">
 		<div class="flex flex-col w-full text-center">
-			<div class="page-header--breadcrumbs">
+			<div class="page-header--breadcrumbs invisible fade-in--noscroll">
 				<?php do_action( 'breadcrumbs' ); ?>
 			</div>
-			<div class="page-header--title">
+			<div class="page-header--title invisible fade-in--noscroll">
 				<?php
 				$page_header_title = '';
 				if ( is_home() ) :
@@ -23,7 +23,7 @@
 				endif;
 				?>
 			</div>
-			<div class="page-header--description w-3/4 lg:w-[40%] mx-auto">
+			<div class="page-header--description w-3/4 lg:w-[40%] mx-auto invisible fade-in--noscroll">
 				<?php
 				$page_header_desc = '';
 				if ( is_home() ) :
