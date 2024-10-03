@@ -114,14 +114,14 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 		if ( $(".fade-in")[0] ) {
 			var fadeInItems = gsap.utils.toArray('.fade-in');
-			fadeInItems.forEach((fadeInItems) => {
-				gsap.from(fadeInItems, {
+			fadeInItems.forEach((fadeInItem) => {
+				gsap.from(fadeInItem, {
 					autoAlpha: 0,
 					//opacity: 0,
 					y: 60,
 					//stagger: 0.2,
 					scrollTrigger: {
-						trigger: fadeInItems,
+						trigger: fadeInItem,
 						start: 'top 70%',
 						scrub: true,
 						end: '+=400',
