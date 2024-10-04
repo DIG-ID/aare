@@ -6,18 +6,18 @@
 				<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url" class="navbar-brand custom-logo-link"><?php do_action( 'theme_logo_dark' ); ?></a>
 			</div>
 		</div>
-		<div class="col-span-1 lg:col-span-1 address">
+		<div class="col-span-1 lg:col-span-1 block md:flex md:flex-col lg:block md:items-center address">
 			<p class="text-body text-blue-shade-5"><?php the_field( 'footer_address', 'options' ); ?></p>
 		</div>
-		<div class="col-span-1 lg:col-span-1 contact">
+		<div class="col-span-1 lg:col-span-1 block md:flex md:flex-col lg:block md:items-center contact">
 			<?php
 			$phone = get_field( 'footer_phone', 'options' );
 			if ( $phone ) :
-				?> <p class="text-body text-blue-shade-5"><a href="tel:<?php echo esc_url( $phone ); ?>"><?php esc_html_e( 'Phone', 'aare' );?> <?php echo $phone; ?></a></p><?php
+				?> <p class="text-body text-blue-shade-5"><a href="tel:<?php echo $phone; ?>"><?php esc_html_e( 'Phone', 'aare' );?> <?php echo $phone; ?></a></p><?php
 			endif;
-			$email = get_field( 'footer_phone', 'options' );
+			$email = get_field( 'footer_email', 'options' );
 			if ( $email ) :
-				?> <p class="text-body text-blue-shade-5"><a href="mailto:<?php echo esc_url( $email ); ?>"><?php echo $email ; ?></a></p><?php
+				?> <p class="text-body text-blue-shade-5"><a href="mailto:<?php echo antispambot( $email ); ?>"><?php echo antispambot( $email ); ?></a></p><?php
 			endif;
 			?>
 		</div>
