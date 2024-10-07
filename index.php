@@ -13,7 +13,7 @@ get_template_part( 'template-parts/pages/page-header' );
 					the_post();
 					if ( 0 === $i || is_sticky() ) :
 						?>
-						<article id="post-<?php the_ID(); ?>" <?php post_class( 'card-news card-news--sticky col-span-2 lg:col-span-8 bg-white rounded-[20px] overflow-hidden' ); ?>>
+						<article id="post-<?php the_ID(); ?>" <?php post_class( 'card-news card-news--sticky col-span-2 lg:col-span-8 bg-white rounded-[20px] overflow-hidden  invisible fade-in--noscroll' ); ?>>
 							<?php
 							if ( has_post_thumbnail() ) :
 								the_post_thumbnail( 'full', array( 'class' => 'w-full object-cover h-[275px] lg:h-[345px]' ) );
@@ -36,7 +36,7 @@ get_template_part( 'template-parts/pages/page-header' );
 						<?php
 					else :
 						?>
-						<article id="post-<?php the_ID(); ?>" <?php post_class( 'card-news col-span-2 lg:col-span-4 bg-white rounded-[20px] overflow-hidden ' ); ?>>
+						<article id="post-<?php the_ID(); ?>" <?php post_class( 'card-news col-span-2 lg:col-span-4 bg-white rounded-[20px] overflow-hidden invisible fade-in--noscroll' ); ?>>
 							<?php
 							if ( has_post_thumbnail() ) :
 								the_post_thumbnail( 'full', array( 'class' => 'w-full object-cover h-[275px] lg:h-[345px]' ) );
