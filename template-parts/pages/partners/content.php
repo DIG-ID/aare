@@ -6,7 +6,7 @@
 				while ( have_rows( 'partners' ) ) :
 					the_row();
 					?>
-					<div class="card-partner bg-blue-shade-1 col-span-2 lg:col-span-6 rounded-[20px] overflow-hidden mb-8 lg:mb-6">
+					<div class="card-partner bg-blue-shade-1 col-span-2 lg:col-span-6 rounded-[20px] overflow-hidden mb-8 lg:mb-6 invisible fade-in--noscroll">
 						<?php
 						if ( get_sub_field( 'image' ) ) :
 							echo wp_get_attachment_image( get_sub_field( 'image' ), 'full', false, array( 'class' => 'w-full object-cover rounded-b-[20px] min-h-[225px]' ) );

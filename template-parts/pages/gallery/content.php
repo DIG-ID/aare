@@ -7,7 +7,7 @@
 					the_row();
 					$gallery_title = get_sub_field( 'title' );
 					?>
-					<div class="col-span-2 lg:col-span-12 grid grid-cols-4 lg:grid-cols-12 gap-6 mb-24">
+					<div class="col-span-2 lg:col-span-12 grid grid-cols-4 lg:grid-cols-12 gap-6 mb-24 invisible fade-in--noscroll">
 						<div class="col-span-4 lg:col-span-12">
 							<h2 class="text-title-h2 text-blue-shade-2"> <?php the_sub_field( 'title' ); ?></h2>
 						</div>

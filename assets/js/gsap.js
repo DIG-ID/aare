@@ -110,44 +110,60 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 		if ( $(".fade-in")[0] ) {
 			var fadeInItems = gsap.utils.toArray('.fade-in');
+			
 			fadeInItems.forEach((fadeInItem) => {
 				gsap.from(fadeInItem, {
 					autoAlpha: 0,
-					//opacity: 0,
 					y: 60,
-					//stagger: 0.2,
+					//stagger: 0.3,
 					scrollTrigger: {
 						trigger: fadeInItem,
-						start: 'top 70%',
+						start: 'top 75%',
 						scrub: true,
 						end: '+=400',
 						//markers: true
-						
+						stagger: 0.3,
 					},
 
 				});
 			});
 		}
 		if ( $(".fade-in--noscroll")[0] ) {
+			//console.log($(".fade-in--noscroll"));
 			var fadeInItemsNs = gsap.utils.toArray('.fade-in--noscroll');
+			gsap.from(fadeInItemsNs, {
+				autoAlpha: 0,
+				y: 50,
+				stagger: 0.3,
+				duration: 1,
+				/*scrollTrigger: {
+					trigger: fadeInItemsNs,
+					start: '50px 65%',
+					//scrub: true,
+					end: '+=400',
+					//markers: true
+					
+				},*/
+			});
+		}
 
-				gsap.from(fadeInItemsNs, {
-					autoAlpha: 0,
-					//opacity: 0,
-					y: 50,
-					stagger: 0.3,
-					duration: 1,
-					/*scrollTrigger: {
-						trigger: fadeInItemsNs,
-						start: '50px 65%',
-						//scrub: true,
-						end: '+=400',
-						//markers: true
-						
-					},*/
-
-				});
-
+		if ( $(".fade-in--n")[0] ) {
+			//console.log($(".fade-in--noscroll"));
+			var fadeInItemsNs = gsap.utils.toArray('.fade-in--n');
+			gsap.from(fadeInItemsNs, {
+				autoAlpha: 0,
+				y: 50,
+				stagger: 0.3,
+				duration: 1,
+				/*scrollTrigger: {
+					trigger: fadeInItemsNs,
+					start: '50px 65%',
+					//scrub: true,
+					end: '+=400',
+					//markers: true
+					
+				},*/
+			});
 		}
 
 

@@ -1,8 +1,8 @@
 <section class="section-langzeitaufenthalt-teaser bg-blue-shade-1 text-blue-shade-5 pt-0 pb-11 lg:py-40">
 	<div class="theme-container">
-		<h2 class="text-title text-center mb-6 lg:mb-20"><?php the_field( 'langzeitaufenthalt_title' ); ?></h2>
+		<h2 class="text-title text-center mb-6 lg:mb-20 fade-in"><?php the_field( 'langzeitaufenthalt_title' ); ?></h2>
 		<div class="theme-grid">
-			<div class="col-span-2 lg:col-span-4 lg:col-start-2 order-2 lg:order-1">
+			<div class="col-span-2 lg:col-span-4 lg:col-start-2 order-2 lg:order-1 fade-in">
 				<h3 class="text-title-h3 mb-5"><?php the_field( 'langzeitaufenthalt_subtitle' ); ?></h3>
 				<p class="text-body mb-8 lg:mb-16"><?php the_field( 'langzeitaufenthalt_description' ); ?></p>
 				<?php
@@ -17,7 +17,7 @@
 				endif;
 				?>
 			</div>
-			<div class="col-span-2 lg:col-start-7 lg:col-span-5 order-1 lg:order-2">
+			<div class="col-span-2 lg:col-start-7 lg:col-span-5 order-1 lg:order-2 fade-in">
 			<?php
 				$limage = get_field( 'langzeitaufenthalt_image' );
 				if ( $limage ) :

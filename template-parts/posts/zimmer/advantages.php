@@ -2,9 +2,9 @@
 	<div class="theme-container">
 		<div class="theme-grid">
 			<div class="col-span-2 lg:col-span-12">
-				<h2 class="text-title text-blue-shade-1 text-center mb-24"><?php the_field( 'single_zimmer_value_title', 'options' ); ?></h2>
+				<h2 class="text-title text-blue-shade-1 text-center mb-24 fade-in"><?php the_field( 'single_zimmer_value_title', 'options' ); ?></h2>
 			</div>
-			<div class="col-span-2 lg:col-span-12 block lg:flex justify-between items-center mb-24">
+			<div class="col-span-2 lg:col-span-12 block lg:flex justify-between items-center mb-24 fade-in">
 				<?php
 				if ( have_rows( 'single_zimmer_value_items', 'options' ) ) :
 					while ( have_rows( 'single_zimmer_value_items', 'options' ) ) :
@@ -26,7 +26,7 @@
 				endif;
 				?>
 			</div>
-			<div class="col-span-2 lg:col-span-12 lg:flex justify-center gap-x-10">
+			<div class="col-span-2 lg:col-span-12 lg:flex justify-center gap-x-10 fade-in">
 				<?php
 				$link1 = get_field( 'single_zimmer_value_link_1', 'options' );
 				if ( $link1 ) :

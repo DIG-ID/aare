@@ -10,12 +10,12 @@
 					if ( 1 === $i ) :
 						?>
 						<article class="card-zimmer col-span-2 lg:col-start-2 lg:col-span-10 grid grid-cols-2 lg:grid-cols-10 mb-24 xl:mb-64">
-							<div class="card-studio__content col-span-2 lg:col-span-4 flex flex-col lg:justify-between order-2 lg:order-1">
+							<div class="card-studio__content col-span-2 lg:col-span-4 flex flex-col lg:justify-between order-2 lg:order-1 fade-in">
 								<h2 class="text-title-h2 text-blue-shade-5 invisible hidden lg:visible lg:block"><?php the_title(); ?></h2>
 								<p class="text-body text-blue-shade-5 pr-16"><?php echo esc_html( wp_strip_all_tags( get_the_excerpt() ) ); ?></p>
 								<a class="btn-internal btn-internal--shade-1 self-start mt-8 xl:mt-0" href="<?php the_permalink(); ?>"><?php esc_html_e( 'zu den Zimmern', 'aare' ); ?></a>
 							</div>
-							<div class="card-studio__swiper col-span-2 lg:col-start-6 lg:col-span-5 order-1 lg:order-2 mb-8 lg:mb-0">
+							<div class="card-studio__swiper col-span-2 lg:col-start-6 lg:col-span-5 order-1 lg:order-2 mb-8 lg:mb-0 fade-in">
 								<h2 class="text-title-h2 text-blue-shade-5 text-center mb-6 lg:invisible lg:hidden"><?php the_title(); ?></h2>
 								<?php
 								if ( has_post_thumbnail() ) :
@@ -29,7 +29,7 @@
 					else :
 						?>
 						<article class="card-zimmer col-span-2 lg:col-start-2 lg:col-span-10 grid grid-cols-2 lg:grid-cols-10 mb-24 xl:mb-64">
-							<div class="card-studio__swiper col-span-2 lg:col-span-5 mb-8 lg:mb-0">
+							<div class="card-studio__swiper col-span-2 lg:col-span-5 mb-8 lg:mb-0 fade-in">
 								<h2 class="text-title-h2 text-blue-shade-5 text-center mb-6 lg:invisible lg:hidden"><?php the_title(); ?></h2>
 								<?php
 								if ( has_post_thumbnail() ) :
@@ -37,7 +37,7 @@
 								endif;
 								?>
 							</div>
-							<div class="card-studio__content col-span-2 lg:col-span-4 lg:col-start-7 flex flex-col lg:justify-between">
+							<div class="card-studio__content col-span-2 lg:col-span-4 lg:col-start-7 flex flex-col lg:justify-between fade-in">
 								<h2 class="text-title-h2 text-blue-shade-5 invisible hidden lg:visible lg:block"><?php the_title(); ?></h2>
 								<p class="text-body text-blue-shade-5 pr-16"><?php echo esc_html( wp_strip_all_tags( get_the_excerpt() ) ); ?></p>
 								<a class="btn-internal btn-internal--shade-1 self-start mt-8 xl:mt-0" href="<?php the_permalink(); ?>"><?php esc_html_e( 'zu den Zimmern', 'aare' ); ?></a>

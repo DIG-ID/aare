@@ -1,9 +1,9 @@
 <section class="section-zimmer-teaser bg-blue-shade-5 text-blue-shade-1 pb-20 lg:pb-40">
 	<div class="theme-container">
-		<h2 class="text-title text-center mb-6 lg:mb-20"><?php the_field( 'zimmer_title' ); ?></h2>
+		<h2 class="text-title text-center mb-6 lg:mb-20 invisible fade-in--noscroll"><?php the_field( 'zimmer_title' ); ?></h2>
 		<div class="theme-grid">
-			<div class="col-span-2 lg:col-span-4 lg:col-start-2 order-2 lg:order-1">
-				<h3 class="text-title-h3 mb-5"><?php the_field( 'zimmer_subtitle_01' ); ?></h3>
+			<div class="col-span-2 lg:col-span-4 lg:col-start-2 order-2 lg:order-1 invisible fade-in--noscroll">
+				<h3 class="text-title-h3 mb-5 "><?php the_field( 'zimmer_subtitle_01' ); ?></h3>
 				<p class="text-body mb-16"><?php the_field( 'zimmer_description_01' ); ?></p>
 				<h3 class="text-title-h3 mb-5"><?php the_field( 'zimmer_subtitle_02' ); ?></h3>
 				<p class="text-body mb-16"><?php the_field( 'zimmer_description_01' ); ?></p>
@@ -19,7 +19,7 @@
 				endif;
 				?>
 			</div>
-			<div class="col-span-2 lg:col-start-7 lg:col-span-5 order-1 lg:order-2">
+			<div class="col-span-2 lg:col-start-7 lg:col-span-5 order-1 lg:order-2 invisible fade-in--noscroll">
 				<?php
 				$zimage = get_field( 'zimmer_image' );
 				if ( $zimage ) :

@@ -1,6 +1,6 @@
 <section class="section-information-content bg-blue-shade-3 pt-8 xl:pt-0 pb-28 xl:pb-0">
 	<div class="theme-container">
-		<div class="flex flex-col flex-wrap gap-6 h-auto xl:h-[1160px]">
+		<div class="flex flex-col flex-wrap gap-6 h-auto xl:h-[1160px] invisible fade-in--noscroll">
 			<?php
 			$reception = get_field( 'reception' );
 			if ( $reception ) :

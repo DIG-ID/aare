@@ -27,7 +27,7 @@
                 $services_btn_title = $services_btn['title'];
                 $services_btn_target = $services_btn['target'] ? $services_btn['target'] : '_self';
                 ?>
-                <a class="section-services--button btn-internal btn-internal--shade-2 text-center fade-in" href="<?php echo esc_url( $services_btn_url ); ?>" target="<?php echo esc_attr( $services_btn_target ); ?>"><?php echo esc_html( $services_btn_title ); ?></a>
+                <div class="fade-in"><a class="section-services--button btn-internal btn-internal--shade-2 text-center" href="<?php echo esc_url( $services_btn_url ); ?>" target="<?php echo esc_attr( $services_btn_target ); ?>"><?php echo esc_html( $services_btn_title ); ?></a></div>
             <?php endif; ?>
         </div>
     </div>

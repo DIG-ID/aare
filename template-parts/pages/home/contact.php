@@ -2,10 +2,10 @@
     <hr class="wave-separator__inverted--light border-0" />
 
     <div class="theme-container grid grid-cols-2 lg:grid-cols-12 gap-x-6 lg:pt-40 lg:pb-32">
-        <div class="after-vertical-line relative col-span-2 lg:col-span-5 col-start-1 lg:col-start-2 flex flex-col items-center justify-start pb-12 lg:pb-0 pt-6 lg:pt-0 w-[75%] lg:w-full mx-auto lg:mx-0">
-            <p class="text-title text-blue-shade-5 lg:leading-[68px] text-center lg:max-w-[412px]"><?php echo get_field( 'contact_title_1' ); ?></p>
+        <div class="after-vertical-line relative col-span-2 lg:col-span-5 col-start-1 lg:col-start-2 flex flex-col items-center justify-start pb-12 lg:pb-0 pt-6 lg:pt-0 w-[75%] lg:w-full mx-auto lg:mx-0 fade-in">
+            <p class="text-title text-blue-shade-5 lg:leading-[68px] text-center lg:max-w-[412px] "><?php echo get_field( 'contact_title_1' ); ?></p>
         </div>
-        <div class="col-span-2 lg:col-span-5 col-start-1 lg:col-start-7 flex flex-col items-center justify-start mb-12 lg:mb-0 mt-12 lg:mt-0">
+        <div class="col-span-2 lg:col-span-5 col-start-1 lg:col-start-7 flex flex-col items-center justify-start mb-12 lg:mb-0 mt-12 lg:mt-0 fade-in">
             <p class="text-title text-blue-shade-5 lg:leading-[68px]"><?php echo get_field( 'contact_title_2' ); ?></p>
             <?php 
             $contact = get_field('contact_button');

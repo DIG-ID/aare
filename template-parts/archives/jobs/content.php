@@ -18,7 +18,7 @@
 					?>
 				</div>
 			</div>-->
-			<div class="col-span-2 lg:col-start-2 lg:col-span-10 grid grid-cols-2 lg:grid-cols-10 gap-6">
+			<div class="col-span-2 lg:col-start-2 lg:col-span-10 grid grid-cols-2 lg:grid-cols-10 gap-6 invisible fade-in--noscroll">
 				<?php
 				$args = array(
 					'post_type'   => 'jobs',
@@ -49,7 +49,7 @@
 						*/
 						?>
 						<?php 
-						$post_card_classes = 'card-job col-span-2 lg:col-span-5  grid-item bg-white rounded-[20px] h-[250px] ' . esc_attr( isset( $args['slug'] ) ? $args['slug'] : '*' );
+						$post_card_classes = 'card-job col-span-2 lg:col-span-5  grid-item bg-white rounded-[20px] h-[250px]' . esc_attr( isset( $args['slug'] ) ? $args['slug'] : '*' );
 						?>
 						<article data-category="<?php echo esc_attr( isset( $args['slug'] ) ? $args['slug'] : '*' ); ?>" id="post-<?php the_ID(); ?>" <?php post_class( $post_card_classes ); ?> >
 							<div class="card-job-content  px-16 py-14 flex flex-col justify-between h-full">

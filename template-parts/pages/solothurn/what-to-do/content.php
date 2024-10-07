@@ -3,7 +3,7 @@
 		<?php
 		if ( have_rows( 'events' ) ) :
 			?>
-			<div class="swiper eventSwiper">
+			<div class="swiper eventSwiper invisible fade-in--noscroll">
 				<div class="swiper-wrapper">
 					<?php
 					while ( have_rows( 'events' ) ) :
@@ -43,12 +43,12 @@
 	</div>
 </section>
 
-<section class="section-what-to-do-activites bg-blue-shade-4 pt-28 lg:pt-40 pb-28 lg:pb-40">
+<section class="section-what-to-do-activites bg-blue-shade-4 pt-28 lg:pt-40 pb-28 lg:pb-40 ">
 	<div class="theme-container mb-28 lg:mb-40">
 		<div class="theme-grid">
 			<div class="col-span-2 lg:col-span-12 flex flex-col justify-center items-center">
-				<h2 class="text-title-h2 text-blue-shade-2 text-center mb-6"><?php the_field( 'activites_title' ); ?></h2>
-				<p class="text-description text-blue-shade-2 text-center max-w-[635px]"><?php the_field( 'activites_description' ); ?></p>
+				<h2 class="text-title-h2 text-blue-shade-2 text-center mb-6 fade-in"><?php the_field( 'activites_title' ); ?></h2>
+				<p class="text-description text-blue-shade-2 text-center max-w-[635px] fade-in"><?php the_field( 'activites_description' ); ?></p>
 			</div>
 		</div>
 	</div>
@@ -56,7 +56,7 @@
 		<?php
 		if ( have_rows( 'activites_list' ) ) :
 			?>
-			<div class="swiper activitesSwiper">
+			<div class="swiper activitesSwiper fade-in">
 				<div class="swiper-wrapper">
 					<?php
 					while ( have_rows( 'activites_list' ) ) :

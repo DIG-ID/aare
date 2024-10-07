@@ -5,7 +5,7 @@
 			$swisstainable = get_field( 'swisstainable' );
 			if ( $swisstainable ) :
 				?>
-				<div class="card-sustainability w-full xl:w-[calc(50%-12px)] bg-white rounded-[20px] overflow-hidden order-1">
+				<div class="card-sustainability w-full xl:w-[calc(50%-12px)] bg-white rounded-[20px] overflow-hidden order-1 fade-in--noscroll">
 					<?php
 					$swissimage = get_field( 'swisstainable_image' );
 					if ( $swissimage ) :
@@ -28,7 +28,7 @@
 			$cs = get_field( 'charging_station' );
 			if ( $cs ) :
 				?>
-				<div class="card-sustainability w-full xl:w-[calc(50%-12px)] bg-white rounded-[20px] overflow-hidden order-3 xl:order-2">
+				<div class="card-sustainability w-full xl:w-[calc(50%-12px)] bg-white rounded-[20px] overflow-hidden order-3 xl:order-2 fade-in">
 					<?php
 					$csimage = get_field( 'charging_station_image' );
 					if ( $csimage ) :
@@ -45,7 +45,7 @@
 			$regional = get_field( 'regional' );
 			if ( $regional ) :
 				?>
-				<div class="card-sustainability w-full xl:w-[calc(50%-12px)] bg-white overflow-hidden rounded-[20px] order-5 xl:order-3">
+				<div class="card-sustainability w-full xl:w-[calc(50%-12px)] bg-white overflow-hidden rounded-[20px] order-5 xl:order-3 fade-in">
 					<?php
 					$rimage = get_field( 'regional_image' );
 					if ( $rimage ) :
@@ -62,7 +62,7 @@
 			$ibex = get_field( 'Ibex' );
 			if ( $ibex ) :
 				?>
-				<div class="card-sustainability w-full xl:w-[calc(50%-12px)] bg-white rounded-[20px] overflow-hidden order-2 xl:order-4">
+				<div class="card-sustainability w-full xl:w-[calc(50%-12px)] bg-white rounded-[20px] overflow-hidden order-2 xl:order-4 fade-in--noscroll">
 					<?php
 					$iimage = get_field( 'Ibex_image' );
 					if ( $iimage ) :
@@ -95,7 +95,7 @@
 			$change = get_field( 'change' );
 			if ( $change ) :
 				?>
-				<div class="card-sustainability w-full xl:w-[calc(50%-12px)] bg-white overflow-hidden rounded-[20px] order-4 xl:order-5">
+				<div class="card-sustainability w-full xl:w-[calc(50%-12px)] bg-white overflow-hidden rounded-[20px] order-4 xl:order-5 fade-in">
 					<?php
 					$cimage = get_field( 'change_image' );
 					if ( $cimage ) :

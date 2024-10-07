@@ -22,7 +22,7 @@
                 $about_btn_title = $about_btn['title'];
                 $about_btn_target = $about_btn['target'] ? $about_btn['target'] : '_self';
                 ?>
-                <a class="btn-internal btn-internal--shade-transparent text-center fgade-in" href="<?php echo esc_url( $about_btn_url ); ?>" target="<?php echo esc_attr( $about_btn_target ); ?>"><?php echo esc_html( $about_btn_title ); ?></a>
+                <div class="fade-in"><a class="btn-internal btn-internal--shade-transparent text-center fgade-in" href="<?php echo esc_url( $about_btn_url ); ?>" target="<?php echo esc_attr( $about_btn_target ); ?>"><?php echo esc_html( $about_btn_title ); ?></a></div>
             <?php endif; ?>
         </div>
     </div>

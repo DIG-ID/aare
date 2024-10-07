@@ -1,6 +1,6 @@
 <section class="section-services-content bg-blue-shade-2 py-8 lg:py-16">
 	<div class="theme-container">
-		<div class="theme-grid">
+		<div class="theme-grid invisible fade-in--noscroll">
 			<?php
 			if ( have_rows( 'services' ) ) :
 				while ( have_rows( 'services' ) ) :

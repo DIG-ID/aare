@@ -1,7 +1,7 @@
 <section class="single-zimmer-header  text-blue-shade-1 pt-28 lg:pt-64">
 	<div class="theme-container relative">
 		<div class="flex flex-col w-full text-center">
-			<div class="page-header--breadcrumbs mb-14">
+			<div class="page-header--breadcrumbs mb-14 invisible fade-in--noscroll">
 				<?php do_action( 'breadcrumbs' ); ?>
 			</div>
 		</div>
@@ -10,7 +10,7 @@
 		$gallery = get_field( 'gallery' );
 		if ( $gallery ) :
 			?>
-			<div class="swiper zimmerSwiper">
+			<div class="swiper zimmerSwiper invisible fade-in--noscroll">
 				<div class="swiper-wrapper">
 					<?php
 					foreach ( $gallery as $gallery_id ) :

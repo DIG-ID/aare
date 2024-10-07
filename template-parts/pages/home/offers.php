@@ -20,7 +20,7 @@
                         $offers_btn_title = $offers_btn['title'];
                         $offers_btn_target = $offers_btn['target'] ? $offers_btn['target'] : '_self';
                         ?>
-                        <a class="btn-internal btn-internal--shade-transparent text-center" href="<?php echo esc_url( $offers_btn_url ); ?>" target="<?php echo esc_attr( $offers_btn_target ); ?>"><?php echo esc_html( $offers_btn_title ); ?></a>
+                        <div class="f"><a class="btn-internal btn-internal--shade-transparent text-center" href="<?php echo esc_url( $offers_btn_url ); ?>" target="<?php echo esc_attr( $offers_btn_target ); ?>"><?php echo esc_html( $offers_btn_title ); ?></a></div>
                     <?php endif; ?>
                 </div>
             </div>

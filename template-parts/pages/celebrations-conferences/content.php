@@ -5,7 +5,7 @@
 			$intro = get_field( 'intro' );
 			if ( $intro ) :
 				?>
-				<div class="col-span-12 card-cs w-full bg-white overflow-hidden rounded-[24px]">
+				<div class="col-span-12 card-cs w-full bg-white overflow-hidden rounded-[24px] fade-in--noscroll">
 				<?php
 					$iimage1 = get_field('intro_image');
 					$iimage2 = get_field('intro_image_2');

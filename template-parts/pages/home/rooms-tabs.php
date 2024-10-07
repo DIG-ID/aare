@@ -1,6 +1,6 @@
 <hr class="wave-separator__inverted border-0 -mb-[2px]" />
 <section class="section-tabs bg-blue-shade-5 pt-0 pb-28 relative overflow-hidden">
-    <div class="theme-container grid grid-cols-2 md:grid-cols-12 gap-x-6">
+    <div class="theme-container grid grid-cols-2 md:grid-cols-12 gap-x-6 fade-in">
             <!-- Tabs Navigation -->
             <div class="tabs-navigation col-span-2 md:col-span-12 pt-20 flex justify-center mb-16 md:mb-24">
                 <button class="tab-button text-title text-blue-shade-2 active mr-9" data-tab="hotelzimmer"><?php echo get_field( 'zimmer_title' ); ?></button>

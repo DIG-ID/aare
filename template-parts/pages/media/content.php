@@ -1,6 +1,6 @@
 <section class="section-media-corner-content py-28">
 	<div class="theme-container">
-		<div class="theme-grid">
+		<div class="theme-grid invisible fade-in--noscroll">
 			<div class="lg:col-start-2 col-span-2 lg:col-span-4">
 				<h2 class="text-title-h2 text-blue-shade-5 mb-10 lg:mb-16"><?php the_field( 'releases_title' ); ?></h2>
 				<?php
