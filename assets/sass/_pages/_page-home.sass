@@ -23,6 +23,36 @@
     &.active::after
         opacity: 1
 
+.section-intro
+    &--description
+        &::after
+            content: ""
+            display: block
+            width: 145px
+            height: 70px
+            position: absolute
+            bottom: 0
+            right: -40px
+            background-image: url('/wp-content/themes/aare/assets/images/waves.svg')
+            background-position: bottom right
+            background-repeat: no-repeat
+            background-size: contain
+            z-index: -1
+    &--description-2
+        &::after
+            content: ""
+            display: block
+            width: 70px
+            height: 145px
+            position: absolute
+            top: -20px
+            right: 0px
+            background-image: url('/wp-content/themes/aare/assets/images/waves-vertical.svg')
+            background-position: bottom right
+            background-repeat: no-repeat
+            background-size: contain
+            z-index: -1
+
 @media (min-width:1024px)
     .after-vertical-line
         &::after
