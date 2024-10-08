@@ -17,7 +17,7 @@
 
     <div class="theme-container grid grid-cols-2 md:grid-cols-12 gap-x-6 pt-12 md:pt-32">
         <div class="col-span-2 md:col-span-5 col-start-1 md:col-start-2">
-            <p class="section-intro--description font-miller font-normal text-[14px] md:text-[24px] lg:text-[36px] leading-7 md:leading-10 lg:leading-[68px] text-blue-shade-5 md:max-w-[440px] text-center md:text-left w-[75%] md:w-full mx-auto md:mx-0 fade-in"><?php echo get_field( 'intro_description_1' ); ?></p>
+            <p class="section-intro--description font-miller font-normal text-[14px] md:text-[24px] lg:text-[36px] leading-7 md:leading-10 lg:leading-[68px] text-blue-shade-5 md:max-w-[490px] text-center md:text-left w-[75%] md:w-full mx-auto md:mx-0 fade-in"><?php echo get_field( 'intro_description_1' ); ?></p>
         </div>
         <div class="col-span-2 md:col-span-5 col-start-1 md:col-start-7 mt-12 md:mt-28">
         <?php 
