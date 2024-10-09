@@ -9,7 +9,7 @@
 				if ( $phone ) :
 					?>
 					<p class="text-body--serif text-blue-shade-5 mb-4 lg:mb-8">
-						<?php esc_html_e( 'Telefon:', 'aare' ); ?> <a class="inline-block" href="tel:<?php echo esc_url( $phone ); ?>"><?php echo esc_html( $phone ); ?></a>
+						<?php esc_html_e( 'Telefon:', 'baeren' ); ?> <a class="inline-block" href="tel:<?php echo esc_url( $phone ); ?>"><?php echo esc_html( $phone ); ?></a>
 					</p>
 					<?php
 				endif;
@@ -17,7 +17,7 @@
 				if ( $email ) :
 					?>
 					<p class="text-body--serif text-blue-shade-5">
-						<?php esc_html_e( 'Email:', 'aare' ); ?> <a class="inline-block" href="mailto:<?php echo esc_url( $email ); ?>"><?php echo esc_html( $email ); ?></a>
+						<?php esc_html_e( 'Email:', 'baeren' ); ?> <a class="inline-block" href="mailto:<?php echo esc_url( $email ); ?>"><?php echo esc_html( $email ); ?></a>
 					</p>
 					<?php
 				endif;

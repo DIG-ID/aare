@@ -1,5 +1,5 @@
 <div class="lg:flex lg:flex-col lg:justify-between lg:h-full pt-28 lg:pt-0 pb-28 lg:pb-0">
-	<h2 class="text-title-h3 mb-6"><?php esc_html_e( 'Related News', 'aare' ); ?></h2>
+	<h2 class="text-title-h3 mb-6"><?php esc_html_e( 'Related News', 'baeren' ); ?></h2>
 	<?php
 	$args = array(
 		'post_type'           => 'post',
