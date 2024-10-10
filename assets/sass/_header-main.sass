@@ -73,11 +73,10 @@
     .menu-item
         @apply min-w-36 text-center
         a
-            @apply font-poppins text-[16px] text-blue-shade-2 uppercase transition-all duration-500 ease-in-out
-            &:hover
-                @apply font-semibold
+            @apply font-poppins font-light text-[16px] text-blue-shade-2   uppercase transition-all duration-500 ease-in-out hover:text-blue-shade-1 hover:tracking-wide
+
     &.main-menu-top-level > .menu-item > a
-        @apply inline-block min-w-[185px]
+        @apply inline-block min-w-[185px] 
     &.main-menu-top-level
         @apply flex-col items-start
         .second-level
@@ -89,9 +88,10 @@
         .menu-item
             @apply text-left mt-6
             a
-                @apply font-miller text-[20px] xl:text-[30px] tracking-[0.3px] font-light text-blue-shade-2 normal-case transition-all duration-500 ease-in-out
+                @apply font-miller text-[20px] xl:text-[30px] tracking-[0.3px] font-light text-blue-shade-2 normal-case  hover:text-blue-shade-1 hover:tracking-wider
+                transition: color .3s, letter-spacing .5s ease-out
                 &:hover
-                    @apply font-semibold
+                    
             .sub-menu
                 @apply hidden absolute left-[165%] top-0 mt-0 ml-5 xl:min-w-72
                 .menu-item:nth-child(1)
