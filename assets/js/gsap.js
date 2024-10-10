@@ -119,10 +119,10 @@ document.addEventListener("DOMContentLoaded", () => {
 					scrollTrigger: {
 						trigger: fadeInItem,
 						start: 'top 75%',
-						scrub: true,
+						//scrub: true,
 						end: '+=400',
-						//markers: true
-						stagger: 0.3,
+						markers: true,
+						//stagger: 0.3,
 					},
 
 				});

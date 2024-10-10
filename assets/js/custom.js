@@ -11,17 +11,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (window.innerWidth > 1280) {
                     if (window.scrollY > 100) {
                         header.classList.add('bg-blue-shade-5');
+                        header.classList.add('top-nav-fixed');
                         header.classList.remove('bg-transparent');
                         menuApp.style.display = 'none'; // Hide the menu-app when scrolling
                     } else {
+                        
                         header.classList.remove('bg-blue-shade-5');
+                        header.classList.remove('top-nav-fixed')
                         header.classList.add('bg-transparent');
                         menuApp.style.display = 'block'; // Show the menu-app when back at the top
                     }
                 } else {
                     // Reset styles if below 1280px
+                    
                     header.classList.remove('bg-transparent');
                     header.classList.add('bg-blue-shade-5');
+                    header.classList.add('top-nav-fixed')
                     menuApp.style.display = 'none'; // Show the menu-app for lower resolutions
                 }
             }
