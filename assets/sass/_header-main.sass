@@ -95,7 +95,7 @@
                 @apply font-miller text-[20px] xl:text-[30px] tracking-[0.3px] font-light text-blue-shade-2 normal-case hover:text-blue-shade-1 hover:tracking-[0.07rem]
                 transition: color .2s, letter-spacing .4s ease-out
             .sub-menu
-                @apply hidden absolute left-[165%] top-0 mt-0 ml-5 xl:min-w-72
+                @apply invisible opacity-0 absolute left-[165%] top-0 mt-0 ml-5 xl:min-w-72 transition-all ease-out translate-x-16 duration-300
                 .menu-item:nth-child(1)
                         @apply mt-2 text-nowrap 
                 .menu-item:not(.menu-label)
@@ -147,7 +147,7 @@
                             right: 100%
 
             &.menu-item-hover .sub-menu
-                @apply block
+                @apply visible opacity-100 translate-x-0
 
 #header-main.menu-open
     &__text
