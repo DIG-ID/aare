@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if ($header.hasClass('menu-open')) {
             // Close the mega menu
             $header.removeClass('menu-open');
-            setTimeout(() => {
+            /*setTimeout(() => {
                 $body.css('overflow', 'auto');
-            }, 100);
+            }, 100);*/
             setTimeout(() => {
                 $menuWrapper.css('padding-right', '0px'); // Reset padding
             }, 300);
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             //$body.css('overflow', 'hidden');
 
-            $menuWrapper.css('padding-right', scrollBarWidth + 'px'); // Compensate for missing scrollbar
+            //$menuWrapper.css('padding-right', scrollBarWidth + 'px'); // Compensate for missing scrollbar
             $('.menu-wrapper').fadeIn(300);
 
             // Add the cross animation

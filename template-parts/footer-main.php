@@ -13,7 +13,7 @@
 			<?php
 			$phone = get_field( 'footer_phone', 'options' );
 			if ( $phone ) :
-				?> <p class="text-body text-blue-shade-5"><a href="tel:<?php echo $phone; ?>"><?php esc_html_e( 'Phone', 'baeren' );?> <?php echo $phone; ?></a></p><?php
+				?> <p class="text-body text-blue-shade-5"><a href="tel:<?php echo $phone; ?>"><?php esc_html_e( 'Phone', 'aare' );?> <?php echo $phone; ?></a></p><?php
 			endif;
 			$email = get_field( 'footer_email', 'options' );
 			if ( $email ) :
@@ -40,7 +40,7 @@
 						<?php
 						$booking_url = get_field( 'booking_url', 'options' );
 						if ( $booking_url ) :
-							?><a href="<?php echo esc_url( $booking_url ); ?>" target="_blank" class="btn-internal btn-internal--shade-3 !text-[16px] !font-poppins uppercase font-medium tracking-[0.16px]"><?php esc_html_e( 'Jetzt Buchen', 'baeren' ); ?></a><?php
+							?><a href="<?php echo esc_url( $booking_url ); ?>" target="_blank" class="btn-internal btn-internal--shade-3 !text-[16px] !font-poppins uppercase font-medium tracking-[0.16px]"><?php esc_html_e( 'Jetzt Buchen', 'aare' ); ?></a><?php
 						endif;
 						?>
 					</div>
@@ -54,13 +54,13 @@
 			<?php
 				$y = date( 'Y' );
 				printf(
-					esc_html__( 'Urheberrecht &copy; %d Hotel an der den Baeren', 'baeren' ),
+					esc_html__( 'Urheberrecht &copy; %d Hotel an der den Aare', 'aare' ),
 					esc_html( $y )
 				);
 				?>
 			</p>
 			<a href="#header-main" class="text-body text-blue-shade-1 flex mb-6 lg:mb-0">
-				<?php esc_html_e( 'Zurück nach oben', 'baeren' ); ?>
+				<?php esc_html_e( 'Zurück nach oben', 'aare' ); ?>
 				<svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-2">
 					<path d="M5.5 1L1 6M5.5 1L10 6M5.5 1V13.5" stroke="#F2FAFF"/>
 				</svg>

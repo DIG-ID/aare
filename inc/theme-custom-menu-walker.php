@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom Menu Walker for Baeren WordPress Theme.
+ * Custom Menu Walker for Aare WordPress Theme.
  */
 class Custom_Walker_Nav_Menu extends Walker_Nav_Menu {
 

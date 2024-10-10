@@ -33,7 +33,7 @@
 			<?php
 			$booking_url = get_field( 'booking_url', 'options' );
 			if ( $booking_url ) :
-				?><a href="<?php echo esc_url( $booking_url ); ?>" target="_blank" class="btn-header btn-header--booking uppercase mt-7 inline-block lg:hidden"><?php esc_html_e( 'Jetzt Buchen', 'baeren' ); ?></a><?php
+				?><a href="<?php echo esc_url( $booking_url ); ?>" target="_blank" class="btn-header btn-header--booking uppercase mt-7 inline-block lg:hidden"><?php esc_html_e( 'Jetzt Buchen', 'aare' ); ?></a><?php
 			endif;
 			?>
 		</div>
