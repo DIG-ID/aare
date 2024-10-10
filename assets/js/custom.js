@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("load", () => {
         const header = document.querySelector('#header-main');
         const menuApp = document.querySelector('.menu-app'); // Select the menu-app element
+        const menucenas = $('.menu-app');
 
         if (header && menuApp) {
             // Function to handle the scroll behavior
@@ -13,13 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
                         header.classList.add('bg-blue-shade-5');
                         header.classList.add('top-nav-fixed');
                         header.classList.remove('bg-transparent');
-                        menuApp.style.display = 'none'; // Hide the menu-app when scrolling
+                        //menuApp.style.display = 'none'; // Hide the menu-app when scrolling
+                        menucenas.slideUp();
                     } else {
                         
                         header.classList.remove('bg-blue-shade-5');
                         header.classList.remove('top-nav-fixed')
                         header.classList.add('bg-transparent');
-                        menuApp.style.display = 'block'; // Show the menu-app when back at the top
+                        //menuApp.style.display = 'block'; // Show the menu-app when back at the top
+                        menucenas.slideDown();
                     }
                 } else {
                     // Reset styles if below 1280px
@@ -27,7 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     header.classList.remove('bg-transparent');
                     header.classList.add('bg-blue-shade-5');
                     header.classList.add('top-nav-fixed')
-                    menuApp.style.display = 'none'; // Show the menu-app for lower resolutions
+                    //menuApp.style.display = 'none'; // Show the menu-app for lower resolutions
+                    menucenas.slideUp();
                 }
             }
 
