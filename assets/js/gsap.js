@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
 						start: 'top 75%',
 						//scrub: true,
 						end: '+=400',
-						markers: true,
+						//markers: true,
 						//stagger: 0.3,
 					},
 
