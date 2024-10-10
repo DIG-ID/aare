@@ -73,8 +73,11 @@
     .menu-item
         @apply min-w-36 text-center
         a
-            @apply font-poppins font-light text-[16px] text-blue-shade-2   uppercase transition-all duration-500 ease-in-out hover:text-blue-shade-1 hover:tracking-wide
-
+            @apply font-poppins font-light text-[16px] text-blue-shade-2 uppercase hover:text-blue-shade-1 hover:tracking-[0.07rem]
+            transition: color .2s, letter-spacing .4s ease-out
+    .current-menu-item
+        a
+            @apply text-blue-shade-1 tracking-[0.1rem]
     &.main-menu-top-level > .menu-item > a
         @apply inline-block min-w-[185px] 
     &.main-menu-top-level
@@ -82,16 +85,15 @@
         .second-level
             .menu-item
                 a
-                    @apply font-poppins text-[16px] xl:text-[30px] tracking-[0.16px] xl:tracking-[0.3px] font-light text-blue-shade-2 normal-case transition-all duration-500 ease-in-out
+                    @apply font-poppins text-[16px] xl:text-[30px] tracking-[0.16px] xl:tracking-[0.3px] font-light text-blue-shade-2 normal-case hover:text-blue-shade-1 hover:tracking-[0.07rem]
+                    transition: color .2s, letter-spacing .4s ease-out
         .menu-item:not(:nth-child(1))
             @apply xl:mt-11
         .menu-item
             @apply text-left mt-6
             a
-                @apply font-miller text-[20px] xl:text-[30px] tracking-[0.3px] font-light text-blue-shade-2 normal-case  hover:text-blue-shade-1 hover:tracking-wider
-                transition: color .3s, letter-spacing .5s ease-out
-                &:hover
-                    
+                @apply font-miller text-[20px] xl:text-[30px] tracking-[0.3px] font-light text-blue-shade-2 normal-case hover:text-blue-shade-1 hover:tracking-[0.07rem]
+                transition: color .2s, letter-spacing .4s ease-out
             .sub-menu
                 @apply hidden absolute left-[165%] top-0 mt-0 ml-5 xl:min-w-72
                 .menu-item:nth-child(1)
@@ -99,9 +101,9 @@
                 .menu-item:not(.menu-label)
                     @apply text-left mt-3
                     a
-                        @apply font-poppins text-[16px] tracking-[0.32px] font-light text-blue-shade-2 normal-case
+                        @apply font-poppins text-[16px] tracking-[0.32px] font-light text-blue-shade-2 normal-case hover:text-blue-shade-1 hover:tracking-[0.07rem]
+                        transition: color .2s, letter-spacing .4s ease-out
                         &:hover
-                            @apply font-semibold
                             &::after
                                 content: ""
                                 position: absolute
@@ -117,9 +119,9 @@
                 .menu-label
                     @apply text-left mt-3
                     a
-                        @apply font-poppins text-[22px] tracking-[0.22px] font-light text-blue-shade-2 normal-case transition-all duration-500 ease-in-out
+                        @apply font-poppins text-[22px] tracking-[0.22px] font-light text-blue-shade-2 normal-case hover:text-blue-shade-1 hover:tracking-[0.07rem]
+                        transition: color .2s, letter-spacing .4s ease-out
                         &:hover
-                            @apply font-semibold
                             &::after
                                 content: ""
                                 position: absolute
@@ -165,9 +167,8 @@
             &:not(:nth-child(1))
                 @apply mt-5
             a
-                @apply font-miller text-[20px] text-blue-shade-2 tracking-[0.4px]
-                &:hover
-                    @apply font-semibold
+                @apply font-miller text-[20px] text-blue-shade-2 tracking-[0.4px] hover:text-blue-shade-1 hover:tracking-[0.07rem]
+                transition: color .2s, letter-spacing .4s ease-out
 
 @media ( min-width: 1280px )
     #main-menu
