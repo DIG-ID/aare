@@ -26,7 +26,7 @@ gsap.ticker.add((time) => {
 	lenis.raf(time * 1000);
 });
 
-gsap.ticker.lagSmoothing(0);
+//gsap.ticker.lagSmoothing(0);
 
 // wait until DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
