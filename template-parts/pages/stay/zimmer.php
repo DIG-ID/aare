@@ -6,7 +6,7 @@
 				<h3 class="text-title-h3 mb-5 "><?php the_field( 'zimmer_subtitle_01' ); ?></h3>
 				<p class="text-body mb-16"><?php the_field( 'zimmer_description_01' ); ?></p>
 				<h3 class="text-title-h3 mb-5"><?php the_field( 'zimmer_subtitle_02' ); ?></h3>
-				<p class="text-body mb-16"><?php the_field( 'zimmer_description_01' ); ?></p>
+				<p class="text-body mb-16"><?php the_field( 'zimmer_description_02' ); ?></p>
 				<?php
 				$zlink = get_field( 'zimmer_link' );
 				if ( $zlink ) :
