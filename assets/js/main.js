@@ -1,5 +1,5 @@
 import "./custom";
-//import "./gsap";
+import "./gsap";
 import "./swiper";
 import "./isotope";
 import "./navigation";
