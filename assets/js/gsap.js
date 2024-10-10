@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
 					//stagger: 0.3,
 					scrollTrigger: {
 						trigger: fadeInItem,
-						start: 'top 80%',
+						start: 'top 90%',
 						scrub: true,
 						end: '+=300',
 						markers: true,
