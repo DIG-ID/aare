@@ -2,14 +2,14 @@
 /**
  * Setup theme
  */
-function aare_theme_setup() {
+function baeren_theme_setup() {
 
 	register_nav_menus(
 		array(
-			'main-menu'      => __( 'Main Menu', 'aare' ),
-			'main-mega-menu' => __( 'Main Mega Menu', 'aare' ),
-			'secondary-menu' => __( 'Secondary Menu', 'aare' ),
-			'copyright-menu' => __( 'Copyright Menu', 'aare' ),
+			'main-menu'      => __( 'Main Menu', 'baeren' ),
+			'main-mega-menu' => __( 'Main Mega Menu', 'baeren' ),
+			'secondary-menu' => __( 'Secondary Menu', 'baeren' ),
+			'copyright-menu' => __( 'Copyright Menu', 'baeren' ),
 		)
 	);
 
@@ -29,12 +29,12 @@ function aare_theme_setup() {
 
 }
 
-add_action( 'after_setup_theme', 'aare_theme_setup' );
+add_action( 'after_setup_theme', 'baeren_theme_setup' );
 
 /**
  * Register our sidebars and widgetized areas.
  */
-function aare_theme_footer_widgets_init() {
+function baeren_theme_footer_widgets_init() {
 
 	register_sidebar(
 		array(
@@ -60,15 +60,15 @@ function aare_theme_footer_widgets_init() {
 
 }
 
-add_action( 'widgets_init', 'aare_theme_footer_widgets_init' );
+add_action( 'widgets_init', 'baeren_theme_footer_widgets_init' );
 
-if ( ! function_exists( 'aare_get_font_face_styles' ) ) :
+if ( ! function_exists( 'baeren_get_font_face_styles' ) ) :
 
 	/**
 	 * Get font face styles.
 	 * Called by functions dig_theme_enqueue_styles() and twentytwentytwo_editor_styles() above.
 	 */
-	function aare_get_font_face_styles() {
+	function baeren_get_font_face_styles() {
 
 		return "
 			@import url('https://p.typekit.net/p.css?s=1&k=wel7pmx&ht=tk&f=29432.29434.29435.29436&a=100534906&app=typekit&e=css');
@@ -167,12 +167,12 @@ if ( ! function_exists( 'aare_get_font_face_styles' ) ) :
 
 endif;
 
-if ( ! function_exists( 'aare_preload_webfonts' ) ) :
+if ( ! function_exists( 'baeren_preload_webfonts' ) ) :
 
 	/**
 	 * Preloads the main web font to improve performance.
 	 */
-	function aare_preload_webfonts() {
+	function baeren_preload_webfonts() {
 		?>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -182,12 +182,12 @@ if ( ! function_exists( 'aare_preload_webfonts' ) ) :
 
 endif;
 
-add_action( 'wp_head', 'aare_preload_webfonts' );
+add_action( 'wp_head', 'baeren_preload_webfonts' );
 
 /**
  * Enqueue styles and scripts
  */
-function aare_theme_enqueue_styles() {
+function baeren_theme_enqueue_styles() {
 
 	//Get the theme data
 	$the_theme     = wp_get_theme();
@@ -196,7 +196,7 @@ function aare_theme_enqueue_styles() {
 	// Register Theme main style.
 	wp_register_style( 'theme-styles', get_template_directory_uri() . '/dist/css/main.css', array(), $theme_version );
 	// Add styles inline.
-	wp_add_inline_style( 'theme-styles', aare_get_font_face_styles() );
+	wp_add_inline_style( 'theme-styles', baeren_get_font_face_styles() );
 	// Enqueue theme stylesheet.
 	wp_enqueue_style( 'theme-styles' );
 	//https://use.typekit.net/evg0ous.css first loaded fonts library backup
@@ -210,16 +210,16 @@ function aare_theme_enqueue_styles() {
 	endif;
 }
 
-add_action( 'wp_enqueue_scripts', 'aare_theme_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'baeren_theme_enqueue_styles' );
 
 //Google Map Init
-function aare_theme_google_map_init() {
+function baeren_theme_google_map_init() {
 	if ( is_admin() ) :
 		acf_update_setting( 'google_api_key', 'AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0' );
 	endif;
 }
 
-add_action( 'acf/init', 'aare_theme_google_map_init' );
+add_action( 'acf/init', 'baeren_theme_google_map_init' );
 
 /**
  * Remove <p> Tag From Contact Form 7.
@@ -233,11 +233,11 @@ add_filter( 'wpcf7_autop_or_not', '__return_false' );
  *
  * @return string $priority The potentially altered priority.
  */
-function aare_theme_lower_yoast_metabox_priority( $priority ) {
+function baeren_theme_lower_yoast_metabox_priority( $priority ) {
 	return 'core';
 }
 
-add_filter( 'wpseo_metabox_prio', 'aare_theme_lower_yoast_metabox_priority' );
+add_filter( 'wpseo_metabox_prio', 'baeren_theme_lower_yoast_metabox_priority' );
 
 
 // Theme custom template tags.

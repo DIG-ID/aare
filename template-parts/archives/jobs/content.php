@@ -2,9 +2,9 @@
 	<div class="theme-container">
 		<div class="theme-grid">
 			<!--<div class="col-12 col-xl-4">
-				<p class="d-none d-lg-block"><?php esc_html_e( 'Nach Position filtern:', 'aare' ); ?></p>
+				<p class="d-none d-lg-block"><?php esc_html_e( 'Nach Position filtern:', 'baeren' ); ?></p>
 				<div class="job-button-group job-filters-button-group">
-					<button class="button is-checked" data-filter="*"><?php esc_html_e( 'Alle', 'aare' ); ?></button>
+					<button class="button is-checked" data-filter="*"><?php esc_html_e( 'Alle', 'baeren' ); ?></button>
 					<?php
 					$job_positions = get_terms(
 						array(
@@ -54,7 +54,7 @@
 						<article data-category="<?php echo esc_attr( isset( $args['slug'] ) ? $args['slug'] : '*' ); ?>" id="post-<?php the_ID(); ?>" <?php post_class( $post_card_classes ); ?> >
 							<div class="card-job-content  px-16 py-14 flex flex-col justify-between h-full">
 								<h2 class="text-title-h3 text-blue-shade-5"><?php the_title(); ?></h2>
-								<a href="<?php the_permalink(); ?>" class="card-job-btn btn btn-external btn-external--shade-1"><?php esc_html_e( 'Angebot anzeigen', 'aare' ); ?></a>
+								<a href="<?php the_permalink(); ?>" class="card-job-btn btn btn-external btn-external--shade-1"><?php esc_html_e( 'Angebot anzeigen', 'baeren' ); ?></a>
 							</div>
 						</article>
 						<?php

@@ -38,7 +38,7 @@
 								$blink = get_field( 'booking_link' );
 								if ( $blink ) :
 								?>
-								<a class="btn-internal btn-internal--shade-3 self-start mt-8 lg:mt-0" href="mailto:<?php echo esc_attr( $blink ); ?>"><?php esc_html_e( 'Jetzt anfragen', 'aare' ); ?></a>
+								<a class="btn-internal btn-internal--shade-3 self-start mt-8 lg:mt-0" href="mailto:<?php echo esc_attr( $blink ); ?>"><?php esc_html_e( 'Jetzt anfragen', 'baeren' ); ?></a>
 								<?php
 								endif;
 								?>
@@ -55,7 +55,7 @@
 								$blink = get_field( 'booking_link' );
 								if ( $blink ) :
 								?>
-								<a class="btn-internal btn-internal--shade-3 self-start mt-8 lg:mt-0" href="mailto:<?php echo esc_attr( $blink ); ?>" ><?php esc_html_e( 'Jetzt anfragen', 'aare' ); ?></a>
+								<a class="btn-internal btn-internal--shade-3 self-start mt-8 lg:mt-0" href="mailto:<?php echo esc_attr( $blink ); ?>" ><?php esc_html_e( 'Jetzt anfragen', 'baeren' ); ?></a>
 								<?php
 								endif;
 								?>

@@ -1,6 +1,6 @@
 <header id="header-main" class="header-main absolute top-0 left-0 w-full z-50 overflow-hidden" itemscope itemtype="http://schema.org/WebSite">
 
-	<nav class="navbar relative overflow-hidden" role="navigation" aria-label="<?php esc_attr_e( 'Main menu', 'aare' ); ?>">
+	<nav class="navbar relative overflow-hidden" role="navigation" aria-label="<?php esc_attr_e( 'Main menu', 'baeren' ); ?>">
 		<div class="header-wrapper relative grid grid-cols-3 px-6 md:px-8 xl:px-16 py-6 md:py-8 xl:py-6 z-40 xl:z-auto">
 			<div class="col-span-1 flex justify-end xl:justify-start items-center order-3 xl:order-1 xl:z-50">
 				<div class="menu-toggle-wrapper">
@@ -10,7 +10,7 @@
 							<span class="bar"></span>
 							<span class="bar"></span>
 						</span>
-						<span class="menu-toggle__text"><?php esc_html_e( 'Menu', 'aare' ); ?></span>
+						<span class="menu-toggle__text"><?php esc_html_e( 'Menu', 'baeren' ); ?></span>
 					</button>
 				</div>
 				<div class="hidden xl:block"><?php do_action( 'wpml_add_language_selector' ); ?></div>
@@ -24,7 +24,7 @@
 				<?php
 				$booking_url = get_field( 'booking_url', 'options' );
 				if ( $booking_url ) :
-					?><a href="<?php echo esc_url( $booking_url ); ?>" target="_blank" class="btn-header btn-header--booking uppercase"><?php esc_html_e( 'Jetzt Buchen', 'aare' ); ?></a><?php
+					?><a href="<?php echo esc_url( $booking_url ); ?>" target="_blank" class="btn-header btn-header--booking uppercase"><?php esc_html_e( 'Jetzt Buchen', 'baeren' ); ?></a><?php
 				endif;
 				?>
 			</div>
@@ -51,7 +51,7 @@
 			<div class="grid grid-cols-12 px-0 py-0 h-full">
 				<div class="col-span-8 pl-48 pt-44 hidden xl:block">
 					<div class="site-branding mega-menu__logo">
-						<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url" class="navbar-brand custom-logo-link"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/mega-menu__logo.svg" alt="Hotel Aaren Logo" title="Hotel Aaren Logo" /></a>
+						<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url" class="navbar-brand custom-logo-link"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/mega-menu__logo.svg" alt="Hotel Baerenn Logo" title="Hotel Baerenn Logo" /></a>
 					</div>
 					<?php
 					wp_nav_menu(
