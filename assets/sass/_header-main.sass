@@ -95,7 +95,7 @@
                 @apply font-miller text-[20px] xl:text-[30px] tracking-[0.3px] font-light text-blue-shade-2 normal-case hover:text-blue-shade-1 hover:tracking-[0.07rem]
                 transition: color .2s, letter-spacing .4s ease-out
             .sub-menu
-                @apply invisible opacity-0 absolute left-[165%] top-0 mt-0 ml-5 xl:min-w-72 transition-all ease-out translate-x-16 duration-300
+                @apply invisible opacity-0 absolute left-[165%] top-0 mt-0 ml-5 xl:min-w-72 transition-all ease-out translate-x-16 duration-500
                 .menu-item:nth-child(1)
                         @apply mt-2 text-nowrap 
                 .menu-item:not(.menu-label)
@@ -103,37 +103,37 @@
                     a
                         @apply font-poppins text-[16px] tracking-[0.32px] font-light text-blue-shade-2 normal-case hover:text-blue-shade-1 hover:tracking-[0.07rem]
                         transition: color .2s, letter-spacing .4s ease-out
+                        &::after
+                            @apply absolute transition-all duration-500 ease-out -translate-x-8 top-1/2 -translate-y-1/2 opacity-0
+                            content: ""
+                            width: 29px
+                            height: 8px
+                            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="29" height="8" viewBox="0 0 29 8" fill="none"><path d="M28.3536 4.35355C28.5488 4.15829 28.5488 3.84171 28.3536 3.64645L25.1716 0.464466C24.9763 0.269204 24.6597 0.269204 24.4645 0.464466C24.2692 0.659728 24.2692 0.976311 24.4645 1.17157L27.2929 4L24.4645 6.82843C24.2692 7.02369 24.2692 7.34027 24.4645 7.53553C24.6597 7.7308 24.9763 7.7308 25.1716 7.53553L28.3536 4.35355ZM0 4.5H28V3.5H0V4.5Z" fill="%2380A8C4"/></svg>')
+                            background-repeat: no-repeat
+                            background-size: contain
+                            margin-left: 10px
+                            left: unset
                         &:hover
                             &::after
-                                content: ""
-                                position: absolute
-                                width: 29px
-                                height: 8px
-                                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="29" height="8" viewBox="0 0 29 8" fill="none"><path d="M28.3536 4.35355C28.5488 4.15829 28.5488 3.84171 28.3536 3.64645L25.1716 0.464466C24.9763 0.269204 24.6597 0.269204 24.4645 0.464466C24.2692 0.659728 24.2692 0.976311 24.4645 1.17157L27.2929 4L24.4645 6.82843C24.2692 7.02369 24.2692 7.34027 24.4645 7.53553C24.6597 7.7308 24.9763 7.7308 25.1716 7.53553L28.3536 4.35355ZM0 4.5H28V3.5H0V4.5Z" fill="%2380A8C4"/></svg>')
-                                background-repeat: no-repeat
-                                background-size: contain
-                                margin-left: 10px
-                                top: 50%
-                                transform: translateY(-40%)
-                                left: unset
+                                @apply translate-x-0 opacity-100
                 .menu-label
                     @apply text-left mt-3
                     a
                         @apply font-poppins text-[22px] tracking-[0.22px] font-light text-blue-shade-2 normal-case hover:text-blue-shade-1 hover:tracking-[0.07rem]
                         transition: color .2s, letter-spacing .4s ease-out
+                        &::after
+                            @apply absolute transition-all duration-500 ease-out -translate-x-8 top-1/2 -translate-y-1/2 opacity-0
+                            content: ""
+                            width: 29px
+                            height: 8px
+                            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="29" height="8" viewBox="0 0 29 8" fill="none"><path d="M28.3536 4.35355C28.5488 4.15829 28.5488 3.84171 28.3536 3.64645L25.1716 0.464466C24.9763 0.269204 24.6597 0.269204 24.4645 0.464466C24.2692 0.659728 24.2692 0.976311 24.4645 1.17157L27.2929 4L24.4645 6.82843C24.2692 7.02369 24.2692 7.34027 24.4645 7.53553C24.6597 7.7308 24.9763 7.7308 25.1716 7.53553L28.3536 4.35355ZM0 4.5H28V3.5H0V4.5Z" fill="%2380A8C4"/></svg>')
+                            background-repeat: no-repeat
+                            background-size: contain
+                            margin-left: 10px
+                            left: unset
                         &:hover
                             &::after
-                                content: ""
-                                position: absolute
-                                width: 29px
-                                height: 8px
-                                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="29" height="8" viewBox="0 0 29 8" fill="none"><path d="M28.3536 4.35355C28.5488 4.15829 28.5488 3.84171 28.3536 3.64645L25.1716 0.464466C24.9763 0.269204 24.6597 0.269204 24.4645 0.464466C24.2692 0.659728 24.2692 0.976311 24.4645 1.17157L27.2929 4L24.4645 6.82843C24.2692 7.02369 24.2692 7.34027 24.4645 7.53553C24.6597 7.7308 24.9763 7.7308 25.1716 7.53553L28.3536 4.35355ZM0 4.5H28V3.5H0V4.5Z" fill="%2380A8C4"/></svg>')
-                                background-repeat: no-repeat
-                                background-size: contain
-                                margin-left: 10px
-                                top: 50%
-                                transform: translateY(-40%)
-                                left: unset
+                                @apply translate-x-0 opacity-100
                         &::before
                             content: ""
                             position: absolute

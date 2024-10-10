@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Calculate scrollbar width
             const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
 
-            $body.css('overflow', 'hidden');
+            //$body.css('overflow', 'hidden');
 
             $menuWrapper.css('padding-right', scrollBarWidth + 'px'); // Compensate for missing scrollbar
             $('.menu-wrapper').fadeIn(300);
