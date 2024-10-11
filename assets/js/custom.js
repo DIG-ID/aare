@@ -1,48 +1,35 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Wait until all resources are loaded
     window.addEventListener("load", () => {
-        const header = document.querySelector('#header-main');
-        const menuApp = document.querySelector('.menu-app'); // Select the menu-app element
-        const menucenas = $('.menu-app');
+        let header = $('#header-main');
+        let menuApp = $('.menu-app');
+        let lastScroll = 0;
 
-        if (header && menuApp) {
-            // Function to handle the scroll behavior
-            function handleScroll() {
-                // Only apply the logic if the window width is greater than 1280px
-                if (window.innerWidth > 1280) {
-                    if (window.scrollY > 100) {
-                        header.classList.add('bg-blue-shade-5');
-                        header.classList.add('top-nav-fixed');
-                        header.classList.remove('bg-transparent');
-                        //menuApp.style.display = 'none'; // Hide the menu-app when scrolling
-                        menucenas.slideUp();
-                    } else {
-                        
-                        header.classList.remove('bg-blue-shade-5');
-                        header.classList.remove('top-nav-fixed')
-                        header.classList.add('bg-transparent');
-                        //menuApp.style.display = 'block'; // Show the menu-app when back at the top
-                        menucenas.slideDown();
+        function handleScroll() {
+            const currentScroll = window.pageYOffset;
+
+            if (window.innerWidth > 1280) {
+                if (currentScroll > 100) {
+                    header.removeClass('bg-transparent').addClass('bg-blue-shade-5 top-nav-fixed');
+                    if (!header.hasClass('sticky')) {
+                        header.addClass('sticky');
                     }
+                    menuApp.slideUp(); 
                 } else {
-                    // Reset styles if below 1280px
-                    
-                    header.classList.remove('bg-transparent');
-                    header.classList.add('bg-blue-shade-5');
-                    header.classList.add('top-nav-fixed')
-                    //menuApp.style.display = 'none'; // Show the menu-app for lower resolutions
-                    menucenas.slideUp();
+                    header.removeClass('bg-blue-shade-5 top-nav-fixed sticky').addClass('bg-transparent');
+                    menuApp.slideDown();  
                 }
+            } else {
+                header.removeClass('bg-transparent').addClass('bg-blue-shade-5 top-nav-fixed sticky');
+                menuApp.slideUp();
             }
 
-            // Check the scroll position when the page loads or refreshes
-            handleScroll();
-
-            // Add the scroll event listener to update styles on scroll
-            window.addEventListener('scroll', handleScroll);
-
-            // Also check window resize to adjust behavior if the width changes
-            window.addEventListener('resize', handleScroll);
+            lastScroll = currentScroll;
         }
+
+        handleScroll();
+
+        $(window).on('scroll', handleScroll);
+        $(window).on('resize', handleScroll);
     });
 });
