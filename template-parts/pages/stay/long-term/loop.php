@@ -42,24 +42,16 @@
 								<?php
 								endif;
 								?>
-								<div id="dialog-content" style="display:none;max-width:500px;">
-									<h2>Hello, world!</h2>
-									<p>
-										<input type="text" value="" />
-									</p>
-									<p>
-										Try hitting the tab key and notice how the focus stays within the dialog
-										itself.
-									</p>
-									<p>
-										To close dialog hit the esc button, click on the overlay or just click the
-										close button.
-									</p>
-									<p>
-										Element used to launch the modal would receive focus back after closing.
-									</p>
+								<div id="dialog-content" style="display:none;max-width:600px;">
+									<h3 class="text-title-h3 text-blue-shade-5 mb-8"><?php the_field( 'single_studio_form_title', 'options' ); ?></h3>
+									<?php
+									$form_sc = get_field( 'single_studio_form_form', 'options' );
+									if ( $form_sc ) :
+										echo do_shortcode( $form_sc );
+									endif;
+									?>
 								</div>
-								<button data-fancybox data-src="#dialog-content">Launch Dialog</button>
+								<button class="btn-internal btn-internal--shade-3 self-start mt-8 lg:mt-0" data-fancybox data-src="#dialog-content"><?php esc_html_e( 'Jetzt anfragen', 'aare' ); ?></button>
 							</div>
 						</article>
 						<?php
@@ -69,14 +61,16 @@
 							<div class="card-studio__content col-span-2 lg:col-span-4 flex flex-col xl:justify-between order-2 lg:order-1">
 								<h2 class="text-title-h2 text-blue-shade-1 invisible hidden lg:visible lg:block"><?php the_title(); ?></h2>
 								<p class="text-body text-blue-shade-1 pr-16 py-0 lg:py-6 xl:py-0"><?php echo esc_html( wp_strip_all_tags( get_the_content() ) ); ?></p>
-								<?php
-								$blink = get_field( 'booking_link' );
-								if ( $blink ) :
-								?>
-								<a class="btn-internal btn-internal--shade-3 self-start mt-8 lg:mt-0" href="mailto:<?php echo esc_attr( $blink ); ?>" ><?php esc_html_e( 'Jetzt anfragen', 'aare' ); ?></a>
-								<?php
-								endif;
-								?>
+								<div id="dialog-content" style="display:none;max-width:600px;">
+									<h3 class="text-title-h3 text-blue-shade-5 mb-8"><?php the_field( 'single_studio_form_title', 'options' ); ?></h3>
+									<?php
+									$form_sc = get_field( 'single_studio_form_form', 'options' );
+									if ( $form_sc ) :
+										echo do_shortcode( $form_sc );
+									endif;
+									?>
+								</div>
+								<button class="btn-internal btn-internal--shade-3 self-start mt-8 lg:mt-0" data-fancybox data-src="#dialog-content"><?php esc_html_e( 'Jetzt anfragen', 'aare' ); ?></button>
 							</div>
 							<div class="card-studio__swiper col-span-2 lg:col-start-6 lg:col-span-5 order-1 lg:order-2 mb-8 lg:mb-0 relative">
 								<h2 class="text-title-h2 text-blue-shade-1 text-center mb-6 lg:invisible lg:hidden"><?php the_title(); ?></h2>

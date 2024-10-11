@@ -36,7 +36,7 @@ window.addEventListener("load", () => {
 					],
 				},
 			},
-			hideScrollbar: false,
+			//hideScrollbar: false,
 		});
 	}
 }, false);
