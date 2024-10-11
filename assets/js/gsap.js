@@ -2,6 +2,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from 'lenis';
 
+// GSAP horizontal scroll effect (this will still run on the about page)
+gsap.registerPlugin(ScrollTrigger);
 
 // Initialize Lenis only if it's NOT the about page
 const lenis = new Lenis({
@@ -25,8 +27,6 @@ gsap.ticker.add((time) => {
 
 gsap.ticker.lagSmoothing(0);
 
-// GSAP horizontal scroll effect (this will still run on the about page)
-gsap.registerPlugin(ScrollTrigger);
 
 // Horizontal Scroll for .history-hospital
 const scrollContainer = document.querySelector('.history-hospital div');
@@ -69,84 +69,83 @@ gsap.to(scrollContainerBuilding, {
 
 if ( $(".page-template-page-home")[0] ) {
 
+	gsap.from(['.section-hero--title', '.section-hero--boat'], {
+		duration: 1,
+		y: 50,
+		stagger: 0.3,
+		opacity: 0,
+		autoAlpha: 0
+	});
 
-gsap.from(['.section-hero--title', '.section-hero--boat'], {
-	duration: 1,
-	y: 50,
-	stagger: 0.3,
-	opacity: 0,
-	autoAlpha: 0
-});
-
-/*gsap.from('.selector', {
-	autoAlpha: 0,
-	//opacity: 0,
-	x: 70,
-	//stagger: 0.2,
-	scrollTrigger: {
-		trigger: '.selector',
-		start: 'top 60%',
-		scrub: true,
-		end: '+=400',
-		markers: true
-		
-	},
-});*/
+	/*gsap.from('.selector', {
+		autoAlpha: 0,
+		//opacity: 0,
+		x: 70,
+		//stagger: 0.2,
+		scrollTrigger: {
+			trigger: '.selector',
+			start: 'top 60%',
+			scrub: true,
+			end: '+=400',
+			markers: true
+			
+		},
+	});*/
 }
 if ( $(".fade-in")[0] ) {
-var fadeInItems = gsap.utils.toArray('.fade-in');
+	var fadeInItems = gsap.utils.toArray('.fade-in');
 
-fadeInItems.forEach((fadeInItem) => {
-	gsap.from(fadeInItem, {
-		autoAlpha: 0,
-		y: 60,
-		//stagger: 0.3,
-		scrollTrigger: {
-			trigger: fadeInItem,
-			start: 'top 90%',
-			scrub: true,
-			end: '+=300',
-			//markers: true,
+	fadeInItems.forEach((fadeInItem) => {
+		gsap.from(fadeInItem, {
+			autoAlpha: 0,
+			y: 60,
 			//stagger: 0.3,
-		},
+			scrollTrigger: {
+				trigger: fadeInItem,
+				start: 'top 90%',
+				scrub: true,
+				end: '+=300',
+				//markers: true,
+				//stagger: 0.3,
+			},
 
+		});
 	});
-});
 }
 if ( $(".fade-in--noscroll")[0] ) {
-//console.log($(".fade-in--noscroll"));
-var fadeInItemsNs = gsap.utils.toArray('.fade-in--noscroll');
-gsap.from(fadeInItemsNs, {
-	autoAlpha: 0,
-	y: 50,
-	stagger: 0.3,
-	duration: 1,
-	/*scrollTrigger: {
-		trigger: fadeInItemsNs,
-		start: '50px 65%',
-		//scrub: true,
-		end: '+=400',
-		//markers: true
-		
-	},*/
-});
+	//console.log($(".fade-in--noscroll"));
+	var fadeInItemsNs = gsap.utils.toArray('.fade-in--noscroll');
+	gsap.from(fadeInItemsNs, {
+		autoAlpha: 0,
+		y: 50,
+		stagger: 0.3,
+		duration: 1,
+		/*scrollTrigger: {
+			trigger: fadeInItemsNs,
+			start: '50px 65%',
+			//scrub: true,
+			end: '+=400',
+			//markers: true
+			
+		},*/
+	});
 }
 
 if ( $(".fade-in--n")[0] ) {
-//console.log($(".fade-in--noscroll"));
-var fadeInItemsNs = gsap.utils.toArray('.fade-in--n');
-gsap.from(fadeInItemsNs, {
-	autoAlpha: 0,
-	y: 50,
-	stagger: 0.3,
-	duration: 1,
-	/*scrollTrigger: {
-		trigger: fadeInItemsNs,
-		start: '50px 65%',
-		//scrub: true,
-		end: '+=400',
-		//markers: true
-		
-	},*/
-});
+	//console.log($(".fade-in--noscroll"));
+	var fadeInItemsNs = gsap.utils.toArray('.fade-in--n');
+	gsap.from(fadeInItemsNs, {
+		autoAlpha: 0,
+		y: 50,
+		stagger: 0.3,
+		duration: 1,
+		/*scrollTrigger: {
+			trigger: fadeInItemsNs,
+			start: '50px 65%',
+			//scrub: true,
+			end: '+=400',
+			//markers: true
+			
+		},*/
+	});
 }
