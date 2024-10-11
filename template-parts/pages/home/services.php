@@ -3,7 +3,7 @@
         <div class="col-span-2 xl:col-span-12">
             <h2 class="section-services--title font-miller font-light text-2xl xl:text-5xl leading-7 w-[40%] xl:w-full mx-auto xl:mx-0 text-blue-shade-2 text-center fade-in"><?php echo get_field( 'services_title' ); ?></h2>
         </div>
-        <div class="col-span-2 xl:col-span-12 block xl:flex items-center mt-4 mb-5 xl:my-24 ">
+        <div class="col-span-2 xl:col-span-12 block xl:flex items-center mt-4 mb-5 xl:mt-24 xl:mb-12">
         <?php if( have_rows('services_services_list') ):
         while( have_rows('services_services_list') ) : the_row(); ?>
             <div class="section-services--item w-1/2 xl:w-1/4 flex flex-col xl:flex-row items-center float-left xl:float-none mb-11 min-h-16 xl:min-h-0 fade-in">
