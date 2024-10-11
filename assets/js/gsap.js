@@ -9,8 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	//wait until images, links, fonts, stylesheets, and js is loaded
 	window.addEventListener("load", () => {
 
-			document.documentElement.style.scrollBehavior = 'auto';
-
 			// Initialize Lenis only if it's NOT the about page
 			const lenis = new Lenis({
 				duration: 1.1,
