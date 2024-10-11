@@ -106,7 +106,7 @@
 						array(
 							'theme_location'  => 'copyright-menu',
 							'menu_id'         => 'copyright-menu',
-							'container_class' => 'copyright-menu-container pt-20 xl:pt-0',
+							'container_class' => 'copyright-menu-container pt-20 xl:pt-12',
 							'menu_class'      => 'copyright-menu-top-level',
 							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 							'fallback_cb'     => '__return_false',
