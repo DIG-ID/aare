@@ -5,7 +5,7 @@
 			$attractions = get_field( 'attractions' );
 			if ( $attractions ) :
 				?>
-				<div class="col-span-2 lg:col-span-12 relative mb-6 lg:mb-20  invisible fade-in--noscroll">
+				<div class="col-span-2 lg:col-span-12 relative mb-6 lg:mb-20 invisible fade-in--noscroll">
 					<div class="hidden invisible lg:block lg:visible">
 						<?php
 						$attractions_image = get_field( 'attractions_hero_image' );
