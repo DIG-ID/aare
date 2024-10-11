@@ -74,7 +74,7 @@
 							array(
 								'theme_location'  => 'main-mega-menu',
 								'menu_id'         => 'main-menu',
-								'container_class' => 'main-menu-container pt-20 xl:pt-0',
+								'container_class' => 'main-menu-container pt-28 xl:pt-0',
 								'menu_class'      => 'main-menu-top-level p-8',
 								'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 								'fallback_cb'     => '__return_false',
@@ -82,6 +82,32 @@
 							)
 						);
 						?>
+					</nav>
+					<nav class="side-menu__mobile">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location'  => 'secondary-menu',
+							'menu_id'         => 'secondary-menu',
+							'container_class' => 'secondary-menu-container pt-0',
+							'menu_class'      => 'secondary-menu-top-level',
+							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+							'fallback_cb'     => '__return_false',
+						)
+					);
+					?>
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location'  => 'copyright-menu',
+							'menu_id'         => 'copyright-menu',
+							'container_class' => 'copyright-menu-container pt-0',
+							'menu_class'      => 'copyright-menu-top-level',
+							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+							'fallback_cb'     => '__return_false',
+						)
+					);
+					?>
 					</nav>
 				</div>
 				<div id="menu-secondary-col" class="col-span-4 bg-blue-shade-3 pt-44 text-center hidden xl:block">

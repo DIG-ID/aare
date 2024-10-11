@@ -201,6 +201,8 @@
     /* Mobile Navigation */
     .mobile__nav
         position: fixed
+        overflow-y: scroll
+        overflow-x: hidden
         width: 100%
         height: 100%
         right: 0
@@ -210,7 +212,7 @@
 
         nav
             width: 100%
-            height: 100%
+            height: auto
             position: relative
 
             /* First level menu */
@@ -239,9 +241,9 @@
 
             /* Second level menu */
             ul.second-level
-                @apply pt-28 px-8 z-30
+                @apply pt-[5.85rem] px-8 z-30
                 width: 100%
-                height: 100%
+                height: 215%
                 background: $background-color-second-level
                 position: absolute
                 top: 0
@@ -276,7 +278,7 @@
                         background-repeat: no-repeat
                         background-size: contain
                         left: 0
-                        top: 0
+                        bottom: 0
                     
                     .arrow-back
                         width: 100%
@@ -321,3 +323,17 @@
                     margin-left: 10px
                     top: 50%
                     transform: translateY(-15%)
+
+        .secondary-menu-top-level, .copyright-menu-top-level
+            @apply p-8
+            .menu-item
+                text-align: left !important
+            .menu-item:not(:nth-child(1))
+                margin-top: 1rem !important
+
+        .main-menu-top-level
+            margin-bottom: 0.5rem !important
+
+    #header-main.menu-open
+        .header-wrapper
+            @apply bg-blue-shade-5
