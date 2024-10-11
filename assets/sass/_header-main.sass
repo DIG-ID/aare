@@ -328,11 +328,16 @@
                     transform: translateY(-15%)
 
         .secondary-menu-top-level, .copyright-menu-top-level
-            @apply p-8
             .menu-item
                 text-align: left !important
             .menu-item:not(:nth-child(1))
                 margin-top: 1rem !important
+        
+        .secondary-menu-top-level
+            @apply pt-8 px-8
+        
+        .copyright-menu-top-level
+            @apply p-8
 
         .main-menu-top-level
             margin-bottom: 0.5rem !important
