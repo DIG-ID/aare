@@ -34,22 +34,17 @@
 							<div class="card-studio__content col-span-2 lg:col-span-4 lg:col-start-7 flex flex-col xl:justify-between">
 								<h2 class="text-title-h2 text-blue-shade-1 invisible hidden lg:visible lg:block"><?php the_title(); ?></h2>
 								<p class="text-body text-blue-shade-1 pr-16 py-0 lg:py-6 xl:py-0"><?php echo esc_html( wp_strip_all_tags( get_the_content() ) ); ?></p>
-								<?php
-								$blink = get_field( 'booking_link' );
-								if ( $blink ) :
-								?>
-								<a class="btn-internal btn-internal--shade-3 self-start mt-8 lg:mt-0" href="mailto:<?php echo esc_attr( $blink ); ?>"><?php esc_html_e( 'Jetzt anfragen', 'aare' ); ?></a>
-								<?php
-								endif;
-								?>
-								<div id="dialog-content" style="display:none;max-width:600px;">
-									<h3 class="text-title-h3 text-blue-shade-5 mb-8"><?php the_field( 'single_studio_form_title', 'options' ); ?></h3>
-									<?php
-									$form_sc = get_field( 'single_studio_form_form', 'options' );
-									if ( $form_sc ) :
-										echo do_shortcode( $form_sc );
-									endif;
-									?>
+								<div id="dialog-content" style="display:none;max-width:700px;" class="rounded-[20px]">
+									<div class="dialog-content--form bg-white py-6 px-8">
+										<h3 class="text-title-h3 text-blue-shade-5 mb-8"><?php the_field( 'single_studio_form_title', 'options' ); ?></h3>
+										<?php
+										$form_sc = get_field( 'single_studio_form_form', 'options' );
+										if ( $form_sc ) :
+											echo do_shortcode( $form_sc );
+										endif;
+										?>
+									</div>
+
 								</div>
 								<button class="btn-internal btn-internal--shade-3 self-start mt-8 lg:mt-0" data-fancybox data-src="#dialog-content"><?php esc_html_e( 'Jetzt anfragen', 'aare' ); ?></button>
 							</div>
@@ -61,7 +56,7 @@
 							<div class="card-studio__content col-span-2 lg:col-span-4 flex flex-col xl:justify-between order-2 lg:order-1">
 								<h2 class="text-title-h2 text-blue-shade-1 invisible hidden lg:visible lg:block"><?php the_title(); ?></h2>
 								<p class="text-body text-blue-shade-1 pr-16 py-0 lg:py-6 xl:py-0"><?php echo esc_html( wp_strip_all_tags( get_the_content() ) ); ?></p>
-								<div id="dialog-content" style="display:none;max-width:600px;">
+								<div id="dialog-content" style="display:none;max-width:700px;">
 									<h3 class="text-title-h3 text-blue-shade-5 mb-8"><?php the_field( 'single_studio_form_title', 'options' ); ?></h3>
 									<?php
 									$form_sc = get_field( 'single_studio_form_form', 'options' );

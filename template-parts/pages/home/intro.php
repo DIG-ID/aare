@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <div class="theme-container grid grid-cols-2 md:grid-cols-12 gap-x-6 md:pt-40 md:pb-32">
+    <div class="theme-container grid grid-cols-2 md:grid-cols-12 gap-x-6 md:pt-28 md:pb-32">
         <div class="col-span-2 md:col-span-4 col-start-1 md:col-start-2 order-2 md:order-1">
         <?php 
             $hero_image = get_field('intro_image_2');
@@ -40,7 +40,7 @@
             } 
         ?>
         </div>
-        <div class="col-span-2 md:col-span-5 col-start-1 md:col-start-7 mt-12 md:mt-28 mb-12 md:mb-0 flex items-end order-1 md:order-2">
+        <div class="col-span-2 md:col-span-5 col-start-1 md:col-start-7 flex items-center order-1 md:order-2">
             <p class="section-intro--description-2 font-miller font-normal text-[14px] md:text-[24px] lg:text-[36px] leading-7 md:leading-10 lg:leading-[68px] text-blue-shade-5 md:max-w-[550px] w-[75%] md:w-full mx-auto md:mx-0 text-center md:text-left fade-in"><?php echo get_field( 'intro_description_2' ); ?></p>
         </div>
     </div>
