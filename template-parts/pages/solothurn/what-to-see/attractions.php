@@ -41,12 +41,27 @@
 							$img = get_sub_field( 'image' );
 							if ( $img ) :
 								echo wp_get_attachment_image( $img, 'full', false, array( 'class' => 'w-full object-cover rounded-t-[20px] lg:rounded-[20px] min-h-[274px] lg:h-auto' ) );
+							else :
+								?>
+								<span class="block bg-blue-shade-3 w-full lg:w-[542px] h-[300px] rounded-t-[20px] lg:rounded-[20px]"></span>
+								<?php
 							endif;
 							?>
 						</div>
 						<div class="flex flex-col justify-center lg:ml-28 px-8 pt-6 pb-14 lg:px-0 lg:py-0">
 							<h2 class="text-title-h3 text-blue-shade-5 mb-6"><?php the_sub_field( 'title' ); ?></h2>
 							<p class="text-body text-blue-shade-5 lg:max-w-[433px]"><?php the_sub_field( 'description' ); ?></p>
+							<?php 
+							$link = get_sub_field( 'link' );
+							if ( $link ) :
+								$link_url    = $link['url'];
+								$link_title  = $link['title'];
+								$link_target = $link['target'] ? $link['target'] : '_self';
+								?>
+								<a class="btn-external btn-external--shade-1 mt-6" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+								<?php
+							endif;
+							?>
 						</div>
 					</div>
 					<?php
