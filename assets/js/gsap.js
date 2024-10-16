@@ -32,39 +32,39 @@ gsap.ticker.lagSmoothing(0);
 const scrollContainer = document.querySelector('.history-hospital div');
 
 if (scrollContainer) {
-const scrollWidth = scrollContainer.scrollWidth;
-const viewportWidth = window.innerWidth;
+	const scrollWidth = scrollContainer.scrollWidth;
+	const viewportWidth = window.innerWidth;
 
-gsap.to(scrollContainer, {
-	x: -(scrollWidth - viewportWidth),
-	ease: 'none',
-	scrollTrigger: {
-		trigger: '.history-hospital',
-		start: 'bottom bottom', // Start horizontal scroll when the bottom of the section hits the bottom of the viewport
-		pin: true,
-		scrub: 1,
-		end: () => "+=" + scrollWidth // Sets the scrolling distance
-	}
-});
+	gsap.to(scrollContainer, {
+		x: -(scrollWidth - viewportWidth),
+		ease: 'none',
+		scrollTrigger: {
+			trigger: '.history-hospital',
+			start: 'bottom bottom', // Start horizontal scroll when the bottom of the section hits the bottom of the viewport
+			pin: true,
+			scrub: 1,
+			end: () => "+=" + scrollWidth // Sets the scrolling distance
+		}
+	});
 }
 
 // Horizontal Scroll for .history-building
 const scrollContainerBuilding = document.querySelector('.history-building div');
-if (scrollContainerBuilding) {
-const scrollWidthBuilding = scrollContainerBuilding.scrollWidth;
-const viewportWidthBuilding = window.innerWidth;
+	if (scrollContainerBuilding) {
+	const scrollWidthBuilding = scrollContainerBuilding.scrollWidth;
+	const viewportWidthBuilding = window.innerWidth;
 
-gsap.to(scrollContainerBuilding, {
-	x: -(scrollWidthBuilding - viewportWidthBuilding),
-	ease: 'none',
-	scrollTrigger: {
-		trigger: '.history-building',
-		start: 'bottom bottom', // Start horizontal scroll when the bottom of the section hits the bottom of the viewport
-		pin: true,
-		scrub: 1,
-		end: () => "+=" + scrollWidthBuilding // Sets the scrolling distance
-	}
-});
+	gsap.to(scrollContainerBuilding, {
+		x: -(scrollWidthBuilding - viewportWidthBuilding),
+		ease: 'none',
+		scrollTrigger: {
+			trigger: '.history-building',
+			start: 'bottom bottom', // Start horizontal scroll when the bottom of the section hits the bottom of the viewport
+			pin: true,
+			scrub: 1,
+			end: () => "+=" + scrollWidthBuilding // Sets the scrolling distance
+		}
+	});
 }
 
 if ( $(".page-template-page-home")[0] ) {

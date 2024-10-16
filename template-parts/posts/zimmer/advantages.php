@@ -1,8 +1,8 @@
-<section class="section-zimmer-advantages bg-blue-shade-3 py-24">
+<section class="section-zimmer-advantages bg-white py-24">
 	<div class="theme-container">
 		<div class="theme-grid">
 			<div class="col-span-2 lg:col-span-12">
-				<h2 class="text-title text-blue-shade-1 text-center mb-24 fade-in"><?php the_field( 'single_zimmer_value_title', 'options' ); ?></h2>
+				<h2 class="text-title text-blue-shade-5 text-center mb-24 fade-in"><?php the_field( 'single_zimmer_value_title', 'options' ); ?></h2>
 			</div>
 			<div class="col-span-2 lg:col-span-12 block lg:flex justify-between items-center mb-24 fade-in">
 				<?php
@@ -19,7 +19,7 @@
 								endif;
 								?>
 							</div>
-							<p class="text-body--serif text-blue-shade-1 !leading-8"><?php the_sub_field( 'description' ); ?></p>
+							<p class="text-body--serif text-blue-shade-5 !leading-8"><?php the_sub_field( 'description' ); ?></p>
 						</div>
 						<?php
 					endwhile;

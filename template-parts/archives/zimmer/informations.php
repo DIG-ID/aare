@@ -1,6 +1,6 @@
-<section class="section-zimmer-archive-info relative bg-blue-shade-3 lg:bg-white xl:pb-52">
+<section class="section-zimmer-archive-info relative bg-blue-shade-3 lg:bg-white">
 	<div class="theme-container">
-		<div class="theme-grid">
+		<div class="theme-grid fade-in">
 			<div class="zimmer-info col-span-2 lg:col-span-12 bg-blue-shade-3 flex flex-col lg:flex-row lg:justify-between lg:rounded-[20px] pt-14 pb-20 lg:pt-20 lg:pb-16 xl:pt-24 xl:pb-16 lg:px-10 xl:px-28">
 				<div class="w-full mb-20">
 					<h2 class="text-title-h2 text-blue-shade-1 mb-9 lg:mb-16 text-center lg:text-left"><?php the_field( 'archive_zimmer_info_equipment_title', 'options' );?></h2>
