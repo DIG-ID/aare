@@ -8,8 +8,9 @@
 				foreach ( $featured_posts as $post ) :
 					setup_postdata( $post );
 					if ( 0 === $i ) :
+						
 						?>
-						<article class="card-studio col-span-2 lg:col-start-2 lg:col-span-10 grid grid-cols-2 lg:grid-cols-10 mb-24 lg:mb-32 xl:mb-64 fade-in">
+						<article class="card-studio col-span-2 lg:col-start-2 lg:col-span-10 grid grid-cols-2 lg:grid-cols-10 mb-24 lg:mb-32 xl:mb-64 invisible fade-in--noscroll">
 							<div class="card-studio__swiper col-span-2 lg:col-span-5 mb-8 lg:mb-0 relative">
 								<h2 class="text-title-h2 text-blue-shade-1 text-center mb-6 lg:invisible lg:hidden"><?php the_title(); ?></h2>
 								<div class="swiper studioSwiper<?php echo esc_attr( $i ); ?>">

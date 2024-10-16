@@ -1,4 +1,4 @@
-<section class="section-history-hospital relative overflow-hidden block xl:hidden pb-28">
+<section class="section-history-hospital relative overflow-hidden block xl:hidden xl:invisible pb-28">
     <div class="theme-container">
         <div class="grid grid-cols-2 lg:grid-cols-12 gap-x-6">
             <div class="col-span-2 lg:col-span-10 col-start-1 lg:col-start-2 px-8 py-7 bg-blue-shade-1 rounded-t-[24px] relative">
