@@ -1,8 +1,8 @@
 <section class="section-team bg-blue-shade-5 text-blue-shade-1 pb-20 xl:pb-40">
     <div class="theme-container">
-        <h2 class="text-title text-center mb-6 lg:mb-20"><?php the_field( 'team_title' ); ?></h2>
+        <h2 class="text-title text-center mb-6 lg:mb-20 fade-in"><?php the_field( 'team_title' ); ?></h2>
         <div class="theme-grid">
-            <div class="col-span-2 lg:col-span-10 lg:col-start-2 bg-blue-shade-1 rounded-[20px] px-8 py-7 xl:px-28 xl:py-16">
+            <div class="col-span-2 lg:col-span-10 lg:col-start-2 bg-blue-shade-1 rounded-[20px] px-8 py-7 xl:px-28 xl:py-16 fade-in">
                 <?php
                 if( have_rows('team_list') ):
                     // Counter to track the index of each item
