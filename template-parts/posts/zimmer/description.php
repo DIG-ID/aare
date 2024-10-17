@@ -5,7 +5,7 @@
 				<div class=" fade-in">
 					<h1 class="text-title mb-7 text-blue-shade-5"><?php the_title(); ?></h1>
 					<div class="grid grid-cols-1 lg:grid-cols-5 gap-x-6  mb-10">
-						<p class="text-body text-blue-shade-5 col-span-1 lg:col-span-3"><?php echo esc_html( wp_strip_all_tags( get_the_content() ) ); ?></p>
+						<p class="text-body text-blue-shade-5 col-span-1 lg:col-span-3 mb-0 lg:mb-0"><?php echo esc_html( wp_strip_all_tags( get_the_content() ) ); ?></p>
 						<div class="col-span-1 lg:col-span-2">
 							<?php do_action( 'room_features' ); ?>
 						</div>
