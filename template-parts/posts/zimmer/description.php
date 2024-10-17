@@ -6,23 +6,10 @@
 					<h1 class="text-title mb-7 text-blue-shade-5"><?php the_title(); ?></h1>
 					<div class="grid grid-cols-1 lg:grid-cols-5 gap-x-6  mb-10">
 						<p class="text-body text-blue-shade-5 col-span-1 lg:col-span-3"><?php echo esc_html( wp_strip_all_tags( get_the_content() ) ); ?></p>
-						<?php
-						if ( have_rows( 'features' ) ) :
-							echo '<ul class="features col-span-1 lg:col-span-2">';
-							while ( have_rows( 'features' ) ) :
-								the_row();
-								?>
-								<li id="feature-item">
-									<p class="font-poppins font-normal text-sm text-blue-shade-5 tracking-[0.14px]"><span class="font-bold"><?php esc_html_e( 'Bett:', 'aare' ); ?></span> <?php the_sub_field( 'bed' ); ?></p>
-									<p class="font-poppins font-normal text-sm text-blue-shade-5 tracking-[0.14px]"><span class="font-bold"><?php esc_html_e( 'Fläche:', 'aare' ); ?></span> <?php the_sub_field( 'size' ); ?></p>
-									<p class="font-poppins font-normal text-sm text-blue-shade-5 tracking-[0.14px]"><span class="font-bold"><?php esc_html_e( 'Belegung:', 'aare' ); ?></span> <?php the_sub_field( 'capacity' ); ?></p>
-									<p class="font-poppins font-normal text-sm text-blue-shade-5 tracking-[0.14px]"><span class="font-bold"><?php esc_html_e( 'Aussicht:', 'aare' ); ?></span> <?php the_sub_field( 'view' ); ?></p>
-								</li>
-								<?php
-							endwhile;
-							echo '</ul>';
-						endif;
-						?>
+						<div class="col-span-1 lg:col-span-2">
+							<?php do_action( 'room_features' ); ?>
+						</div>
+						
 					</div>
 
 					<?php
