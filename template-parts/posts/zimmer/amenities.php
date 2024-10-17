@@ -7,6 +7,7 @@
 					<li>
 						<?php
 						if ( have_rows( 'amenities_lists_list_1' ) ) :
+							?><h3 class="font-poppins font-bold text-sm text-blue-shade-5 tracking-[0.14px] mb-3"> <?php the_field( 'amenities_lists_list_1_name' ); ?></h3><?php
 							echo '<ul class="amenities-list">';
 							while ( have_rows( 'amenities_lists_list_1' ) ) :
 								the_row();
@@ -15,6 +16,7 @@
 							echo '</ul>';
 						endif;
 						if ( have_rows( 'amenities_lists_list_2' ) ) :
+							?><h3 class="font-poppins font-bold text-sm text-blue-shade-5 tracking-[0.14px] mb-3"> <?php the_field( 'amenities_lists_list_2_name' ); ?></h3><?php
 							echo '<ul class="amenities-list">';
 							while ( have_rows( 'amenities_lists_list_2' ) ) :
 								the_row();
@@ -27,6 +29,7 @@
 					<li>
 						<?php
 						if ( have_rows( 'amenities_lists_list_3' ) ) :
+							?><h3 class="font-poppins font-bold text-sm text-blue-shade-5 tracking-[0.14px] mb-3"> <?php the_field( 'amenities_lists_list_3_name' ); ?></h3><?php
 							echo '<ul class="amenities-list">';
 							while ( have_rows( 'amenities_lists_list_3' ) ) :
 								the_row();
@@ -35,6 +38,7 @@
 							echo '</ul>';
 						endif;
 						if ( have_rows( 'amenities_lists_list_4' ) ) :
+							?><h3 class="font-poppins font-bold text-sm text-blue-shade-5 tracking-[0.14px] mb-3"> <?php the_field( 'amenities_lists_list_4_name' ); ?></h3><?php
 							echo '<ul class="amenities-list">';
 							while ( have_rows( 'amenities_lists_list_4' ) ) :
 								the_row();
@@ -47,6 +51,7 @@
 					<li>
 						<?php
 						if ( have_rows( 'amenities_lists_list_5' ) ) :
+							?><h3 class="font-poppins font-bold text-sm text-blue-shade-5 tracking-[0.14px] mb-3"> <?php the_field( 'amenities_lists_list_5_name' ); ?></h3><?php
 							echo '<ul class="amenities-list">';
 							while ( have_rows( 'amenities_lists_list_5' ) ) :
 								the_row();
@@ -55,6 +60,7 @@
 							echo '</ul>';
 						endif;
 						if ( have_rows( 'amenities_lists_list_6' ) ) :
+							?><h3 class="font-poppins font-bold text-sm text-blue-shade-5 tracking-[0.14px] mb-3"> <?php the_field( 'amenities_lists_list_6_name' ); ?></h3><?php
 							echo '<ul class="amenities-list">';
 							while ( have_rows( 'amenities_lists_list_6' ) ) :
 								the_row();

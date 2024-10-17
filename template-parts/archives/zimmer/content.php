@@ -19,6 +19,23 @@
 							<div class="card-studio__content col-span-2 lg:col-span-4 flex flex-col lg:justify-between order-2 lg:order-1">
 								<h2 class="text-title-h2 text-blue-shade-5 invisible hidden lg:visible lg:block"><?php the_title(); ?></h2>
 								<p class="text-body text-blue-shade-5 pr-16"><?php echo esc_html( wp_strip_all_tags( get_the_excerpt() ) ); ?></p>
+								<?php
+								if ( have_rows( 'features' ) ) :
+									echo '<ul class="features">';
+									while ( have_rows( 'features' ) ) :
+										the_row();
+										?>
+										<li id="feature-item">
+											<p class="font-poppins font-normal text-sm text-blue-shade-5 tracking-[0.14px]"><span class="font-bold"><?php esc_html_e( 'Bett:', 'aare' ); ?></span> <?php the_sub_field( 'bed' ); ?></p>
+											<p class="font-poppins font-normal text-sm text-blue-shade-5 tracking-[0.14px]"><span class="font-bold"><?php esc_html_e( 'Fläche:', 'aare' ); ?></span> <?php the_sub_field( 'size' ); ?></p>
+											<p class="font-poppins font-normal text-sm text-blue-shade-5 tracking-[0.14px]"><span class="font-bold"><?php esc_html_e( 'Belegung:', 'aare' ); ?></span> <?php the_sub_field( 'capacity' ); ?></p>
+											<p class="font-poppins font-normal text-sm text-blue-shade-5 tracking-[0.14px]"><span class="font-bold"><?php esc_html_e( 'Aussicht:', 'aare' ); ?></span> <?php the_sub_field( 'view' ); ?></p>
+										</li>
+										<?php
+									endwhile;
+									echo '</ul>';
+								endif;
+								?>
 								<a class="btn-internal btn-internal--shade-1 self-start mt-8 xl:mt-0" href="<?php the_permalink(); ?>"><?php esc_html_e( 'zu den Zimmern', 'aare' ); ?></a>
 							</div>
 							<div class="card-studio__swiper col-span-2 lg:col-start-6 lg:col-span-5 order-1 lg:order-2 mb-8 lg:mb-0 <?php echo esc_attr( $fade_class ); ?>">
@@ -46,6 +63,23 @@
 							<div class="card-studio__content col-span-2 lg:col-span-4 lg:col-start-7 flex flex-col lg:justify-between">
 								<h2 class="text-title-h2 text-blue-shade-5 invisible hidden lg:visible lg:block"><?php the_title(); ?></h2>
 								<p class="text-body text-blue-shade-5 pr-16"><?php echo esc_html( wp_strip_all_tags( get_the_excerpt() ) ); ?></p>
+								<?php
+								if ( have_rows( 'features' ) ) :
+									echo '<ul class="features">';
+									while ( have_rows( 'features' ) ) :
+										the_row();
+										?>
+										<li id="feature-item">
+											<p class="font-poppins font-normal text-sm text-blue-shade-5 tracking-[0.14px]"><span class="font-bold"><?php esc_html_e( 'Bett:', 'aare' ); ?></span> <?php the_sub_field( 'bed' ); ?></p>
+											<p class="font-poppins font-normal text-sm text-blue-shade-5 tracking-[0.14px]"><span class="font-bold"><?php esc_html_e( 'Fläche:', 'aare' ); ?></span> <?php the_sub_field( 'size' ); ?></p>
+											<p class="font-poppins font-normal text-sm text-blue-shade-5 tracking-[0.14px]"><span class="font-bold"><?php esc_html_e( 'Belegung:', 'aare' ); ?></span> <?php the_sub_field( 'capacity' ); ?></p>
+											<p class="font-poppins font-normal text-sm text-blue-shade-5 tracking-[0.14px]"><span class="font-bold"><?php esc_html_e( 'Aussicht:', 'aare' ); ?></span> <?php the_sub_field( 'view' ); ?></p>
+										</li>
+										<?php
+									endwhile;
+									echo '</ul>';
+								endif;
+								?>
 								<a class="btn-internal btn-internal--shade-1 self-start mt-8 xl:mt-0" href="<?php the_permalink(); ?>"><?php esc_html_e( 'zu den Zimmern', 'aare' ); ?></a>
 							</div>
 						</article>
