@@ -70,7 +70,7 @@ window.addEventListener("load", () => {
 	if ( $(".single-zimmer")[0] ) {
 		var zimmerSwiperThumbs = new Swiper(".zimmerSwiperThumbs", {
 			slidesPerView: 6,
-			spaceBetween: 16,
+			spaceBetween: 0,
 			lazy: true,
 			grid: {
 				fill: 'row',
