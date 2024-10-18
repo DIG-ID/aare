@@ -17,10 +17,9 @@
 							foreach ( $gallery as $gallery_id ) :
 								?>
 								<div class="col-span-1 lg:col-span-2">
-									<a href="<?php echo esc_url( wp_get_attachment_image_url( $gallery_id, 'full' ) ); ?>" data-fancybox="gallery-<?php echo esc_attr( strtolower( get_sub_field( 'title' ) ) ); ?>" data-caption="<?php echo esc_html( wp_get_attachment_caption( $gallery_id ) ); ?>" data-srcset="<?php echo esc_attr( wp_get_attachment_image_srcset( $gallery_id ) ) ;?>" data-sizes="<?php echo esc_attr( wp_get_attachment_image_sizes( $gallery_id ) ); ?>">
+									<a href="<?php echo esc_url( wp_get_attachment_image_url( $gallery_id, 'full' ) ); ?>" data-fancybox="gallery-<?php echo esc_attr( strtolower( get_sub_field( 'title' ) ) ); ?>" data-caption="<?php echo esc_html( wp_get_attachment_caption( $gallery_id ) ); ?>" >
 										<?php echo wp_get_attachment_image( $gallery_id, 'thumbnail', false, array( 'class' => 'w-full object-cover' ) ); ?>
 									</a>
-									
 								</div>
 								<?php
 							endforeach;

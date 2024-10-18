@@ -10,9 +10,9 @@
 				$pimage = get_field( 'philosophie_image' );
 				if ( $pimage ) :
 					echo wp_get_attachment_image( $pimage, 'full', false, array( 'class' => 'w-full object-cover rounded-[20px] mb-10 lg:mb-0' ) );
-                else:
-                    echo '<img src="https://placehold.co/520x350/3E6C8A/FFF" class="w-full object-cover rounded-[20px] mb-10 lg:mb-0">';
-                endif;
+					else:
+						echo '<img src="https://placehold.co/520x350/3E6C8A/FFF" class="w-full object-cover rounded-[20px] mb-10 lg:mb-0">';
+					endif;
 				?>
 			</div>
 		</div>

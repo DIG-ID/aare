@@ -10,7 +10,7 @@ if ( have_posts() ) :
 		do_action( 'before_main_content' );
 			get_template_part( 'template-parts/pages/page-header' );
 			get_template_part( 'template-parts/pages/history-architects/history-hospital' );
-			get_template_part( 'template-parts/pages/history-architectst/history-hospital-mobile' );
+			get_template_part( 'template-parts/pages/history-architects/history-hospital-mobile' );
 			get_template_part( 'template-parts/pages/history-architects/history-building' );
 			get_template_part( 'template-parts/pages/history-architects/history-building-mobile' );
 			get_template_part( 'template-parts/pages/history-architects/architecture' );
