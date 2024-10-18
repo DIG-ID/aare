@@ -18,7 +18,7 @@
                 <div class="offers-box col-span-2 <?php echo $col_span_class; ?> rounded-[22px] bg-blue-shade-1 mb-16 lg:mb-0 fade-in">
                     <?php 
                         $offer_img = get_sub_field('image');
-                        $size = 'full';
+                        $size = 'offer-image';
                         if( $offer_img ) {
                             echo wp_get_attachment_image( $offer_img, $size, false, array( 'class' => 'w-full rounded-t-[22px]' ) );
                         } 

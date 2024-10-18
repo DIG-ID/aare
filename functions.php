@@ -27,6 +27,8 @@ function aare_theme_setup() {
 
 	add_image_size( 'long-term-image', 975, 650, array( 'center', 'center' ) );
 
+	add_image_size( 'offer-image', 625, 345, array( 'center', 'center' ) );
+
 }
 
 add_action( 'after_setup_theme', 'aare_theme_setup' );
