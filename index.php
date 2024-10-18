@@ -5,7 +5,7 @@ get_template_part( 'template-parts/pages/page-header' );
 ?>
 <div class="section-news-content pb-28">
 	<div class="theme-container">
-		<div class="theme-grid gap-y-6">
+		<div class="theme-grid gap-6">
 			<?php
 			if ( have_posts() ) :
 				$i = 0;
@@ -13,7 +13,7 @@ get_template_part( 'template-parts/pages/page-header' );
 					the_post();
 					if ( 0 === $i || is_sticky() ) :
 						?>
-						<article id="post-<?php the_ID(); ?>" <?php post_class( 'card-news card-news--sticky col-span-2 lg:col-span-8 bg-white rounded-[20px] overflow-hidden  invisible fade-in--noscroll' ); ?>>
+						<article id="post-<?php the_ID(); ?>" <?php post_class( 'card-news card-news--sticky col-span-2 lg:col-span-8 bg-white rounded-[20px] overflow-hidden invisible fade-in--noscroll' ); ?>>
 							<?php
 							if ( has_post_thumbnail() ) :
 								the_post_thumbnail( 'full', array( 'class' => 'w-full object-cover h-[275px] lg:h-[345px]' ) );
