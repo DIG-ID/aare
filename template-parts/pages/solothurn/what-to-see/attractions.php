@@ -58,7 +58,7 @@
 								$link_title  = $link['title'];
 								$link_target = $link['target'] ? $link['target'] : '_self';
 								?>
-								<a class="btn-external btn-external--shade-1 mt-6 w-full flex items-center justify-between" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><span class="whitespace-normal"><?php echo esc_html( $link_title ); ?></span></a>
+								<a class="btn-external btn-external--shade-1 mt-6 w-full flex items-center justify-between lg:justify-start" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><span class="whitespace-normal"><?php echo esc_html( $link_title ); ?></span></a>
 								<?php
 							endif;
 							?>
