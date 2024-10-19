@@ -1,4 +1,4 @@
-<section class="section-perfect-for-content pb-0">
+<section class="section-perfect-for-content pb-0 -mt-[2px]">
 	<div class="theme-container !px-0 lg:!px-6">
 		<div class="block lg:hidden min-h-20 bg-blue-shade-5 w-full -mt-1"></div>
 		<div class="theme-grid">

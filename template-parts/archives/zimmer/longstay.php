@@ -1,4 +1,4 @@
-<section class="section-langzeitaufenthalt-teaser text-blue-shade-5 pt-0 pb-11 lg:py-40">
+<section class="section-langzeitaufenthalt-teaser text-blue-shade-5 pt-9 pb-11 lg:py-40">
 	<div class="theme-container">
 		<h2 class="text-title text-center mb-6 lg:mb-20 fade-in"><?php the_field( 'archive_zimmer_langzeitaufenthalt_title', 'options' ); ?></h2>
 		<div class="theme-grid">

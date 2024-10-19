@@ -1,4 +1,4 @@
-<section class="section-long-term bg-blue-shade-5 xl:pb-96">
+<section class="section-long-term bg-blue-shade-5 pt-6 lg:pt-0 xl:pb-96 -mt-[2px]">
 	<div class="theme-container">
 		<div class="theme-grid">
 			<?php
