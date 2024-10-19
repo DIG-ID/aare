@@ -27,6 +27,14 @@ gsap.ticker.add((time) => {
 
 gsap.ticker.lagSmoothing(0);
 
+// Back to top scroll functionality
+document.getElementById('back-to-top').addEventListener('click', function (event) {
+    event.preventDefault();
+	lenis.scrollTo(0, { offset: 0, duration: 2.5 });
+});
+
+
+
 
 // Horizontal Scroll for .history-hospital
 const scrollContainer = document.querySelector('.history-hospital div');
