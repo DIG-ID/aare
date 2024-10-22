@@ -1,5 +1,5 @@
 <section class="section-amenities bg-blue-shade-1 pt-10">
-	<div class="theme-container fade-in">
+	<div class="theme-container">
 		<div class="theme-grid px-0 lg:px-6 xl:px-0">
 			<div class="col-span-2 lg:col-span-7">
 				<h2 class="text-title-h3 text-blue-shade-5 mb-10"><?php the_field( 'amenities_title' ); ?></h2>

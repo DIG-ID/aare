@@ -31,15 +31,12 @@
 				endif;
 				?>
 			</div>
-			<div class="col-span-2 lg:col-span-12 pt-9">
-				<div class="w-full text-center flex flex-col items-center justify-center">
-					<!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Trustpilot.svg" class="mx-auto w-[186px] lg:w-[186px] mb-6" alt="Tustpilot" title="Trustpilot" /> -->
-					<!-- TrustYou Widget -->
-					<!-- <div class="bg-white py-3 px-4 rounded-[22px]"> -->
-						<iframe src="https://api.trustyou.com/hotels/b31b1d45-89ea-4497-a19f-5bb0d187b447/trust_score.html?key=70d7d02a-d79a-45f4-8908-d2e7454de0e8&size=m&scale=5" scrolling="no" height="56" width="205" style="border:none;"></iframe>
-					<!-- </div> -->
-					<!-- /TrustYou Widget -->
+			<div class="col-span-2 lg:col-span-12 pt-9 flex flex-col items-center justify-center">
+				<!-- TrustYou Widget -->
+				<div class="bg-white p-6 pb-5 rounded-[22px] flex flex-col items-center justify-center ">
+					<iframe src="https://api.trustyou.com/hotels/b31b1d45-89ea-4497-a19f-5bb0d187b447/trust_score.html?key=70d7d02a-d79a-45f4-8908-d2e7454de0e8&size=m&scale=5" scrolling="no" height="56" width="135" style="border:none;"></iframe>
 				</div>
+				<!-- /TrustYou Widget -->
 			</div>
 		</div>
 	</div>

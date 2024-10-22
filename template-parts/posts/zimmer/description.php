@@ -2,7 +2,7 @@
 	<div class="theme-container">
 		<div class="theme-grid">
 			<div class="col-span-2 lg:col-span-7 order-2 lg:order-1">
-				<div class=" fade-in">
+				<div class="">
 					<h1 class="text-title mb-7 text-blue-shade-5"><?php the_title(); ?></h1>
 					<div class="grid grid-cols-1 lg:grid-cols-5 gap-x-6  mb-10">
 						<p class="text-body text-blue-shade-5 col-span-1 lg:col-span-3 mb-10 lg:mb-0"><?php echo esc_html( wp_strip_all_tags( get_the_content() ) ); ?></p>
@@ -33,7 +33,7 @@
 				$gallery = get_field( 'gallery' );
 				if ( $gallery ) :
 					?>
-					<div class="swiper zimmerSwiperThumbs fade-in">
+					<div class="swiper zimmerSwiperThumbs">
 						<div class="swiper-wrapper">
 							<?php
 							foreach ( $gallery as $gallery_id ) :
@@ -52,6 +52,6 @@
 				?>
 			</div>
 		</div>
-		<span class="w-full h-[1px] bg-blue-shade-3 block mt-10 fade-in"></span>
+		<span class="w-full h-[1px] bg-blue-shade-3 block mt-10"></span>
 	</div>
 </section>

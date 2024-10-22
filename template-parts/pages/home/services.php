@@ -1,7 +1,7 @@
 <section class="section-services bg-blue-shade-3 pt-24 pb-28 relative overflow-hidden">
     <div class="theme-container grid grid-cols-2 xl:grid-cols-12 gap-x-6 fade-in">
         <div class="col-span-2 xl:col-span-12">
-            <h2 class="section-services--title font-miller font-light text-2xl xl:text-5xl leading-7 w-[40%] xl:w-full mx-auto xl:mx-0 text-blue-shade-2 text-center"><?php echo get_field( 'services_title' ); ?></h2>
+            <h2 class="section-services--title font-miller font-light text-2xl xl:text-5xl leading-7 w-[45%] xl:w-full mx-auto xl:mx-0 text-blue-shade-2 text-center mb-6 xl:mb-0"><?php echo get_field( 'services_title' ); ?></h2>
         </div>
         <div class="col-span-2 xl:col-span-12 block xl:flex items-center mt-4 mb-5 xl:mt-24 xl:mb-12">
         <?php if( have_rows('services_services_list') ):

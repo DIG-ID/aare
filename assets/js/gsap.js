@@ -157,3 +157,28 @@ if ( $(".fade-in--n")[0] ) {
 		},*/
 	});
 }
+
+// Fixec Booking Button
+const fixedButton = document.querySelector('.fixed-booking-button');
+lenis.on('scroll', (e) => {
+  const scrollPosition = lenis.scroll;
+  const triggerPosition = 300; // Change this to where you want the button to start fading in
+  if (scrollPosition > triggerPosition) {
+    gsap.to(fixedButton, {
+      //opacity: 0,
+			autoAlpha: 1,
+      y: 0,
+      duration: 0.6,
+      //ease: 'power2.out',
+    });
+  } else {
+    // If you want the button to fade out when scrolling back up
+    gsap.to(fixedButton, {
+      opacity: 0,
+			autoAlpha: 0,
+      y: 50,
+      duration: 0.6,
+      //ease: 'power2.out',
+    });
+  }
+});
