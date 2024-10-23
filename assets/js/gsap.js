@@ -162,7 +162,7 @@ if ( $(".fade-in--n")[0] ) {
 const fixedButton = document.querySelector('.fixed-booking-button');
 lenis.on('scroll', (e) => {
   const scrollPosition = lenis.scroll;
-  const triggerPosition = 300; // Change this to where you want the button to start fading in
+  const triggerPosition = 900; // Change this to where you want the button to start fading in
   if (scrollPosition > triggerPosition) {
     gsap.to(fixedButton, {
       //opacity: 0,

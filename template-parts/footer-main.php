@@ -72,7 +72,7 @@
 $booking_url = get_field( 'booking_url', 'options' );
 if ( $booking_url ) :
 	?>
-	<div class="fixed z-50 left-1/2 -translate-x-1/2 bottom-16 lg:hidden lg:invisible">
+	<div class="fixed z-50 left-1/2 -translate-x-1/2 bottom-10 lg:hidden lg:invisible">
 		<div class="fixed-booking-button invisible">
 			<a href="<?php echo esc_url( $booking_url ); ?>" target="_blank" class="btn-header btn-header--booking uppercase"><?php esc_html_e( 'Jetzt Buchen', 'aare' ); ?></a>
 		</div>
