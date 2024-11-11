@@ -38,7 +38,7 @@
 									<div class="dialog-content--form bg-white py-6 px-8">
 										<h3 class="text-title-h3 text-blue-shade-5 mb-8"><?php the_field( 'single_studio_form_title', 'options' ); ?></h3>
 										<?php
-										$form_sc = get_field( 'contact_from', get_th_ID() );
+										$form_sc = get_field( 'contact_from', get_the_ID() );
 										if ( $form_sc ) :
 											echo do_shortcode( $form_sc );
 										endif;
@@ -59,7 +59,7 @@
 								<div id="dialog-content" style="display:none;max-width:700px;">
 									<h3 class="text-title-h3 text-blue-shade-5 mb-8"><?php the_field( 'single_studio_form_title', 'options' ); ?></h3>
 									<?php
-									$form_sc = get_field( 'contact_from', get_th_ID() );
+									$form_sc = get_field( 'contact_from', get_the_ID() );
 									if ( $form_sc ) :
 										echo do_shortcode( $form_sc );
 									endif;
