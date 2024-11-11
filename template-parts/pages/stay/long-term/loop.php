@@ -40,6 +40,7 @@
 										<?php
 										$form_sc = get_field( 'contact_from', get_the_ID() );
 										if ( $form_sc ) :
+											var_dump($form_sc);
 											echo do_shortcode( $form_sc );
 										endif;
 										?>
@@ -59,9 +60,10 @@
 								<div id="dialog-content" style="display:none;max-width:700px;">
 									<h3 class="text-title-h3 text-blue-shade-5 mb-8"><?php the_field( 'single_studio_form_title', 'options' ); ?></h3>
 									<?php
-									$form_sc = get_field( 'contact_from', get_the_ID() );
-									if ( $form_sc ) :
-										echo do_shortcode( $form_sc );
+									$form_sc_2 = get_field( 'contact_from', get_the_ID() );
+									if ( $form_sc_2 ) :
+										var_dump($form_sc_2);
+										echo do_shortcode( $form_sc_2 );
 									endif;
 									?>
 								</div>
