@@ -35,6 +35,10 @@
         </mj-text>
         <mj-divider border-width="1px" border-style="solid" border-color="lightgrey" />
         <mj-table cellpadding="5" cellspacing="0" width="100%" color="#0E324A">
+ 					<tr>
+            <th align="left" style="font-weight: bold;">Studio</th>
+            <td>[_post_title]</td>
+          </tr>
           <tr>
             <th align="left" style="font-weight: bold;">Vorname</th>
             <td>[your-name]</td>
