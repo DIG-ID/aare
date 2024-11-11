@@ -5,10 +5,9 @@
 			$studios_args = array(
 				'post_type'   => 'studios',
 				'post_status' => 'published',
-				'order'       => 'ASC',
+				'order'       => 'DESC',
 				'order_by'    => 'date',
 			);
-
 			$the_studios = new WP_Query( $studios_args );
 
 			if ( $the_studios->have_posts() ) :
@@ -47,7 +46,10 @@
 										<h3 class="text-title-h3 text-blue-shade-5 mb-8"><?php the_field( 'single_studio_form_title', 'options' ); ?></h3>
 										<?php
 										$form_sc = get_field( 'contact_from', get_the_ID() );
+										$post_studio_id = get_the_ID();
 										if ( $form_sc ) :
+											var_dump($form_sc);
+											var_dump($post_studio_id);
 											echo do_shortcode( $form_sc );
 										endif;
 										?>
@@ -68,7 +70,10 @@
 									<h3 class="text-title-h3 text-blue-shade-5 mb-8"><?php the_field( 'single_studio_form_title', 'options' ); ?></h3>
 									<?php
 									$form_sc_2 = get_field( 'contact_from', get_the_ID() );
+									$post_studio_id = get_the_ID();
 									if ( $form_sc_2 ) :
+										var_dump($form_sc_2 ); 
+										var_dump($post_studio_id);
 										echo do_shortcode( $form_sc_2 );
 									endif;
 									?>
