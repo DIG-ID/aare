@@ -2,18 +2,11 @@
 	<div class="theme-container">
 		<div class="theme-grid">
 			<?php
-			$studios_args = array(
-				'post_type'   => 'studios',
-				'post_status' => 'published',
-				'order'       => 'DESC',
-				'order_by'    => 'date',
-			);
-			$the_studios = new WP_Query( $studios_args );
-
-			if ( $the_studios->have_posts() ) :
+			$featured_posts = get_field( 'studios' );
+			if ( $featured_posts ) :
 				$i = 0;
-				while ( $the_studios->have_posts() ) :
-					$the_studios->the_post();
+				foreach ( $featured_posts as $post ) :
+					setup_postdata( $post );
 					if ( 0 === $i ) :
 						?>
 						<article class="card-studio col-span-2 lg:col-start-2 lg:col-span-10 grid grid-cols-2 lg:grid-cols-10 mb-24 lg:mb-32 xl:mb-64 invisible fade-in--noscroll">
@@ -45,11 +38,8 @@
 									<div class="dialog-content--form bg-white py-6 px-8">
 										<h3 class="text-title-h3 text-blue-shade-5 mb-8"><?php the_field( 'single_studio_form_title', 'options' ); ?></h3>
 										<?php
-										$form_sc = get_field( 'contact_from', get_the_ID() );
-										$post_studio_id = get_the_ID();
+										$form_sc = get_field( 'single_studio_form_form', 'options' );
 										if ( $form_sc ) :
-											var_dump($form_sc);
-											var_dump($post_studio_id);
 											echo do_shortcode( $form_sc );
 										endif;
 										?>
@@ -66,19 +56,16 @@
 							<div class="card-studio__content col-span-2 lg:col-span-4 flex flex-col xl:justify-between order-2 lg:order-1">
 								<h2 class="text-title-h2 text-blue-shade-1 invisible hidden lg:visible lg:block"><?php the_title(); ?></h2>
 								<p class="text-body text-blue-shade-1 pr-16 py-0 lg:py-6 xl:py-0"><?php echo esc_html( wp_strip_all_tags( get_the_content() ) ); ?></p>
-								<div id="dialog-content" style="display:none;max-width:700px;">
+								<div id="dialog-content-2" style="display:none;max-width:700px;">
 									<h3 class="text-title-h3 text-blue-shade-5 mb-8"><?php the_field( 'single_studio_form_title', 'options' ); ?></h3>
 									<?php
-									$form_sc_2 = get_field( 'contact_from', get_the_ID() );
-									$post_studio_id = get_the_ID();
-									if ( $form_sc_2 ) :
-										var_dump($form_sc_2 ); 
-										var_dump($post_studio_id);
-										echo do_shortcode( $form_sc_2 );
+									$form_sc = get_field( 'single_studio_form_form', 'options' );
+									if ( $form_sc ) :
+										echo do_shortcode( $form_sc );
 									endif;
 									?>
 								</div>
-								<button class="btn-internal btn-internal--shade-3 self-start mt-8 lg:mt-0" data-fancybox data-src="#dialog-content"><?php esc_html_e( 'Jetzt anfragen', 'aare' ); ?></button>
+								<button class="btn-internal btn-internal--shade-3 self-start mt-8 lg:mt-0" data-fancybox data-src="#dialog-content-2"><?php esc_html_e( 'Jetzt anfragen', 'aare' ); ?></button>
 							</div>
 							<div class="card-studio__swiper col-span-2 lg:col-start-6 lg:col-span-5 order-1 lg:order-2 mb-8 lg:mb-0 relative">
 								<h2 class="text-title-h2 text-blue-shade-1 text-center mb-6 lg:invisible lg:hidden"><?php the_title(); ?></h2>
@@ -105,9 +92,9 @@
 						<?php
 					endif;
 					$i++;
-				endwhile;
+				endforeach;
+				wp_reset_postdata();
 			endif;
-			wp_reset_postdata();
 			?>
 		</div>
 	</div>
