@@ -54,7 +54,7 @@
 			<?php
 				$y = date( 'Y' );
 				printf(
-					esc_html__( 'Urheberrecht &copy; %d Hotel an der den Aare', 'aare' ),
+					esc_html__( 'Urheberrecht &copy; %d Hotel an der Aare', 'aare' ),
 					esc_html( $y )
 				);
 				?>
