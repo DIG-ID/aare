@@ -40,7 +40,7 @@
 							<?php
 							$img = get_sub_field( 'image' );
 							if ( $img ) :
-								echo wp_get_attachment_image( $img, 'full', false, array( 'class' => 'w-full object-cover rounded-t-[20px] lg:rounded-[20px] min-h-[274px] lg:h-auto' ) );
+								echo wp_get_attachment_image( $img, 'full', false, array( 'class' => 'w-full object-cover rounded-t-[20px] lg:rounded-[20px] min-h-[274px] lg:h-auto lg:max-w-[542px]' ) );
 							else :
 								?>
 								<span class="block bg-blue-shade-3 w-full lg:w-[542px] h-[300px] rounded-t-[20px] lg:rounded-[20px]"></span>
