@@ -2,7 +2,7 @@
 	<div class="theme-container">
 		<div class="theme-grid">
 			<div class="col-span-2 lg:col-span-6 lg:col-start-2">
-				<h1 class="text-title text-blue-shade-5 mb-6"><?php the_title(); ?></h1>
+				<h1 class="text-title text-blue-shade-2 mb-6"><?php the_title(); ?></h1>
 				<div class="section-post-content-wrapper invisible fade-in--noscroll">
 					<?php the_content(); ?>
 				</div>
