@@ -29,8 +29,8 @@
 						<div class="text-body"><?php the_field( 'check_in_description' ); ?></div>
 					</div>
 					<div>
-						<h2 class="text-title-h3 mb-4 xl:mb-7"><?php the_field( 'check_in_title' ); ?></h2>
-						<div class="text-body"><?php the_field( 'check_in_description' ); ?></div>
+						<h2 class="text-title-h3 mb-4 xl:mb-7"><?php the_field( 'check_out_title' ); ?></h2>
+						<div class="text-body"><?php the_field( 'check_out_description' ); ?></div>
 					</div>
 				</div>
 				<?php
