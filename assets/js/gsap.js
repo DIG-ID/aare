@@ -55,7 +55,7 @@ if (scrollContainer) {
 		}
 	});
 }
-
+ 
 // Horizontal Scroll for .history-building
 const scrollContainerBuilding = document.querySelector('.history-building div');
 	if (scrollContainerBuilding) {

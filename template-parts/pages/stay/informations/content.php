@@ -22,7 +22,7 @@
 			endif;
 			$check = get_field( 'check' );
 			if ( $check ) :
-				?>
+				?> 
 				<div class="card-service w-full xl:w-[calc(50%-12px)] bg-white py-12 xl:py-20 pl-9 pr-14 xl:px-28 rounded-[20px] order-2 xl:order-3">
 					<div class="mb-12 xl:mb-16">
 						<h2 class="text-title-h3 mb-4 xl:mb-7"><?php the_field( 'check_in_title' ); ?></h2>
