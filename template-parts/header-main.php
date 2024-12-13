@@ -84,30 +84,33 @@
 						?>
 					</nav>
 					<nav class="side-menu__mobile">
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location'  => 'secondary-menu',
-							'menu_id'         => 'secondary-menu',
-							'container_class' => 'secondary-menu-container pt-0',
-							'menu_class'      => 'secondary-menu-top-level',
-							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-							'fallback_cb'     => '__return_false',
-						)
-					);
-					?>
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location'  => 'copyright-menu',
-							'menu_id'         => 'copyright-menu',
-							'container_class' => 'copyright-menu-container pt-0',
-							'menu_class'      => 'copyright-menu-top-level',
-							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-							'fallback_cb'     => '__return_false',
-						)
-					);
-					?>
+						<?php
+						wp_nav_menu(
+							array(
+								'theme_location'  => 'secondary-menu',
+								'menu_id'         => 'secondary-menu',
+								'container_class' => 'secondary-menu-container pt-0',
+								'menu_class'      => 'secondary-menu-top-level',
+								'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+								'fallback_cb'     => '__return_false',
+							)
+						);
+						?>
+						<?php
+						wp_nav_menu(
+							array(
+								'theme_location'  => 'copyright-menu',
+								'menu_id'         => 'copyright-menu',
+								'container_class' => 'copyright-menu-container pt-0',
+								'menu_class'      => 'copyright-menu-top-level',
+								'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+								'fallback_cb'     => '__return_false',
+							)
+						);
+						?>
+						<div class="side-menu__mobile-socials flex justify-start items-center pl-8">
+							<?php do_action( 'socials' ); ?>
+						</div>
 					</nav>
 				</div>
 				<div id="menu-secondary-col" class="col-span-4 bg-blue-shade-3 pt-44 text-center hidden xl:block">
@@ -139,6 +142,9 @@
 						)
 					);
 					?>
+					<div class="menu-secondary-socials flex justify-center items-center">
+						<?php do_action( 'socials' ); ?>
+					</div>
 				</div>
 			</div>
 		</div>

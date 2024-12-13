@@ -29,6 +29,9 @@
 			endif;
 			?>
 		</div>
+		<div class="col-span-2 lg:col-span-3 flex justify-center items-center pt-12">
+			<?php do_action( 'socials' ); ?>
+		</div>
 	</section>
 	<section class="footer-bunchen bg-blue-shade-5 text-blue-shade-1 pt-16 pb-32 lg:py-32">
 		<div class="theme-container">

@@ -59,8 +59,16 @@
 						</article>
 						<?php
 					endwhile;
-					wp_reset_postdata();
+				else :
+					?>
+					<div class="card-job card-job--empty col-span-2 lg:col-start-3 lg:col-span-6 grid-item bg-white rounded-[20px]">
+						<div class="card-job-content px-16 py-14 flex flex-col justify-between h-full text-center">
+							<h2 class="text-title-h3 text-blue-shade-5"><?php esc_html_e( 'Zur Zeit ist unser Team komplett !', 'aare' ) ?></h2>
+						</div>
+					</div>
+					<?php
 				endif;
+				wp_reset_postdata();
 				?>
 			</div>
 		</div>
