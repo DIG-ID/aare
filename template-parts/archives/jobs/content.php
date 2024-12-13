@@ -12,9 +12,11 @@
 							'hide_empty' => true,
 						)
 					);
-					foreach ( $job_positions as $job_position ) :
-						echo '<button class="button" data-filter=".' . esc_attr( $job_position->slug ) . '">' . esc_html( $job_position->name ) . '</button>';
-					endforeach
+					if ( $job_positions ) :
+						foreach ( $job_positions as $job_position ) :
+							echo '<button class="button" data-filter=".' . esc_attr( $job_position->slug ) . '">' . esc_html( $job_position->name ) . '</button>';
+						endforeach;
+					endif;
 					?>
 				</div>
 			</div>-->
