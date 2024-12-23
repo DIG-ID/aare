@@ -13,7 +13,7 @@
 			<?php
 			$phone = get_field( 'footer_phone', 'options' );
 			if ( $phone ) :
-				?> <p class="text-body text-blue-shade-5"><a href="tel:<?php echo $phone; ?>"><?php esc_html_e( 'Phone', 'aare' );?> <?php echo $phone; ?></a></p><?php
+				?> <p class="text-body text-blue-shade-5"><a href="tel:<?php echo $phone; ?>"><?php esc_html_e( 'Tel.', 'aare' );?> <?php echo $phone; ?></a></p><?php
 			endif;
 			$email = get_field( 'footer_email', 'options' );
 			if ( $email ) :
@@ -53,7 +53,7 @@
 	</section>
 	<section class="footer-copyright bg-blue-shade-4 z-10">
 		<div class="flex flex-col lg:flex-row justify-center lg:justify-between items-center py-4 max-w-7xl mx-auto px-6">
-			<p class="text-body text-blue-shade-1 mb-6 lg:mb-0">
+			<p class="text-body !text-sm text-blue-shade-1 mb-6 lg:mb-0">
 			<?php
 				$y = date( 'Y' );
 				printf(
@@ -62,7 +62,7 @@
 				);
 				?>
 			</p>
-			<a href="#header-main" id="back-to-top" class="text-body text-blue-shade-1 flex mb-6 lg:mb-0">
+			<a href="#header-main" id="back-to-top" class="text-body !text-sm text-blue-shade-1 flex mb-6 lg:mb-0">
 				<?php esc_html_e( 'Zurück nach oben', 'aare' ); ?>
 				<svg width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-2">
 					<path d="M5.5 1L1 6M5.5 1L10 6M5.5 1V13.5" stroke="#F2FAFF"/>

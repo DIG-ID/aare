@@ -13,7 +13,7 @@
             ?>
         </div>
         <div class="col-span-1 md:col-span-5 xl:col-span-3 col-start-2 md:col-start-7 xl:col-start-6 flex flex-col lg:justify-between md:pl-7 pt-[30%] md:pt-0">
-            <p class="font-miller font-normal text-[0.875rem] text-s md:text-[1.125rem] xl:text-[1.5rem] tracking-[0.14px] leading-normal md:leading-tight md:tracking-[0.24px] text-blue-shade-2 mb-6 xl:mb-0"><?php echo get_field( 'location_text' ); ?></p>
+            <p class="font-miller font-normal text-base md:text-[1.125rem] xl:text-[1.5rem] tracking-[0.14px] leading-normal md:leading-tight md:tracking-[0.24px] text-blue-shade-2 mb-6 xl:mb-0"><?php echo get_field( 'location_text' ); ?></p>
             <?php 
             $location_btn = get_field('location_button');
             if( $location_btn ): 

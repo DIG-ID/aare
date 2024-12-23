@@ -24,7 +24,7 @@
                         } 
                     ?>
                     <div class="px-9 lg:px-16 pb-12 lg:pb-9">
-                        <h3 class="text-bullets--primary text-blue-shade-5 my-7"><?php echo get_sub_field( 'title' ); ?></h3>
+                        <h3 class="text-title-h3 text-blue-shade-5 my-7"><?php echo get_sub_field( 'title' ); ?></h3>
                         <p class="text-body text-blue-shade-5 mb-9 lg:mb-9"><?php echo get_sub_field( 'text' ); ?></p>
                         <?php 
                         $offers_btn = get_sub_field('button');

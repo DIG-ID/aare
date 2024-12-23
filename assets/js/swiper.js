@@ -26,6 +26,10 @@ window.addEventListener("load", () => {
 					spaceBetween: 24,
 				},
 			},
+			navigation: {
+				nextEl: ".event-swiper-button-next",
+				prevEl: ".event-swiper-button-prev",
+			},
 		});
 	}
 	if ( $(".page-template-page-solothurn-what-to-do")[0] ) {
@@ -46,6 +50,10 @@ window.addEventListener("load", () => {
 					slidesPerView: 2.2,
 					spaceBetween: 24,
 				},
+			},
+			navigation: {
+				nextEl: ".activites-swiper-button-next",
+				prevEl: ".activites-swiper-button-prev",
 			},
 		});
 	}

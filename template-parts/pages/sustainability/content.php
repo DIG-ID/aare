@@ -1,6 +1,6 @@
 <section class="section-sustainability-content bg-blue-shade-3 pt-8 xl:pt-0 pb-28 xl:pb-0">
 	<div class="theme-container">
-		<div class="flex flex-col flex-wrap gap-6 h-auto xl:h-[2200px]">
+		<div class="flex flex-col flex-wrap gap-6 h-auto xl:h-[2430px]">
 			<?php
 			$ibex = get_field( 'Ibex' );
 			if ( $ibex ) :
@@ -19,8 +19,8 @@
 							echo wp_get_attachment_image( $ilogo, 'full', false, array( 'class' => 'max-w-full object-fit rounded-[20px] mt-14 mb-7' ) );
 						endif;
 						?>
-						<h2 class="text-title-h3 mb-4 xl:mb-7"><?php the_field( 'Ibex_title' ); ?></h2>
-						<div class="text-body !font-bold mb-5"><?php the_field( 'Ibex_subtitle' ); ?></div>
+						<h2 class="text-title-h3 !text-[#233047] mb-4 xl:mb-7"><?php the_field( 'Ibex_title' ); ?></h2>
+						<div class="text-body !text-[#233047] !font-bold mb-5"><?php the_field( 'Ibex_subtitle' ); ?></div>
 						<?php
 						if ( have_rows( 'Ibex_list' ) ) :
 							echo '<ul class="list">';
@@ -46,8 +46,8 @@
 					endif;
 					?>
 					<div class="card-sustainability-content py-12 xl:py-20 px-9 xl:px-28">
-						<h2 class="text-title-h3 mb-4 xl:mb-7"><?php the_field( 'charging_station_title' ); ?></h2>
-						<div class="text-body"><?php the_field( 'charging_station_description' ); ?></div>
+						<h2 class="text-title-h3 !text-[#233047] mb-4 xl:mb-7"><?php the_field( 'charging_station_title' ); ?></h2>
+						<div class="text-body !text-[#233047]"><?php the_field( 'charging_station_description' ); ?></div>
 					</div>
 				</div>
 				<?php
@@ -63,8 +63,8 @@
 					endif;
 					?>
 					<div class="card-sustainability-content py-12 xl:py-20 px-9 xl:px-28">
-						<h2 class="text-title-h3 mb-4 xl:mb-7"><?php the_field( 'regional_title' ); ?></h2>
-						<div class="text-body"><?php the_field( 'regional_description' ); ?></div>
+						<h2 class="text-title-h3 mb-4 xl:mb-7 !text-[#233047]"><?php the_field( 'regional_title' ); ?></h2>
+						<div class="text-body !text-[#233047]"><?php the_field( 'regional_description' ); ?></div>
 					</div>
 				</div>
 				<?php
@@ -86,8 +86,8 @@
 							echo wp_get_attachment_image( $swisslogo, 'full', false, array( 'class' => 'max-w-full object-fit rounded-[20px] mt-14 mb-7' ) );
 						endif;
 						?>
-						<h2 class="text-title-h3 mb-4 xl:mb-7"><?php the_field( 'swisstainable_title' ); ?></h2>
-						<div class="text-body xl:max-w-[333px]"><?php the_field( 'swisstainable_description' ); ?></div>
+						<h2 class="text-title-h3 mb-4 xl:mb-7 !text-[#233047]"><?php the_field( 'swisstainable_title' ); ?></h2>
+						<div class="text-body xl:max-w-[333px] !text-[#233047]"><?php the_field( 'swisstainable_description' ); ?></div>
 					</div>
 				</div>
 				<?php
@@ -104,8 +104,8 @@
 					endif;
 					?>
 					<div class="card-sustainability-content py-12 xl:py-20 px-9 xl:px-28">
-						<h2 class="text-title-h3 mb-4 xl:mb-7"><?php the_field( 'change_title' ); ?></h2>
-						<div class="text-body"><?php the_field( 'change_description' ); ?></div>
+						<h2 class="text-title-h3 mb-4 xl:mb-7 !text-[#233047]"><?php the_field( 'change_title' ); ?></h2>
+						<div class="text-body !text-[#233047]"><?php the_field( 'change_description' ); ?></div>
 					</div>
 				</div>
 				<?php

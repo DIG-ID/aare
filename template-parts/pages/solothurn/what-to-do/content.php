@@ -1,9 +1,16 @@
-<section class="section-what-to-do-events">
+<section class="section-what-to-do-events relative">
+
+
 	<div class="overflow-hidden ml-6 lg:ml-40">
+		<div class="events-navigation relative py-6">
+			<div class="swiper-button-next event-swiper-button-next"></div>
+			<div class="swiper-button-prev event-swiper-button-prev"></div>
+		</div>
 		<?php
 		if ( have_rows( 'events' ) ) :
 			?>
 			<div class="swiper eventSwiper invisible fade-in--noscroll">
+
 				<div class="swiper-wrapper">
 					<?php
 					while ( have_rows( 'events' ) ) :
@@ -53,6 +60,10 @@
 		</div>
 	</div>
 	<div class="overflow-hidden ml-6 lg:ml-40">
+		<div class="activites-navigation relative py-6">
+			<div class="swiper-button-next activites-swiper-button-next"></div>
+			<div class="swiper-button-prev activites-swiper-button-prev"></div>
+		</div>
 		<?php
 		if ( have_rows( 'activites_list' ) ) :
 			?>

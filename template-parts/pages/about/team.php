@@ -8,7 +8,7 @@
 					// Counter to track the index of each item
 					$counter = 0;
 					?>
-					<div class="grid grid-cols-2 lg:grid-cols-3 gap-8">
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 						<div>
 						<?php
 						// Loop through the repeater field items

@@ -1,6 +1,6 @@
 <section class="section-arrival-contact-content pb-28 lg:pb-16">
 	<div class="theme-container">
-		<div class="flex flex-col flex-wrap lg:h-[1900px] gap-6">
+		<div class="flex flex-col flex-wrap lg:h-[2000px] gap-6">
 			<div class="address w-full lg:w-1/2 bg-white px-8 lg:px-28 pt-9 lg:pt-14 pb-14 lg:pb-28 rounded-[20px] overflow-hidden order-1 lg:order-1 invisible fade-in--noscroll">
 				<img class="mb-8 lg:mb-16" src="<?php echo esc_url( get_theme_file_uri( '/assets/images/boat.png' ) ); ?>" alt="boat">
 				<p class="text-body--serif text-blue-shade-5 mb-4 lg:mb-8"><?php the_field( 'address_address' ); ?></p>
@@ -70,9 +70,11 @@
 				$location = get_field( 'map' );
 				if ( $location ) :
 					?>
+					<a href="https://www.google.com/maps/dir//Hotel+an+der+Aare+AG,+Oberer+Winkel+2,+4500+Solothurn,+Switzerland/@47.2050884,7.5334197,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4791d7ff232a1799:0x3ee73ecd34f6e41e!2m2!1d7.5359946!2d47.2050848?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
 					<div class="acf-map w-full h-full !static" data-zoom="14">
 						<div class="marker" data-lat="<?php echo esc_attr( $location['lat'] ); ?>" data-lng="<?php echo esc_attr( $location['lng'] ); ?>"></div>
 					</div>
+					</a>
 					<?php
 				endif;
 				?>
@@ -90,5 +92,12 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="theme-container flex items-center justify-center py-9">
+		<!-- TrustYou Widget -->
+		<div class="bg-white p-6 pb-5 rounded-[22px] flex flex-col items-center justify-center ">
+			<iframe src='https://api.trustyou.com/hotels/b31b1d45-89ea-4497-a19f-5bb0d187b447/trust_score.html?key=70d7d02a-d79a-45f4-8908-d2e7454de0e8&size=m&scale=100&custom_style={"textColor":"0x3b3131"}' scrolling="no" height="56" width="205" style="border:none"></iframe>
+		</div>
+		<!-- /TrustYou Widget -->
 	</div>
 </section>

@@ -16,7 +16,7 @@
                 ?>
                 <a class="btn-custom btn-custom--only-arrow text-center mb-9 mt-7" href="<?php echo esc_url( $contact_url ); ?>" target="<?php echo esc_attr( $contact_target ); ?>"><?php echo esc_html( $contact_title ); ?></a>
             <?php endif; ?>
-            <p class="font-miller font-light text-sm lg:text-2xl text-blue-shade-5 text-center lg:max-w-[350px] w-[50%] lg:w-full"><?php echo get_field( 'contact_disclaimer' ); ?></p>
+            <p class="font-miller font-light text-base lg:text-2xl text-blue-shade-5 text-center lg:max-w-[350px] w-[50%] lg:w-full"><?php echo get_field( 'contact_disclaimer' ); ?></p>
         </div>
     </div>
 </section>
