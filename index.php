@@ -23,7 +23,7 @@ get_template_part( 'template-parts/pages/page-header' );
 								<?php
 							endif;
 							?>
-							<div class="card-news-content min-h-[200px] px-14 pt-9">
+							<div class="card-news-content min-h-[200px] px-9 py-8 lg:px-14 lg:py-9">
 								<a href="<?php the_permalink(); ?>" class="flex items-center gap-x-4 mb-6">
 									<h2 class="text-title-h3 text-blue-shade-5"><?php the_title(); ?></h2>
 									<svg width="59" height="12" viewBox="0 0 59 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +46,7 @@ get_template_part( 'template-parts/pages/page-header' );
 								<?php
 							endif;
 							?>
-							<div class="card-news-content min-h-[200px] px-14 py-9">
+							<div class="card-news-content min-h-[200px] px-9 py-8 lg:px-14 lg:py-9">
 								<a href="<?php the_permalink(); ?>" class="flex items-center gap-x-4 mb-6">
 									<h2 class="text-title-h3 text-blue-shade-5"><?php the_title(); ?></h2>
 									<svg width="59" height="12" viewBox="0 0 59 12" fill="none" xmlns="http://www.w3.org/2000/svg">
