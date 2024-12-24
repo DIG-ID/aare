@@ -3,8 +3,8 @@
     <div class="theme-container grid grid-cols-2 md:grid-cols-12 gap-x-6 fade-in">
             <!-- Tabs Navigation -->
             <div class="tabs-navigation col-span-2 md:col-span-12 pt-20 flex justify-center mb-16 md:mb-24">
-                <button class="tab-button text-title text-blue-shade-2 active mr-9" data-tab="hotelzimmer"><?php echo get_field( 'zimmer_title' ); ?></button>
-                <button class="tab-button text-title text-blue-shade-2 ml-9" data-tab="apartments"><?php echo get_field( 'apartments_title' ); ?></button>
+                <button class="tab-button text-title text-blue-shade-2 active mr-2 sm:mr-9" data-tab="hotelzimmer"><?php echo get_field( 'zimmer_title' ); ?></button>
+                <button class="tab-button text-title text-blue-shade-2 ml-2 sm:ml-9" data-tab="apartments"><?php echo get_field( 'apartments_title' ); ?></button>
             </div>
 
             <!-- Tabs Content -->
