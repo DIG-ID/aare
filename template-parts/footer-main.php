@@ -1,35 +1,48 @@
-<footer class="footer-main bg-blue-shade-2 ">
-	<section class="grid grid-cols-2 lg:grid-cols-3 gap-x-6 lg:gap-x-8 lg:max-w-2xl mx-auto pt-12 pb-24 xl:py-36 px-6">
-		<div class="col-span-2 lg:col-span-3 flex justify-center items-center mb-14">
+<footer class="footer-main bg-blue-shade-2">
+	<section class="grid grid-cols-2 lg:grid-cols-4 gap-x-6 lg:gap-x-8 lg:max-w-[60rem] mx-auto pt-12 pb-24 xl:py-36 px-6">
+		<div class="col-span-2 lg:col-span-4 flex justify-center items-center mb-14">
 			<div class="site-branding">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/paper-boat.svg" class="w-[66px] mb-5 mx-auto" alt="paper boat" title="paper boat" />
 				<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url" class="navbar-brand custom-logo-link"><?php do_action( 'theme_logo_dark' ); ?></a>
 			</div>
 		</div>
-		<div class="col-span-1 lg:col-span-1 block md:flex md:flex-col lg:block md:items-center address">
-			<p class="text-body text-blue-shade-5"><?php the_field( 'footer_address', 'options' ); ?></p>
+		<div class="col-span-1 lg:col-span-1 block md:flex md:flex-col lg:flex md:items-center address">
+			<p class="text-body text-blue-shade-5 lg:inline-block"><?php the_field( 'footer_address', 'options' ); ?></p>
 		</div>
-		<div class="col-span-1 lg:col-span-1 block md:flex md:flex-col lg:block md:items-center contact">
-			<?php
-			$phone = get_field( 'footer_phone', 'options' );
-			if ( $phone ) :
-				?> <p class="text-body text-blue-shade-5"><a href="tel:<?php echo $phone; ?>"><?php esc_html_e( 'Tel.', 'aare' );?> <?php echo $phone; ?></a></p><?php
-			endif;
-			$email = get_field( 'footer_email', 'options' );
-			if ( $email ) :
-				?> <p class="text-body text-blue-shade-5"><a href="mailto:<?php echo antispambot( $email ); ?>"><?php echo antispambot( $email ); ?></a></p><?php
-			endif;
-			?>
+		<div class="col-span-1 lg:col-span-1 block md:flex md:flex-col lg:flex md:items-center contact">
+			<div class="block lg:flex lg:flex-col">
+				<?php
+				$phone = get_field( 'footer_phone', 'options' );
+				if ( $phone ) :
+					?> <p class="text-body text-blue-shade-5 lg:inline-block"><a href="tel:<?php echo $phone; ?>"><?php esc_html_e( 'Tel.', 'aare' );?> <?php echo $phone; ?></a></p><?php
+				endif;
+				$email = get_field( 'footer_email', 'options' );
+				if ( $email ) :
+					?> <p class="text-body text-blue-shade-5 lg:inline-block"><a href="mailto:<?php echo antispambot( $email ); ?>"><?php echo antispambot( $email ); ?></a></p><?php
+				endif;
+				?>
+			</div>
 		</div>
-		<div class="col-span-2 lg:col-span-1 text-center mt-10 lg:mt-0 flex justify-center lg:block" style="mix-blend-mode: multiply;">
+		<div class="col-span-1 lg:col-span-1 text-center mt-10 lg:mt-0 flex justify-center lg:block" style="mix-blend-mode: multiply;">
 			<?php
 			$partner_logo = get_field( 'footer_partner_logo', 'options' );
 			if ( $partner_logo ) :
-				echo wp_get_attachment_image( $partner_logo, 'full', false, array( 'class' => 'max-w-full object-cover' ) );
+				echo wp_get_attachment_image( $partner_logo, 'full', false, array( 'class' => 'max-w-full object-cover lg:mx-auto' ) );
 			endif;
 			?>
 		</div>
-		<div class="col-span-2 lg:col-span-3 flex justify-center items-center pt-12">
+		<div class="col-span-1 lg:col-span-1 text-center mt-10 lg:mt-0 block md:flex md:flex-col lg:flex md:items-center">
+			<div class="block lg:flex lg:flex-col lg:max-w-[80%]">
+				<!-- TrustYou Widget -->
+				<iframe src='https://api.trustyou.com/hotels/b31b1d45-89ea-4497-a19f-5bb0d187b447/trust_score.html?key=70d7d02a-d79a-45f4-8908-d2e7454de0e8&size=m&scale=100&custom_style={"textColor":"0x3b3131"}'
+				scrolling="no"
+				height="56"
+				width="205"
+				style="border:none"></iframe>
+				<!-- /TrustYou Widget -->
+			</div>
+		</div>
+		<div class="col-span-2 lg:col-span-4 flex justify-center items-center pt-12">
 			<?php do_action( 'socials' ); ?>
 		</div>
 	</section>
