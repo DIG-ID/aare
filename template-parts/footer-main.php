@@ -23,11 +23,11 @@
 				?>
 			</div>
 		</div>
-		<div class="col-span-1 lg:col-span-1 text-center mt-10 lg:mt-0 flex justify-center lg:block" style="mix-blend-mode: multiply;">
+		<div class="col-span-1 lg:col-span-1 text-center mt-10 lg:mt-0 flex md:justify-center lg:block" style="mix-blend-mode: multiply;">
 			<?php
 			$partner_logo = get_field( 'footer_partner_logo', 'options' );
 			if ( $partner_logo ) :
-				echo wp_get_attachment_image( $partner_logo, 'full', false, array( 'class' => 'max-w-full object-cover lg:mx-auto' ) );
+				echo wp_get_attachment_image( $partner_logo, 'full', false, array( 'class' => 'max-w-full lg:object-cover lg:mx-auto h-fit' ) );
 			endif;
 			?>
 		</div>
@@ -38,7 +38,7 @@
 				scrolling="no"
 				height="56"
 				width="205"
-				style="border:none"></iframe>
+				style="border:none;max-width:100%;"></iframe>
 				<!-- /TrustYou Widget -->
 			</div>
 		</div>
