@@ -20,7 +20,7 @@
                         $offer_img = get_sub_field('image');
                         $size = 'offer-image';
                         if( $offer_img ) {
-                            echo wp_get_attachment_image( $offer_img, $size, false, array( 'class' => 'w-full rounded-t-[22px]' ) );
+                            echo wp_get_attachment_image( $offer_img, $size, false, array( 'class' => 'w-full object-cover rounded-t-[22px] min-h-[275px] max-h-[275px] lg:min-h-[345px] lg:max-h-[345px]' ) );
                         } 
                     ?>
                     <div class="px-9 lg:px-16 pb-12 lg:pb-9">
