@@ -21,15 +21,15 @@
 							<?php
 							$img = get_sub_field( 'image' );
 							if ( $img ) :
-								echo wp_get_attachment_image( $img, 'full', false, array( 'class' => 'w-full object-cover h-[238px] lg:h-[354px]' ) );
+								echo wp_get_attachment_image( $img, 'full', false, array( 'class' => 'w-full object-cover h-[238px] lg:h-[354px] min-h-[238px] lg:min-h-[354px] max-h-[238px] lg:max-h-[354px]' ) );
 							else :
 								?>
-								<span class="flex flex-col justify-center items-center w-full h-[238px] lg:h-[354px] bg-blue-shade-1 text-blue-shade-2">no image</span>
+								<span class="flex flex-col justify-center items-center w-full h-[238px] lg:h-[354px] min-h-[238px] lg:min-h-[354px] max-h-[238px] lg:max-h-[354px] bg-blue-shade-1 text-blue-shade-2">no image</span>
 								<?php
 							endif;
 							?>
 							</a>
-							<div class="card-event-content h-[175px] lg:h-[200px] flex flex-col justify-between px-7 lg:px-12 pt-6 lg:pt-9 pb-6 lg:pb-14">
+							<div class="card-event-content min-h-[175px] lg:min-h-[200px] flex flex-col justify-between px-7 lg:px-12 pt-6 lg:pt-9 pb-6 lg:pb-14">
 								<a href="<?php echo esc_url( get_sub_field( 'link' ) ); ?>" class="flex gap-x-3 items-center  mb-4 lg:mb-0" target="_blank">
 									<h2 class="text-title-h3 text-blue-shade-5 text-nowrap"><?php the_sub_field( 'title' ); ?></h2>
 								</a>
