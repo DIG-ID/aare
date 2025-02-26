@@ -96,6 +96,9 @@
 							)
 						);
 						?>
+						<div class="px-[22px]">
+							<?php do_action( 'wpml_add_language_selector' ); ?>
+						</div>
 						<?php
 						wp_nav_menu(
 							array(
@@ -108,13 +111,13 @@
 							)
 						);
 						?>
-						<div class="side-menu__mobile-socials flex justify-start items-center pl-8">
+						<div class="side-menu__mobile-socials flex justify-start items-center pl-8 pb-10">
 							<?php do_action( 'socials' ); ?>
 						</div>
 					</nav>
 				</div>
 				<div id="menu-secondary-col" class="col-span-4 bg-blue-shade-3 pt-44 text-center hidden xl:block">
-					<div class="w-full mb-20">
+					<div class="w-full mb-16">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/svg/paper-boat.svg" class="mx-auto" alt="Paper boat" title="Paper boat" />
 					</div>
 					<?php
@@ -135,7 +138,7 @@
 						array(
 							'theme_location'  => 'copyright-menu',
 							'menu_id'         => 'copyright-menu',
-							'container_class' => 'copyright-menu-container pt-20 xl:pt-12',
+							'container_class' => 'copyright-menu-container pt-20 xl:pt-7',
 							'menu_class'      => 'copyright-menu-top-level',
 							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 							'fallback_cb'     => '__return_false',

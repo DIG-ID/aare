@@ -43,13 +43,13 @@
                     @apply border-l-2 border-blue-shade-2 pl-[10px]
                 .wpml-ls-item
                     .wpml-ls-link
-                        @apply font-poppins font-normal text-[16px] text-blue-shade-2 leading-[16px] uppercase transition-all duration-500 ease-out xl:flex
+                        @apply font-poppins font-normal text-[16px] text-blue-shade-2 leading-[16px] uppercase transition-all duration-500 ease-out flex
     .menu-wrapper
         .wpml-ls-legacy-list-horizontal
             a
                 @apply px-[10px] py-0
         .wpml-ls-statics-shortcode_actions
-            @apply border-none px-0 py-12
+            @apply border-none px-0 pt-8
             ul
                 .wpml-ls-current-language
                     .wpml-ls-link
@@ -58,7 +58,7 @@
                     @apply border-x-2 border-blue-shade-2
                 .wpml-ls-item
                     .wpml-ls-link
-                        @apply font-miller font-light text-[20px] text-blue-shade-2 tracking-[0.4px] leading-[20px] uppercase transition-all duration-500 ease-out xl:flex
+                        @apply font-miller font-light text-[20px] text-blue-shade-2 tracking-[0.4px] leading-[20px] uppercase transition-all duration-500 ease-out flex
         
     .menu-bg
         clip-path: rect(0% at 4% 4%)
@@ -165,7 +165,7 @@
         .menu-item
             @apply text-center
             &:not(:nth-child(1))
-                @apply mt-5
+                @apply mt-3
             a
                 @apply font-miller font-light text-[20px] text-blue-shade-2 tracking-[0.4px] hover:text-blue-shade-1 hover:tracking-[0.07rem]
                 transition: color .2s, letter-spacing .4s ease-out
@@ -197,6 +197,12 @@
             font-weight: $font-weight
             display: block
             color: black
+        .menu-wrapper
+            .wpml-ls-statics-shortcode_actions
+                @apply pt-8 pb-0
+            .wpml-ls-legacy-list-horizontal
+                ul
+                    @apply inline-flex
 
     /* Mobile Navigation */
     .mobile__nav
