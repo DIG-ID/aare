@@ -32,12 +32,12 @@
 			?>
 		</div>
 		<div class="col-span-1 lg:col-span-1 text-center mt-10 lg:mt-0 block md:flex md:flex-col lg:flex md:items-center">
-			<div class="block lg:flex lg:flex-col lg:max-w-[80%]">
+			<div class="block lg:flex lg:flex-col lg:max-w-[90%]">
 				<!-- TrustYou Widget -->
 				<iframe src='https://api.trustyou.com/hotels/b31b1d45-89ea-4497-a19f-5bb0d187b447/trust_score.html?key=70d7d02a-d79a-45f4-8908-d2e7454de0e8&size=m&scale=100&custom_style={"textColor":"0x3b3131"}'
 				scrolling="no"
 				height="56"
-				width="205"
+				width="250"
 				style="border:none;max-width:100%;"></iframe>
 				<!-- /TrustYou Widget -->
 			</div>
