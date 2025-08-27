@@ -23,28 +23,7 @@
 				endif;
 				?>
 			</div>
-			<div class="arrival-by-auto w-full lg:w-1/2 bg-white rounded-[20px] overflow-hidden order-4 lg:order-2 fade-in">
-				<?php
-				$bycar = get_field( 'arrival_by_auto_image' );
-				if ( $bycar ) :
-					echo wp_get_attachment_image( $bycar, 'full', false, array( 'class' => 'w-full object-cover rounded-b-[20px] min-h-[225px]' ) );
-				endif;
-				?>
-				<div class="px-8 lg:px-28 pt-9 lg:pt-14 pb-14 lg:pb-28">
-					<h2 class="text-title-h3 text-blue-shade-5 mb-6"><?php the_field( 'arrival_by_auto_title' ); ?></h2>
-					<?php
-					if ( have_rows( 'arrival_by_auto_list' ) ) :
-						echo '<ul class="list text-blue-shade-5">';
-						while ( have_rows( 'arrival_by_auto_list' ) ) :
-							the_row();
-							echo '<li>' . get_sub_field( 'text' ) . '</li>';
-						endwhile;
-						echo '</ul>';
-					endif;
-					?>
-				</div>
-			</div>
-			<div class="arrival-by-zug w-full lg:w-1/2 bg-white rounded-[20px] overflow-hidden order-5 lg:order-3 fade-in">
+			<div class="arrival-by-zug w-full lg:w-1/2 bg-white rounded-[20px] overflow-hidden order-5 lg:order-2 fade-in">
 				<?php
 				$byzug = get_field( 'arrival_by_zug_image' );
 				if ( $byzug ) :
@@ -54,6 +33,18 @@
 				<div class="px-8 lg:px-28 pt-9 lg:pt-14 pb-14 lg:pb-28 ">
 					<h2 class="text-title-h3 text-blue-shade-5 mb-6"><?php the_field( 'arrival_by_zug_title' ); ?></h2>
 					<p class="text-body text-blue-shade-5"><?php the_field( 'arrival_by_zug_description' ); ?></p>
+				</div>
+			</div>
+			<div class="arrival-by-bus w-full lg:w-1/2 bg-white rounded-[20px] overflow-hidden order-6 lg:order-3 fade-in">
+				<?php
+				$bybus = get_field( 'arrival_by_bus_image' );
+				if ( $bybus ) :
+					echo wp_get_attachment_image( $bybus, 'full', false, array( 'class' => 'w-full object-cover rounded-b-[20px] min-h-[225px]' ) );
+				endif;
+				?>
+				<div class="px-8 lg:px-28 pt-9 lg:pt-14 pb-14 lg:pb-28 ">
+					<h2 class="text-title-h3 text-blue-shade-5 mb-6"><?php the_field( 'arrival_by_bus_title' ); ?></h2>
+					<p class="text-body text-blue-shade-5"><?php the_field( 'arrival_by_bus_description' ); ?></p>
 				</div>
 			</div>
 			<div class="contact-form w-full lg:w-1/2 bg-white px-8 lg:px-20 pt-12 lg:pt-14 pb-14 lg:pb-28 rounded-[20px] overflow-hidden order-2 lg:order-4 invisible fade-in--noscroll">
@@ -79,16 +70,26 @@
 				endif;
 				?>
 			</div>
-			<div class="arrival-by-bus w-full lg:w-1/2 bg-white rounded-[20px] overflow-hidden order-6 lg:order-6 fade-in">
+
+			<div class="arrival-by-auto w-full lg:w-1/2 bg-white rounded-[20px] overflow-hidden order-4 lg:order-6 fade-in">
 				<?php
-				$bybus = get_field( 'arrival_by_bus_image' );
-				if ( $bybus ) :
-					echo wp_get_attachment_image( $bybus, 'full', false, array( 'class' => 'w-full object-cover rounded-b-[20px] min-h-[225px]' ) );
+				$bycar = get_field( 'arrival_by_auto_image' );
+				if ( $bycar ) :
+					echo wp_get_attachment_image( $bycar, 'full', false, array( 'class' => 'w-full object-cover rounded-b-[20px] min-h-[225px]' ) );
 				endif;
 				?>
-				<div class="px-8 lg:px-28 pt-9 lg:pt-14 pb-14 lg:pb-28 ">
-					<h2 class="text-title-h3 text-blue-shade-5 mb-6"><?php the_field( 'arrival_by_bus_title' ); ?></h2>
-					<p class="text-body text-blue-shade-5"><?php the_field( 'arrival_by_bus_description' ); ?></p>
+				<div class="px-8 lg:px-28 pt-9 lg:pt-14 pb-14 lg:pb-28">
+					<h2 class="text-title-h3 text-blue-shade-5 mb-6"><?php the_field( 'arrival_by_auto_title' ); ?></h2>
+					<?php
+					if ( have_rows( 'arrival_by_auto_list' ) ) :
+						echo '<ul class="list text-blue-shade-5">';
+						while ( have_rows( 'arrival_by_auto_list' ) ) :
+							the_row();
+							echo '<li>' . get_sub_field( 'text' ) . '</li>';
+						endwhile;
+						echo '</ul>';
+					endif;
+					?>
 				</div>
 			</div>
 		</div>
