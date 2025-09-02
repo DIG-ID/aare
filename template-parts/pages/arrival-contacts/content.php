@@ -1,6 +1,6 @@
 <section class="section-arrival-contact-content pb-28 lg:pb-16">
 	<div class="theme-container">
-		<div class="flex flex-col flex-wrap lg:h-[2200px] gap-6">
+		<div class="flex flex-col flex-wrap lg:h-[2450px] gap-6">
 			<div class="address w-full lg:w-1/2 bg-white px-8 lg:px-28 pt-9 lg:pt-14 pb-14 lg:pb-28 rounded-[20px] overflow-hidden order-1 lg:order-1 invisible fade-in--noscroll">
 				<img class="mb-8 lg:mb-16" src="<?php echo esc_url( get_theme_file_uri( '/assets/images/boat.png' ) ); ?>" alt="boat">
 				<p class="text-body--serif text-blue-shade-5 mb-4 lg:mb-8"><?php the_field( 'address_address' ); ?></p>
