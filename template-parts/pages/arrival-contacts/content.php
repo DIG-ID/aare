@@ -1,6 +1,6 @@
 <section class="section-arrival-contact-content pb-28 lg:pb-16">
 	<div class="theme-container">
-		<div class="flex flex-col flex-wrap lg:h-[2000px] gap-6">
+		<div class="flex flex-col flex-wrap lg:h-[2200px] gap-6">
 			<div class="address w-full lg:w-1/2 bg-white px-8 lg:px-28 pt-9 lg:pt-14 pb-14 lg:pb-28 rounded-[20px] overflow-hidden order-1 lg:order-1 invisible fade-in--noscroll">
 				<img class="mb-8 lg:mb-16" src="<?php echo esc_url( get_theme_file_uri( '/assets/images/boat.png' ) ); ?>" alt="boat">
 				<p class="text-body--serif text-blue-shade-5 mb-4 lg:mb-8"><?php the_field( 'address_address' ); ?></p>
@@ -23,7 +23,7 @@
 				endif;
 				?>
 			</div>
-			<div class="arrival-by-zug w-full lg:w-1/2 bg-white rounded-[20px] overflow-hidden order-5 lg:order-2 fade-in">
+			<div class="arrival-by-zug w-full lg:w-1/2 bg-white rounded-[20px] overflow-hidden order-4 lg:order-2 fade-in">
 				<?php
 				$byzug = get_field( 'arrival_by_zug_image' );
 				if ( $byzug ) :
@@ -35,7 +35,7 @@
 					<p class="text-body text-blue-shade-5"><?php the_field( 'arrival_by_zug_description' ); ?></p>
 				</div>
 			</div>
-			<div class="arrival-by-bus w-full lg:w-1/2 bg-white rounded-[20px] overflow-hidden order-6 lg:order-3 fade-in">
+			<div class="arrival-by-bus w-full lg:w-1/2 bg-white rounded-[20px] overflow-hidden order-5 lg:order-3 fade-in">
 				<?php
 				$bybus = get_field( 'arrival_by_bus_image' );
 				if ( $bybus ) :
@@ -47,7 +47,19 @@
 					<p class="text-body text-blue-shade-5"><?php the_field( 'arrival_by_bus_description' ); ?></p>
 				</div>
 			</div>
-			<div class="contact-form w-full lg:w-1/2 bg-white px-8 lg:px-20 pt-12 lg:pt-14 pb-14 lg:pb-28 rounded-[20px] overflow-hidden order-2 lg:order-4 invisible fade-in--noscroll">
+			<div class="arrival-by-bike w-full lg:w-1/2 bg-white rounded-[20px] overflow-hidden order-6 lg:order-4 fade-in">
+				<?php
+				$bybike = get_field( 'arrival_by_bike_image' );
+				if ( $bybike ) :
+					echo wp_get_attachment_image( $bybike, 'full', false, array( 'class' => 'w-full object-cover rounded-b-[20px] min-h-[225px]' ) );
+				endif;
+				?>
+				<div class="px-8 lg:px-28 pt-9 lg:pt-14 pb-14 lg:pb-28 ">
+					<h2 class="text-title-h3 text-blue-shade-5 mb-6"><?php the_field( 'arrival_by_bike_title' ); ?></h2>
+					<p class="text-body text-blue-shade-5"><?php the_field( 'arrival_by_bike_description' ); ?></p>
+				</div>
+			</div>
+			<div class="contact-form w-full lg:w-1/2 bg-white px-8 lg:px-20 pt-12 lg:pt-14 pb-14 lg:pb-28 rounded-[20px] overflow-hidden order-2 lg:order-5 invisible fade-in--noscroll">
 				<h2 class="text-title-h3 text-blue-shade-5 mb-8"><?php the_field( 'contact_form_title' ); ?></h2>
 				<?php
 				$form_sc = get_field( 'contact_form_form' );
@@ -56,7 +68,7 @@
 				endif;
 				?>
 			</div>
-			<div class="map w-full lg:w-1/2 bg-white rounded-[20px] overflow-hidden order-3 lg:order-5 min-h-[614px] fade-in">
+			<div class="map w-full lg:w-1/2 bg-white rounded-[20px] overflow-hidden order-3 lg:order-6 min-h-[614px] fade-in">
 				<?php
 				$location = get_field( 'map' );
 				if ( $location ) :
@@ -71,7 +83,7 @@
 				?>
 			</div>
 
-			<div class="arrival-by-auto w-full lg:w-1/2 bg-white rounded-[20px] overflow-hidden order-4 lg:order-6 fade-in">
+			<div class="arrival-by-auto w-full lg:w-1/2 bg-white rounded-[20px] overflow-hidden order-7 lg:order-7 fade-in">
 				<?php
 				$bycar = get_field( 'arrival_by_auto_image' );
 				if ( $bycar ) :
