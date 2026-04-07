@@ -1,9 +1,11 @@
 // Skip-to-main-content link — keyboard-only, visually hidden off-screen until focused
 .skip-link
-  @apply fixed font-poppins text-[16px] font-normal leading-7 tracking-[0.16px] py-[0.35rem] px-8 border border-blue-shade-2 rounded-full bg-blue-shade-2 text-blue-shade-5 whitespace-nowrap -translate-y-full transition-all duration-300 ease-in-out z-[200]
-  top: 1rem
+  @apply fixed font-poppins text-[16px] font-normal leading-7 tracking-[0.16px] py-[0.35rem] px-8 border border-blue-shade-2 rounded-full bg-blue-shade-2 text-blue-shade-5 whitespace-nowrap z-[200]
+  top: 0
   left: 1.5rem
+  transform: translateY(-100%)
+  transition: transform 0.3s ease-in-out
   &:focus
-    @apply translate-y-0 outline-none ring-2 ring-blue-shade-5 ring-offset-2
-  &:focus-visible
-    @apply translate-y-0
+    transform: translateY(1rem)
+    outline: none
+    box-shadow: 0 0 0 2px #0E324A, 0 0 0 4px #F2FAFF
