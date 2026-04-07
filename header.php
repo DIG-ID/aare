@@ -13,5 +13,7 @@
 		<!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDZ8H79F" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
+		<a class="skip-link" href="#main-content"><?php esc_html_e( 'Skip to main content', 'aare' ); ?></a>
+
 		<?php do_action( 'wp_body_open' ); ?>
 		<?php get_template_part( 'template-parts/header', 'main' ); ?>
