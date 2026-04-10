@@ -1,19 +1,37 @@
 <section class="section-hero bg-blue-shade-1 pt-0 pb-0 relative">
 	<div class="hero-block relative">
 		<div class="absolute top-0 left-0 w-full h-[80vh]" style="background: linear-gradient(180deg, rgba(14, 50, 74, 0.85) 0%, rgba(232, 246, 255, 0.85) 48.5%);mix-blend-mode: multiply;"></div>
-		<?php 
-			$hero_image = get_field('hero_section_hero_image');
-			$size = 'full';
-			if( $hero_image ) {
-				echo wp_get_attachment_image( $hero_image, $size, false, array( 'class' => 'w-full hidden lg:block' ) );
-			} 
+		<?php
+		$hero_image = get_field( 'hero_section_hero_image' );
+		$size = 'full';
+		if ( $hero_image ) :
+			echo wp_get_attachment_image(
+				$hero_image,
+				$size,
+				false,
+				array(
+					'class'         => 'w-full hidden lg:block',
+					'loading'       => 'eager',
+					'fetchpriority' => 'high',
+				)
+			);
+		endif;
 		?>
-		<?php 
-			$hero_image = get_field('hero_section_hero_image_mobile');
-			$size = 'full';
-			if( $hero_image ) {
-				echo wp_get_attachment_image( $hero_image, $size, false, array( 'class' => 'w-full block lg:hidden max-h-none md:max-h-[75vh] lg:max-h-none' ) );
-			} 
+		<?php
+		$hero_image = get_field( 'hero_section_hero_image_mobile' );
+		$size = 'full';
+		if ( $hero_image ) :
+			echo wp_get_attachment_image(
+				$hero_image,
+				$size,
+				false,
+				array(
+					'class'         => 'w-full block lg:hidden max-h-none md:max-h-[75vh] lg:max-h-none',
+					'loading'       => 'eager',
+					'fetchpriority' => 'high',
+				)
+			);
+		endif;
 		?>
 		<div class="absolute bottom-0 left-0 w-full h-[35vh]" style="background: linear-gradient(180deg, rgba(14, 50, 74, 0.00) 0%, #0E324A 100%);"></div>
 	</div>
