@@ -64,21 +64,6 @@ function aare_theme_footer_widgets_init() {
 
 add_action( 'widgets_init', 'aare_theme_footer_widgets_init' );
 
-if ( ! function_exists( 'aare_get_font_face_styles' ) ) :
-
-	/**
-	 * Get font face styles.
-	 * Called by functions dig_theme_enqueue_styles() and twentytwentytwo_editor_styles() above.
-	 */
-	function aare_get_font_face_styles() {
-
-		return "
-				@import url('https://use.typekit.net/wel7pmx.css');
-		";
-
-	}
-
-endif;
 
 if ( ! function_exists( 'aare_preload_webfonts' ) ) :
 
@@ -87,7 +72,8 @@ if ( ! function_exists( 'aare_preload_webfonts' ) ) :
 	 */
 	function aare_preload_webfonts() {
 		?>
-		<link rel="preconnect" href="use.typekit.net" crossorigin>
+		<link rel="preconnect" href="https://use.typekit.net" crossorigin>
+		<link rel="preconnect" href="https://p.typekit.net" crossorigin>
 		<?php
 	}
 
@@ -100,30 +86,55 @@ add_action( 'wp_head', 'aare_preload_webfonts' );
  */
 function aare_theme_enqueue_styles() {
 
-	//Get the theme data
+	// Get the theme data.
 	$the_theme     = wp_get_theme();
 	$theme_version = $the_theme->get( 'Version' );
 
-	// Register Theme main style.
-	wp_register_style( 'theme-styles', get_template_directory_uri() . '/dist/css/main.css', array(), $theme_version );
-	// Add styles inline.
-	wp_add_inline_style( 'theme-styles', aare_get_font_face_styles() );
-	// Enqueue theme stylesheet.
-	wp_enqueue_style( 'theme-styles' );
-	//https://use.typekit.net/evg0ous.css first loaded fonts library backup
-	//wp_enqueue_style( 'theme-fonts', 'https://use.typekit.net/buy6qwo.css', array(), $theme_version );
+	// Typekit — enqueue normal como stylesheet separado.
+	wp_enqueue_style(
+		'typekit',
+		'https://use.typekit.net/wel7pmx.css',
+		array(),
+		null
+	);
 
-	wp_enqueue_script( 'jquery', false, array(), $theme_version, true );
-	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/js/main.js', array( 'jquery' ), $theme_version, true );
+	// Register Theme main style.
+	wp_enqueue_style(
+		'theme-styles',
+		get_theme_file_uri( '/dist/css/main.css' ),
+		array( 'typekit' ),
+		$theme_version
+	);
+
+	wp_enqueue_script(
+		'theme-scripts',
+		get_theme_file_uri( '/dist/js/main.js' ),
+		array( 'jquery' ),
+		$theme_version,
+		true
+	);
+
 	if ( is_page_template( 'page-templates/page-home.php' ) || is_page_template( 'page-templates/page-arrival-contacts.php' ) || is_admin() ) :
-		wp_enqueue_script( 'google-map-settings', get_stylesheet_directory_uri() . '/assets/js/google-maps.js', array( 'jquery' ), $theme_version, true );
-		wp_enqueue_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBAZN5TfX1aWmjodZ4e_6sOcaJV4D59jfo&callback=initMap', array(), $theme_version, true );
+		wp_enqueue_script(
+			'google-map-settings',
+			get_theme_file_uri( '/assets/js/google-maps.js' ),
+			array( 'jquery' ),
+			$theme_version,
+			true
+		);
+		wp_enqueue_script(
+			'google-map-api',
+			'https://maps.googleapis.com/maps/api/js?key=AIzaSyBAZN5TfX1aWmjodZ4e_6sOcaJV4D59jfo&callback=initMap',
+			array(),
+			null,
+			true
+		);
 	endif;
 }
 
 add_action( 'wp_enqueue_scripts', 'aare_theme_enqueue_styles' );
 
-//Google Map Init
+// Google Map Init.
 function aare_theme_google_map_init() {
 	if ( is_admin() ) :
 		acf_update_setting( 'google_api_key', 'AIzaSyBAZN5TfX1aWmjodZ4e_6sOcaJV4D59jfo' );
@@ -159,10 +170,3 @@ require get_template_directory() . '/inc/theme-admin-settings.php';
 
 // The theme custom menu walker settings.
 require get_template_directory() . '/inc/theme-custom-menu-walker.php';
-
-function my_console_log(...$data) {
-	$json = json_encode($data);
-	add_action('shutdown', function() use ($json) {
-		 echo "<script>console.log({$json})</script>";
-	});
-}
