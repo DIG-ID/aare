@@ -65,21 +65,7 @@ function aare_theme_footer_widgets_init() {
 add_action( 'widgets_init', 'aare_theme_footer_widgets_init' );
 
 
-if ( ! function_exists( 'aare_preload_webfonts' ) ) :
 
-	/**
-	 * Preloads the main web font to improve performance.
-	 */
-	function aare_preload_webfonts() {
-		?>
-		<link rel="preconnect" href="https://use.typekit.net" crossorigin>
-		<link rel="preconnect" href="https://p.typekit.net" crossorigin>
-		<?php
-	}
-
-endif;
-
-add_action( 'wp_head', 'aare_preload_webfonts' );
 
 /**
  * Enqueue styles and scripts
@@ -170,3 +156,6 @@ require get_template_directory() . '/inc/theme-admin-settings.php';
 
 // The theme custom menu walker settings.
 require get_template_directory() . '/inc/theme-custom-menu-walker.php';
+
+// The theme custom optimizations.
+require get_template_directory() . '/inc/theme-optimize.php';
